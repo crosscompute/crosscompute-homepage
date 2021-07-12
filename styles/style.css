@@ -2,9 +2,13 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-.box {
+.container {
   display: flex;
   justify-content: space-between;
+}
+
+.video {
+  flex-shrink: 0;
 }
 
 .button {
