@@ -22,7 +22,7 @@ body {
   transform: rotate(1deg);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 64em) {
   .video {
     position: relative;
     padding-bottom: 56.25%;
