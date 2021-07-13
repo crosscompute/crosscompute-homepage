@@ -2,11 +2,35 @@
 <html>
   <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
       gtag('config', 'G-VP9T2V7B17');
+
+      function onYouTubeIframeAPIReady() {
+        const matches = document.querySelectorAll('.video');
+        for (let i = 0; i < matches.length; i++) {
+          const match = matches[i];
+          const youtubeId = match.dataset.id;
+          const elementId = 'video-' + id;
+          const element = document.createElement('div');
+          element.setAttribute('id', elementId);
+          match.appendChild(element);
+
+          new YT.Player(elementId, {
+            height: '315',
+            width: '560',
+            videoId: youtubeId,
+            playerVars: {
+              'rel': 0
+            }
+          });
+        }
+      }
     </script>
 
     <meta charset="utf-8">
@@ -135,9 +159,7 @@
         <li>Click Run.</li>
       </ol>
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XyXwg9Z9e_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <div class="video" data-id="XyXwg9Z9e_E"></div>
     </div>
 
     <h4>Legacy Platform (Option 2)</h4>
