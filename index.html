@@ -1,38 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
-    <script async src="https://www.youtube.com/iframe_api"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-VP9T2V7B17');
-
-      function onYouTubeIframeAPIReady() {
-        const matches = document.querySelectorAll('.video');
-        for (let i = 0; i < matches.length; i++) {
-          const match = matches[i];
-          const youtubeId = match.dataset.id;
-          const elementId = 'video-' + id;
-          const element = document.createElement('div');
-          element.setAttribute('id', elementId);
-          match.appendChild(element);
-
-          new YT.Player(elementId, {
-            height: '315',
-            width: '560',
-            videoId: youtubeId,
-            playerVars: {
-              'rel': 0
-            }
-          });
-        }
-      }
-    </script>
-
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="CrossCompute sells products and services for automating reports. Each report can be rendered as an embeddable widget, dashboard, PDF document or interactive notebook.">
@@ -42,6 +10,17 @@
     <title>CrossCompute</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-VP9T2V7B17');
+    </script>
+    <script defer src="https://www.youtube.com/iframe_api"></script>
   </head>
   <body>
     <h1>Bring Your Reports and Articles to Life!</h1>
@@ -172,9 +151,7 @@
         <li>Click Run.</li>
       </ol>
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/M6GPVq3-Beg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <div class="video" data-id="M6GPVq3-Beg"></div>
     </div>
 
     <h3>How to Publish Your Own Reports</h3>
@@ -188,9 +165,7 @@
         <li>Create your report using <a href="https://github.com/crosscompute/crosscompute-examples">https://github.com/crosscompute/crosscompute-examples</a> for reference.</li>
       </ol>
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/b8Xe9Er86EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <div class="video" data-id="b8Xe9Er86EU"></div>
     </div>
 
     <h4>Legacy Platform (Option 2)</h4>
@@ -202,9 +177,7 @@
         <li>Create your report using <a href="https://github.com/crosscompute/crosscompute-notebook-examples">https://github.com/crosscompute/crosscompute-notebook-examples</a> for reference.</li>
       </ol>
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MtpswX7rI0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <div class="video" data-id="MtpswX7rI0c"></div>
     </div>
 
     <h2 id="products">Products</h2>
@@ -235,9 +208,7 @@
         <dd>Bot for Querying Nearby Emergency Services Via Text Message</dd>
       </dl>
 
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CUJ3u_I282o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <div class="video" data-id="CUJ3u_I282o"></div>
     </div>
 
     <h2 id="services">Services</h2>
@@ -416,5 +387,30 @@
       <li><a href="https://www.facebook.com/crosscompute">Facebook</a></li>
       <li><a href="https://github.com/crosscompute">GitHub</a></li>
     </ul>
+
+    <script>
+      function onYouTubeIframeAPIReady() {
+        const matches = document.querySelectorAll('.video');
+        for (let i = 0; i < matches.length; i++) {
+          const match = matches[i];
+          const youtubeId = match.dataset.id;
+          const elementId = 'video-' + youtubeId;
+          const element = document.createElement('div');
+          element.setAttribute('id', elementId);
+          match.appendChild(element);
+
+          new YT.Player(elementId, {
+            height: '315',
+            width: '560',
+            videoId: youtubeId,
+            playerVars: {
+              'cc_load_policy': 1,
+              'modestbranding': 1,
+              'rel': 0
+            }
+          });
+        }
+      }
+    </script>
   </body>
 </html> 
