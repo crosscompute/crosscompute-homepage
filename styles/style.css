@@ -2,13 +2,8 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.video {
-  flex-shrink: 0;
+body {
+  line-height: 1.25;
 }
 
 .button {
@@ -24,4 +19,42 @@ html {
 
 .button:hover {
   transform: rotate(5deg);
+}
+
+@media only screen and (min-width: 64em) {
+  body {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 4%;
+  }
+}
+
+@media only screen and (min-width: 85.375em) {
+  body {
+    font-size: 1.3em;
+    margin: 0 8%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .video {
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  body {
+    font-size: 1.4em;
+    margin: 0 12%;
+  }
+}
+
+@media only screen and (min-width: 160em) {
+  body {
+    font-size: 1.6em;
+    margin: 0 18%;
+  }
 }
