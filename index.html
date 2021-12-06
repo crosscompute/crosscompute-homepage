@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Kashfi Fahim | kashfi@crosscompute.com | October, 2021-->
+<!-- Kashfi Fahim | kashfi@crosscompute.com | December, 2021-->
 <html>
 <head>
   <meta charset="utf-8">
@@ -8,12 +8,9 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <!-- The css links below have been reviewed and optimized by Kashfi-->
-  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
-  <link href="styles/webflow.css" rel="stylesheet" type="text/css">
-  <link href="styles/kashfiStyles.css" rel="stylesheet" type="text/css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-
   <!-- Roboto Slab font as requested-->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Roboto Slab:100,200,300,regular,500,600,700,800,900"]  }});</script>
@@ -34,122 +31,33 @@
 <!-- Start of Content -->
 <body class="body">
 
-  <!-- Navigation Bar with Call to Action Buttons -->
-  <div class="nav">
-    <img src="images/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy" width="370" alt="" class="titlelogo">
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+  <!-- MUST BE ON EVERY CC PAGE-->
+  <img src="images/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy" alt="" class="titlelogo">
+  <!-- Navigation Bar-->
+  <div class="topnav" id="myTopnav">
+      <a href="https://crosscompute.com/" class="active">Home</a>
+      <!-- <a href="https://forum.crosscompute.com/">Forum</a> -->
+      <a href="https://crosscompute.com/services.html">Products & Services</a>
+      <a href="https://crosscompute.com/capabilities.html">Capabilities</a>
+      <a href="#about">About Us</a>
+      <a href="#news">Contact Us</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
+      <script>
+        function myFunction() {
+          let x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
   </div>
+  <!-- MUST BE ON EVERY CC PAGE-->
 
   
-
-  <!-- Footer Section -->
-  <footer id="footer" class="kashficontainer wf-section">
-    <div class="kashfifootercontainerdivblock w-container">
-      
-      <div class="kashfifooterflexcontainer">
-        <a href="#" class="footer-logo-link"><img src="images/LogoBrand-20210417-237x32.png" width="118.5" alt="" class="footer-image"></a>
-
-        <!-- Contact Us Links -->
-        <div class="kashfifootercontactusdivblock">
-          <h2 class="kashfifooterheading">Contact Us</h2>
-          <ul role="list" class="kashfifooterlistofcontactuslinks w-list-unstyled">
-            <li class="kashfilistitems">
-              <a href="mailto:contact@crosscompute.com?subject=General%20Questions%2C%20Partnerships%2C%20Proposals" class="footer-link">General Questions, Partnerships, Proposals</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:sales@crosscompute.com?subject=Sales%20Inquiry" class="footer-link">Sales Inquiries</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:billing@crosscompute.com?subject=Billing%2C%20Invoices%2C%20Payments" class="footer-link">Billing, Invoices, Payments</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:support@crosscompute.com?subject=Technical%20Issues" class="footer-link">Technical Issues</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:engineering@crosscompute.com?subject=Integration%20Questions" class="footer-link">Integration Questions</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:careers@crosscompute.com?subject=Careers%2C%20Jobs%2C%20Internships" class="footer-link">Careers, Jobs, Internships</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:legal@crosscompute.com?subject=Legal%20Questions" class="footer-link">Legal Questions</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="mailto:request@crosscompute.com?subject=Special%20Requests" class="footer-link">Special Requests</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="tel:+1-917-566-7004" class="footer-link">Emergency Requests</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="kashfifooterheading">Pages</h2>
-          <ul role="list" class="kashfifooterlistofcontactuslinks w-list-unstyled">
-            <li class="kashfilistitems">
-              <a href="https://forum.crosscompute.com" target="_blank" class="footer-link">Forum</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://news.crosscompute.com" target="_blank" class="footer-link">News</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="services.html" target="_blank" class="footer-link">Services</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="capabilities.html" target="_blank" class="footer-link">Capabilities</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="kashfilinksdivblock">
-          <h2 class="kashfifooterheading">Links</h2>
-          <ul role="list" class="kashfifooterlistofcontactuslinks w-list-unstyled">
-            <li class="kashfilistitems">
-              <a href="https://www.youtube.com/crosscompute" target="_blank" class="footer-link">YouTube</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://twitter.com/crosscompute" target="_blank" class="footer-link">Twitter</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://www.linkedin.com/company/crosscompute" target="_blank" class="footer-link">LinkedIn</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://www.facebook.com/crosscompute" target="_blank" class="footer-link">Facebook</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://github.com/crosscompute" target="_blank" class="footer-link">GitHub</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://twitch.tv/crosscompute" target="_blank" class="footer-link">Twitch</a>
-            </li>
-            <li class="kashfilistitems">
-              <a href="https://discord.com/channels/905104835639140393/905104836104691843" target="_blank" class="footer-link">Discord</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
 </body>
 </html>
 
