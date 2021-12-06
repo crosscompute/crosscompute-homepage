@@ -7,7 +7,7 @@
 
 .titlelogo {
   /* width: 400px; */
-  width: 35%;
+  width: 90%;
   display: block;
   margin: auto;
   padding: 10px 10px 10px 10px;
@@ -19,7 +19,7 @@
     background-color: #eee;
     overflow: hidden;
     margin: auto;
-    width: 44%;
+    width: 80%;
     border: #000;
     border-style: solid;
     border-width: 0.1px;
@@ -141,7 +141,7 @@
     color: white;
     text-align: center;
     overflow: hidden;
-    width: 44%;
+    width: 80%;
     border: #000;
     border-style: solid;
     border-width: 0.1px;
@@ -152,7 +152,7 @@
 .row {
   overflow: hidden;
   margin: auto;
-  width: 44%;
+  width: 80%;
   text-indent: 5%;
   border: #000;
   border-style: solid;
