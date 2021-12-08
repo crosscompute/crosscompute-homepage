@@ -1,5 +1,5 @@
 .body {
-  background-color: #fff;
+  background-color: #fffff;
   font-family: 'Roboto Slab', sans-serif;
   color: #000;
   font-weight: 400;
@@ -153,7 +153,7 @@
   overflow: hidden;
   margin: auto;
   width: 80%;
-  text-indent: 5%;
+  /* text-indent: 5%; */
   border: #000;
   border-style: solid;
   border-width: 0.1px;
@@ -204,4 +204,52 @@
 .animated-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.column {
+  /* float: right; */
+  display: block;
+  width: 100%;
+  margin: auto;
+  /* border: rgb(255, 0, 0);
+  border-style: dashed; */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  /* border: blue;
+  border-style: double; */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 2px;
+  /* border: rgb(0, 255, 81);
+  border-width: 10px;
+  border-style: dotted; */
+  /* padding-left: 10%; */
+  text-align: center;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(0, 72, 255);
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
