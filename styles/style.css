@@ -40,12 +40,15 @@ html {
   /* Style the links inside the navigation bar */
   .topnav a {
     /* float: left; */
-    display: inline-flexbox;
+    display: grid;
     /* color: #000; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border: #000; 
+    /* border-style: solid;
+    margin: auto; */
   }
   
   /* Add an active class to highlight the current page */
