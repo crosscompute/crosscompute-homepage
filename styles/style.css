@@ -7,7 +7,7 @@
 
 .titlelogo {
   /* width: 400px; */
-  width: 90%;
+  width: 80%;
   display: block;
   margin: auto;
   padding: 10px 10px 10px 10px;
@@ -29,7 +29,7 @@
   .topnav a {
     float: left;
     display: inline-flexbox;
-    color: #000;
+    /* color: #000; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
