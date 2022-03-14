@@ -29,11 +29,12 @@ def load_configuration(configuration_path):
     return configuration
 
 
-def _get_app():
+def _get_app(is_production):
     settings = {
-        'pyramid.reload_templates': True,
         'jinja2.trim_blocks': True,
     }
+    if not is_production:
+        settings['pyramid.reload_templates'] = True
     with Configurator(settings=settings) as config:
         config.add_route('index', '/')
         config.include('pyramid_jinja2')
@@ -65,11 +66,12 @@ CONFIGURATION = {}
 
 
 if __name__ == '__main__':
-    argument_parser = ArgumentParser()
-    argument_parser.add_argument('configuration_path')
-    args = argument_parser.parse_args()
+    a = ArgumentParser()
+    a.add_argument('configuration_path')
+    a.add_argument('--production', dest='is_production', action='store_true')
+    args = a.parse_args()
     CONFIGURATION.update(load_configuration(args.configuration_path))
-    app = _get_app()
+    app = _get_app(args.is_production)
     server = make_server('0.0.0.0', 8000, app)
     try:
         server.serve_forever()
