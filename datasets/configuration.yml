@@ -1,0 +1,8 @@
+---
+articles:
+  - title: Article 1
+    description:
+      path: article-1.md
+  - title: Article 2
+    description:
+      path: article-2.md
