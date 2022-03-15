@@ -3,14 +3,20 @@ from argparse import ArgumentParser
 from markdown import markdown
 from pathlib import Path
 from pyramid.config import Configurator
+from pyramid.response import FileResponse
 from wsgiref.simple_server import make_server
 
 
 def index(request):
     return {
-        'title_text': 'CrossCompute Updates',
+        'title_text': 'CrossCompute',
+        'page_description': 'CrossCompute provides infrastructure for hosting analytics content that organizations can license to customers.',
         'articles': CONFIGURATION['articles'],
     }
+
+
+def see_icon(request):
+    return FileResponse(IMAGES_FOLDER / 'favicon.ico')
 
 
 def load_configuration(configuration_path):
@@ -37,12 +43,13 @@ def _get_app(is_production):
         settings['pyramid.reload_templates'] = True
     with Configurator(settings=settings) as config:
         config.add_route('index', '/')
+        config.add_route('icon', '/favicon.ico')
         config.include('pyramid_jinja2')
         config.add_jinja2_search_path(str(TEMPLATES_FOLDER))
         config.add_static_view(name='images', path=str(IMAGES_FOLDER))
         config.add_static_view(name='styles', path=str(STYLES_FOLDER))
-        config.add_view(
-            index, route_name='index', renderer='index.jinja2')
+        config.add_view(index, route_name='index', renderer='index.jinja2')
+        config.add_view(see_icon, route_name='icon')
         _configure_renderer_globals(config)
         app = config.make_wsgi_app()
     return app

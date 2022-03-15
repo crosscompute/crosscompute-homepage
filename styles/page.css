@@ -1,5 +1,6 @@
 :root {
   --body-margin: 8px;
+  --nav-height: 32px;
   --horizontal-article-count: 4;
   --horizontal-content-gap: 16px;
   --vertical-content-gap: 4px;
@@ -8,15 +9,24 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: var(--body-margin);
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 nav > ul {
   display: flex;
   flex-wrap: wrap;
 	justify-content: space-between;
+  align-items: center;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
+  height: var(--nav-height);
 }
 .brand {
   max-width: 192px;
@@ -26,6 +36,8 @@ nav > ul {
   flex-wrap: wrap;
 	justify-content: space-between;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
+  height: calc(100vh - var(--body-margin) * 2 - var(--nav-height) * 2);
+  overflow: auto;
 }
 /* max-width = brand-width + body-margin * 2 */
 @media screen and (max-width: 208px) {

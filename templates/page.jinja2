@@ -1,7 +1,6 @@
 {% extends 'base.jinja2' %}
 
 {% block head_html %}
-{#
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -9,18 +8,26 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-VP9T2V7B17');
 </script>
-#}
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title_text }}</title>
 <link rel="stylesheet" href="{{ STYLE_URI }}/page.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page_description }}">
+<title>{{ title_text }}</title>
 {% endblock %}
 
 {% block header_html %}
-<a href="/"><img class="brand" src="{{ IMAGE_URI }}/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy"></a>
+<nav>
+<ul>
+<li><a href="/"><img class="brand" src="{{ IMAGE_URI }}/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy"></a></li>
+<li><a href="https://crosscompute.net">Gallery</a></li>
+<li><a href="https://forum.crosscompute.com">Forum</a></li>
+<li><a href="https://news.crosscompute.com">News</a></li>
+<li><a href="https://docs.crosscompute.com">Docs</a></li>
+</ul>
+</nav>
 {% endblock %}
 
 {% block body_html %}
@@ -29,11 +36,7 @@ gtag('config', 'G-VP9T2V7B17');
 {% block footer_html %}
 <nav>
 <ul>
-<li><a href="https://about.crosscompute.com">About</a></li>
-<li><a href="https://forum.crosscompute.com">Forum</a></li>
-<li><a href="https://news.crosscompute.com">News</a></li>
-<li><a href="https://docs.crosscompute.com">Documentation</a></li>
-<li><a href="https://github.com/crosscompute">Code</a></li>
+<li><a href="https://github.com/crosscompute">GitHub</a></li>
 <li><a href="https://www.youtube.com/crosscompute">YouTube</a></li>
 <li><a href="https://twitter.com/crosscompute">Twitter</a></li>
 <li><a href="https://www.linkedin.com/company/crosscompute">LinkedIn</a></li>
