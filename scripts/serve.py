@@ -10,7 +10,9 @@ from wsgiref.simple_server import make_server
 def index(request):
     return {
         'title_text': 'CrossCompute',
-        'page_description': 'CrossCompute provides infrastructure for hosting analytics content that organizations can license to customers.',
+        'page_description': (
+            'CrossCompute provides infrastructure for hosting analytics '
+            'content that organizations can license to customers.'),
         'articles': CONFIGURATION['articles'],
     }
 
@@ -32,7 +34,17 @@ def load_configuration(configuration_path):
             description_text = description_file.read()
         description_html = markdown(description_text)
         description_dictionary['html'] = description_html
+    CONFIGURATION.update(configuration)
     return configuration
+
+
+def serve_with(args):
+    app = _get_app(args.is_production)
+    server = make_server(args.host, args.port, app)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
 
 
 def _get_app(is_production):
@@ -65,6 +77,8 @@ def _configure_renderer_globals(config):
     config.action(None, update_renderer_globals)
 
 
+HOST = '127.0.0.1'
+PORT = 8000
 BASE_FOLDER = Path(__file__).parents[1]
 IMAGES_FOLDER = BASE_FOLDER / 'images'
 STYLES_FOLDER = BASE_FOLDER / 'styles'
@@ -74,13 +88,14 @@ CONFIGURATION = {}
 
 if __name__ == '__main__':
     a = ArgumentParser()
-    a.add_argument('configuration_path')
-    a.add_argument('--production', dest='is_production', action='store_true')
+    a.add_argument(
+        'configuration_path')
+    a.add_argument(
+        '--host', metavar='X', default=HOST)
+    a.add_argument(
+        '--port', metavar='X', default=PORT)
+    a.add_argument(
+        '--production', dest='is_production', action='store_true')
     args = a.parse_args()
-    CONFIGURATION.update(load_configuration(args.configuration_path))
-    app = _get_app(args.is_production)
-    server = make_server('0.0.0.0', 8000, app)
-    try:
-        server.serve_forever()
-    except KeyboardInterrupt:
-        pass
+    load_configuration(args.configuration_path)
+    serve_with(args)

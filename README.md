@@ -1,5 +1,11 @@
 # CrossCompute Homepage
 
+## Installation
+
+```bash
+pip install requests
+```
+
 ## Usage
 
 ```bash
