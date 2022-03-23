@@ -41,6 +41,7 @@ def load_configuration(configuration_path):
 def serve_with(args):
     app = _get_app(args.is_production)
     server = make_server(args.host, args.port, app)
+    print(f'http://localhost:{args.port}')
     try:
         server.serve_forever()
     except KeyboardInterrupt:
