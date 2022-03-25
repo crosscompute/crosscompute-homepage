@@ -60,8 +60,9 @@ if __name__ == '__main__':
     process = StoppableProcess(name='serve', target=serve_with, args=(args,))
     process.start()
     uri = f'http://localhost:{args.port}'
-    target_folder = Path(args.target_folder)
+    folder = Path(args.target_folder)
     try:
-        save(target_folder, 'index.html', uri, is_recursive=True)
+        save(folder, 'index.html', uri, is_recursive=True)
+        save(folder, 'favicon.ico', uri + '/favicon.ico', is_binary=True)
     finally:
         process.stop()
