@@ -1,3 +1,4 @@
+#!/bin/bash
 TIMESTAMP=$(date +%Y%m%d-%H%M)
 FOLDER=/srv/crosscompute-homepage-$TIMESTAMP
 

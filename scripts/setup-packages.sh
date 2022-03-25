@@ -1,3 +1,4 @@
+#!/bin/bash
 command -v python3.9 || sudo dnf install python39 -y
 
 python3.9 -m venv \
