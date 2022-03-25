@@ -1,10 +1,11 @@
-import yaml
 from argparse import ArgumentParser
-from markdown import markdown
 from pathlib import Path
+from wsgiref.simple_server import make_server
+
+import yaml
+from markdown import markdown
 from pyramid.config import Configurator
 from pyramid.response import FileResponse
-from wsgiref.simple_server import make_server
 
 
 def index(request):

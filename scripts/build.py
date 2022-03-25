@@ -1,11 +1,12 @@
-import requests
 from argparse import ArgumentParser
-from bs4 import BeautifulSoup
-from crosscompute.macros.process import StoppableProcess
-from crosscompute.macros.web import find_open_port
 from pathlib import Path
 from time import sleep
 from urllib.parse import urlparse as parse_uri
+
+import requests
+from bs4 import BeautifulSoup
+from crosscompute.macros.process import StoppableProcess
+from crosscompute.macros.web import find_open_port
 
 from serve import load_configuration, serve_with
 

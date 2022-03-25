@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-pip install requests
+bash scripts/setup.sh
 ```
 
 ## Usage
