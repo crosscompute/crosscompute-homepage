@@ -1,7 +1,3 @@
-[Unit]
-Requires=network.target
-After=network.target
-
 [Service]
 Type=oneshot
 ExecStart=/home/crosscompute/Projects/crosscompute-homepage/scripts/build.sh
