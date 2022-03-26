@@ -45,7 +45,7 @@ footer ul {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .fa-brands {
   color: gray;
