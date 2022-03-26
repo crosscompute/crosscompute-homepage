@@ -9,24 +9,35 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: var(--body-margin);
 }
+header, footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: var(--nav-height);
+}
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  align-items: end;
+  justify-content: center;
+}
 a {
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-	justify-content: space-between;
-  align-items: center;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
-  height: var(--nav-height);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header ul {
+  align-items: center;
+}
+footer ul {
+  align-items: end;
 }
 .brand {
   max-width: 192px;
@@ -34,10 +45,13 @@ nav > ul {
 .content {
   display: flex;
   flex-wrap: wrap;
-	justify-content: space-between;
+  justify-content: space-between;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
   height: calc(100vh - var(--body-margin) * 2 - var(--nav-height) * 2);
   overflow: auto;
+}
+.fa-brands {
+  color: gray;
 }
 /* max-width = brand-width + body-margin * 2 */
 @media screen and (max-width: 208px) {

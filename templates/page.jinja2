@@ -8,6 +8,7 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-VP9T2V7B17');
 </script>
+<script async src="https://kit.fontawesome.com/08458997b7.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ STYLE_URI }}/page.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +20,11 @@ gtag('config', 'G-VP9T2V7B17');
 {% endblock %}
 
 {% block header_html %}
+<a href="/"><img class="brand" src="{{ IMAGE_URI }}/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy"></a>
 <nav>
 <ul>
-<li><a href="/"><img class="brand" src="{{ IMAGE_URI }}/CrossCompute-LogoBrand-Horizontal-20200420.svg" loading="lazy"></a></li>
 <li><a href="https://crosscompute.net">Gallery</a></li>
 <li><a href="https://forum.crosscompute.com">Forum</a></li>
-<li><a href="https://news.crosscompute.com">News</a></li>
 <li><a href="https://docs.crosscompute.com">Docs</a></li>
 </ul>
 </nav>
@@ -36,13 +36,14 @@ gtag('config', 'G-VP9T2V7B17');
 {% block footer_html %}
 <nav>
 <ul>
-<li><a href="https://github.com/crosscompute">GitHub</a></li>
-<li><a href="https://www.youtube.com/crosscompute">YouTube</a></li>
-<li><a href="https://twitter.com/crosscompute">Twitter</a></li>
-<li><a href="https://www.linkedin.com/company/crosscompute">LinkedIn</a></li>
-<li><a href="https://www.facebook.com/crosscompute">Facebook</a></li>
-<li><a href="https://discord.com/channels/905104835639140393/905104836104691843">Discord</a></li>
-<li><a href="https://twitch.tv/crosscompute">Twitch</a></li>
+<li><a href="https://crosscompute.tumblr.com" class="fa-brands fa-tumblr"></a></li>
+<li><a href="https://github.com/crosscompute" class="fa-brands fa-github"></a></li>
+<li><a href="https://www.youtube.com/crosscompute" class="fa-brands fa-youtube"></a></li>
+<li><a href="https://twitter.com/crosscompute" class="fa-brands fa-twitter"></a></li>
+<li><a href="https://www.linkedin.com/company/crosscompute" class="fa-brands fa-linkedin"></a></li>
+<li><a href="https://www.facebook.com/crosscompute" class="fa-brands fa-facebook"></a></li>
+<li><a href="https://discord.com/channels/905104835639140393/905104836104691843" class="fa-brands fa-discord"></a></li>
+<li><a href="https://twitch.tv/crosscompute" class="fa-brands fa-twitch"></a></li>
 </ul>
 </nav>
 {% endblock %}
