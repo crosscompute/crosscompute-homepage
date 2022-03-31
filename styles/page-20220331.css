@@ -15,13 +15,18 @@ header, footer {
 header {
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 footer {
   align-items: end;
   justify-content: center;
+  margin-top: 16px;
 }
 a {
   text-decoration: none;
+}
+table {
+  border-spacing: 1em;
 }
 nav > ul {
   display: flex;
@@ -40,12 +45,15 @@ footer ul {
 .brand {
   max-width: 180px;
 }
+.introduction {
+  max-width: 800px;
+  margin: auto;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
-  margin-bottom: 16px;
 }
 .fa-brands {
   color: gray;

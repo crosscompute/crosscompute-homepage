@@ -1,11 +1,12 @@
 {% extends 'page.jinja2' %}
 
 {% block body_html %}
+<div class="introduction">We help teams build analytics such as reports, tools, widgets, dashboards, forms. Our CrossCompute Analytics Automation System and Support Services turn spreadsheets, scripts, databases into products that you can sell. Our mission is to inspire people to create content for improving health, safety, quality of life in their communities.</div>
 <div class="content">
-{% for article in articles %}
+{% for post in CONFIGURATION['posts'] %}
 <article>
-<h2>{{ article['title'] }}</h2>
-{{ article['description']['html'] | safe }}
+<h2>{{ post['title'] }}</h2>
+{{ post['description']['html'] | safe }}
 </article>
 {% endfor %}
 </div>
