@@ -4,4 +4,4 @@ A better approach is to start small. Analysts should create lightweight automati
 
 With the CrossCompute Analytics Automation System, your team can lower the barrier to entry for prototyping and delivering new reports, forms, tools to your customers. Our team specializes in report automation for microgrid and electricity infrastructure planning. We are also experienced in interactive mapping for scenario planning, geospatial data collection, logistical optimization through operations research, road/path planning algorithms, satellite image recognition and office automation.
 
-Message <contact@crosscompute.com> to learn more about our CrossCompute Analytics Automation System and Support Services.
+[Message us](mailto:crosscompute@crosscompute.com) to learn more about our CrossCompute Analytics Automation System and Support Services.
