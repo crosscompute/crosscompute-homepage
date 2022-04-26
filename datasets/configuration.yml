@@ -5,6 +5,9 @@ pages:
     description:
       path: page-index.txt
 posts:
+  - title: Apply to List Your Profile in Our Upcoming Computational Marketplace
+    description:
+      path: post-computational-marketplace-20220426.md
   - title: CrossCompute Framework 0.9.2.3 Release Notes
     description:
       path: post-crosscompute-0.9.2.3.md
