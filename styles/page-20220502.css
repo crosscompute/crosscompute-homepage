@@ -42,6 +42,9 @@ header ul {
 footer ul {
   align-items: end;
 }
+h1 {
+  text-align: center;
+}
 .brand {
   max-width: 180px;
 }
