@@ -1,6 +1,6 @@
 :root {
   --body-margin: 8px;
-  --horizontal-article-count: 4;
+  --horizontal-article-count: 3;
   --horizontal-content-gap: 16px;
   --vertical-content-gap: 4px;
 }
@@ -15,12 +15,14 @@ header, footer {
 header {
   align-items: center;
   justify-content: space-between;
+}
+main {
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 footer {
   align-items: end;
   justify-content: center;
-  margin-top: 16px;
 }
 a {
   text-decoration: none;
@@ -28,12 +30,14 @@ a {
 table {
   border-spacing: 1em;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
 nav > ul {
   display: flex;
   flex-wrap: wrap;
   gap: var(--vertical-content-gap) var(--horizontal-content-gap);
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 header ul {
@@ -48,11 +52,31 @@ h1 {
 .brand {
   max-width: 180px;
 }
-.introduction {
-  max-width: 800px;
-  margin: auto;
+.job {
+  text-align: center;
+  font-size: x-large;
 }
-.content {
+.outcomes {
+  text-align: center;
+  font-size: large;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.outcomes li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.blurb {
+  text-align: center;
+  font-size: x-large;
+}
+.description {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.posts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -68,7 +92,7 @@ h1 {
   }
 }
 @media screen and (min-width: 1200px) {
-  .content > article {
+  .posts > article {
     max-width: calc((100% - var(--body-margin) * 2) / var(--horizontal-article-count) - var(--horizontal-content-gap) / 2);
   }
 }

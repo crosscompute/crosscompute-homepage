@@ -26,5 +26,5 @@ bash scripts/setup-services.sh
 ## Development
 
 ```bash
-python scripts/serve.py datasets/configuration.yml
+python scripts/serve.py
 ```

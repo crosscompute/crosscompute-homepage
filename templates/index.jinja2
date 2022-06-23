@@ -1,9 +1,24 @@
 {% extends 'page.jinja2' %}
 
 {% block body_html %}
-<h1>Scripts to Products</h1>
-<div class="introduction">CrossCompute trains researchers to turn their computational models into web-based products using the open source CrossCompute Analytics Automation System. We train analysts to turn spreadsheets, scripts, databases into decision support products that you can sell. Our mission is to inspire people to create products that improve health, safety, quality of life.</div>
-<div class="content">
+<h1>Hazard Mitigation Planning for Electric Cooperatives</h1>
+<div class="job">
+Prioritize Infrastructure Upgrades
+</div>
+<div class="outcomes">
+<ul>
+<li>Map incidents</li>
+<li>Update plans</li>
+<li>Expedite reviews</li>
+</ul>
+</div>
+<div class="blurb">
+Digitally Transform Your Co-op for Happier Customers
+</div>
+<div class="description">
+Our vision is to help communities prepare for hazards, by connecting the best tools from researchers.
+</div>
+<div class="posts">
 {% for post in CONFIGURATION['posts'] %}
 <article>
 <h2>{{ post['title'] }}</h2>
