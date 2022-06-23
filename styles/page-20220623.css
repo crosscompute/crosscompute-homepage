@@ -1,8 +1,8 @@
 :root {
   --body-margin: 8px;
   --horizontal-article-count: 3;
-  --horizontal-content-gap: 16px;
-  --vertical-content-gap: 4px;
+  --horizontal-content-gap: 32px;
+  --vertical-content-gap: 32px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,9 +15,9 @@ header, footer {
 header {
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 main {
-  margin-top: 16px;
   margin-bottom: 16px;
 }
 footer {
@@ -37,7 +37,7 @@ ul {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--vertical-content-gap) var(--horizontal-content-gap);
+  gap: 8px 32px;
   margin: 0;
 }
 header ul {
@@ -52,28 +52,18 @@ h1 {
 .brand {
   max-width: 180px;
 }
-.job {
-  text-align: center;
-  font-size: x-large;
-}
 .outcomes {
   text-align: center;
-  font-size: large;
-  margin-top: 32px;
   margin-bottom: 32px;
+}
+.outcomes ul {
+  font-size: x-large;
 }
 .outcomes li:not(:last-child) {
   margin-bottom: 16px;
 }
-.blurb {
-  text-align: center;
-  font-size: x-large;
-}
 .description {
   text-align: center;
-  max-width: 80%;
-  margin: auto;
-  margin-top: 32px;
   margin-bottom: 32px;
 }
 .posts {
