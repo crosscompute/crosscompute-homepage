@@ -1,1 +1,1 @@
-CrossCompute trains researchers to turn their computational models into web-based products using the open source CrossCompute Analytics Automation System. We train analysts to turn spreadsheets, scripts, databases into decision support products that you can sell. Our mission is to inspire people to create products that improve health, safety, quality of life.
+CrossCompute enables electric cooperatives to expedite upgrades and prepare for hazards, by connecting the best planning tools from researchers.
