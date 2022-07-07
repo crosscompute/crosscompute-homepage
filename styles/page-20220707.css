@@ -1,12 +1,6 @@
-:root {
-  --body-margin: 8px;
-  --horizontal-article-count: 3;
-  --horizontal-content-gap: 32px;
-  --vertical-content-gap: 32px;
-}
 body {
   font-family: 'Roboto', sans-serif;
-  margin: var(--body-margin);
+  margin: 8px;
 }
 header, footer {
   display: flex;
@@ -49,6 +43,18 @@ footer ul {
 h1 {
   text-align: center;
 }
+article {
+  background: aliceblue;
+  padding: 16px;
+  break-inside: avoid;
+  filter: drop-shadow(0 0 8px lightgray);
+}
+article + article {
+  margin-top: 32px;
+}
+article > h3 {
+  margin: 0 0 0.5em 0;
+}
 .brand {
   max-width: 180px;
 }
@@ -67,22 +73,28 @@ h1 {
   margin-bottom: 32px;
 }
 .posts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--vertical-content-gap) var(--horizontal-content-gap);
+  column-gap: 32px;
 }
 .fa-brands {
   color: gray;
 }
-/* max-width = brand-width + body-margin * 2 */
 @media screen and (max-width: 208px) {
   .brand {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .posts > article {
-    max-width: calc((100% - var(--body-margin) * 2) / var(--horizontal-article-count) - var(--horizontal-content-gap) / 2);
+@media only screen and (min-width: 600px) {
+  .posts {
+    column-count: 2;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .posts {
+    column-count: 3;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .posts {
+    column-count: 4;
   }
 }

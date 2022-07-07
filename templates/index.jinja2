@@ -17,7 +17,7 @@ Help communities prepare for hazards, by connecting the best tools from research
 <div class="posts">
 {% for post in CONFIGURATION['posts'] %}
 <article>
-<h2>{{ post['title'] }}</h2>
+<h3>{{ post['title'] }}</h3>
 {{ post['description']['html'] | safe }}
 </article>
 {% endfor %}
