@@ -5,6 +5,9 @@ pages:
     description:
       path: page-index.txt
 posts:
+  - title: Simplify Outage Tracking
+    description:
+      path: post-simplify-outage-tracking-20220711.md
   - title: Webify Your Scripts into Report Products
     description:
       path: post-script-webification-20220512.md

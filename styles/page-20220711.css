@@ -55,6 +55,9 @@ article + article {
 article > h3 {
   margin: 0 0 0.5em 0;
 }
+article img {
+  width: 100%;
+}
 .brand {
   max-width: 180px;
 }
