@@ -1,16 +1,15 @@
 #!/bin/bash
-command -v python3.9 || sudo dnf install python39 -y
+command -v python3 || sudo dnf install python3 -y
 
-python3.9 -m venv \
+python3 -m venv \
     ~/.virtualenvs/crosscompute-homepage
 source \
     ~/.virtualenvs/crosscompute-homepage/bin/activate
 
 pip install -U \
     beautifulsoup4 \
-    crosscompute \
+    fastapi \
     markdown \
     pip \
-    pyramid \
-    pyyaml \
-    requests
+    requests \
+    ruamel.yaml

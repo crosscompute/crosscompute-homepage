@@ -2,15 +2,15 @@
 
 ## Installation
 
-Add a deploy key to https://github.com/crosscompute/crosscompute-homepage for root.
+1. Become root and make an SSH key.
 
 ```bash
 sudo -s
-TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-ssh-keygen -t ed25519 -C "crosscompute-homepage-$TIMESTAMP"
+ssh-keygen -t ed25519 -C "crosscompute-homepage-$(date +%Y%m%d-%H%M%S)"
 ```
 
-Test deploy key.
+2. [Add the SSH key as a deploy key to this repository](https://github.com/crosscompute/crosscompute-homepage/settings/keys).
+3. Test the deploy key.
 
 ```bash
 bash scripts/build.sh
