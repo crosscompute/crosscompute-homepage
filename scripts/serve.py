@@ -1,23 +1,23 @@
+import uvicorn
 from argparse import ArgumentParser
 
 from fastapi import FastAPI
 
 
+HOST = '127.0.0.1'
+PORT = 8000
+
+
 app = FastAPI()
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.get('/')
+def see_home():
+    return {'Hello': 'World'}
 
 
 def serve_with(args):
-    pass
+    uvicorn.run(app, port=args.port, log_level='debug')
 
 
 if __name__ == '__main__':

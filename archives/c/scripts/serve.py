@@ -114,8 +114,6 @@ def get_html_from_markdown(text, extensions=None):
     return html
 
 
-HOST = '127.0.0.1'
-PORT = 8000
 BASE_FOLDER = Path(__file__).parents[1]
 DATASETS_FOLDER = BASE_FOLDER / 'datasets'
 IMAGES_FOLDER = BASE_FOLDER / 'images'

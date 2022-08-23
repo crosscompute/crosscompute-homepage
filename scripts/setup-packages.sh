@@ -8,6 +8,7 @@ source \
 
 pip install -U \
     beautifulsoup4 \
+    crosscompute \
     fastapi \
     markdown \
     pip \
