@@ -1,7 +1,6 @@
 import operator
 from pathlib import Path
 from pyramid.events import NewRequest, subscriber
-from wsgiref.simple_server import make_server
 
 import yaml
 from markdown import markdown
@@ -19,10 +18,6 @@ def index(request):
         CONFIGURATION['pages'], 'id', 'index',
         get_value=lambda item, key: item[key])
     return metadata
-
-
-def see_icon(request):
-    return FileResponse(IMAGES_FOLDER / 'favicon.ico')
 
 
 def load_configuration(configuration_path):
@@ -47,34 +42,9 @@ def process_dictionary(dictionary, configuration_folder):
     dictionary['text'] = text
 
 
-def serve_with(args):
-    app = _get_app()
-    server = make_server(args.host, args.port, app)
-    print(f'http://localhost:{args.port}')
-    try:
-        server.serve_forever()
-    except KeyboardInterrupt:
-        pass
-
-
 def _get_app():
-    settings = {
-        'jinja2.trim_blocks': True,
-        'pyramid.reload_templates': True,
-    }
-    with Configurator(settings=settings) as config:
-        config.add_route('index', '/')
-        config.add_route('icon', '/favicon.ico')
-        config.include('pyramid_jinja2')
-        config.add_jinja2_search_path(str(TEMPLATES_FOLDER))
-        config.add_static_view(name='images', path=str(IMAGES_FOLDER))
-        config.add_static_view(name='styles', path=str(STYLES_FOLDER))
-        config.add_view(index, route_name='index', renderer='index.jinja2')
-        config.add_view(see_icon, route_name='icon')
-        config.add_subscriber(reload_configuration, NewRequest)
-        _configure_renderer_globals(config)
-        app = config.make_wsgi_app()
-    return app
+    config.add_subscriber(reload_configuration, NewRequest)
+    _configure_renderer_globals(config)
 
 
 def _configure_renderer_globals(config):
@@ -114,10 +84,6 @@ def get_html_from_markdown(text, extensions=None):
     return html
 
 
-BASE_FOLDER = Path(__file__).parents[1]
 DATASETS_FOLDER = BASE_FOLDER / 'datasets'
-IMAGES_FOLDER = BASE_FOLDER / 'images'
-STYLES_FOLDER = BASE_FOLDER / 'styles'
-TEMPLATES_FOLDER = BASE_FOLDER / 'templates'
 CONFIGURATION_PATH = DATASETS_FOLDER / 'configuration.yml'
 CONFIGURATION = {}

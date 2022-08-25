@@ -53,7 +53,6 @@ if __name__ == '__main__':
     a.add_argument('configuration_path')
     a.add_argument('target_folder')
     args = a.parse_args()
-    args.host = '127.0.0.1'
     args.port = find_open_port()
     args.is_production = True
     load_configuration(args.configuration_path)

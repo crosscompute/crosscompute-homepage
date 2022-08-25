@@ -10,6 +10,7 @@ pip install -U \
     beautifulsoup4 \
     crosscompute \
     fastapi \
+    jinja2 \
     markdown \
     pip \
     requests \
