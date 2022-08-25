@@ -1,5 +1,3 @@
-{% extends 'page.jinja2' %}
-
 {% block body_html %}
 <h1>Hazard Mitigation Planning for Electric Cooperatives</h1>
 <div class="outcomes">
@@ -12,13 +10,5 @@
 </div>
 <div class="description">
 Help communities prepare for hazards, by connecting the best tools from researchers.
-</div>
-<div class="posts">
-{% for post in CONFIGURATION['posts'] %}
-<article>
-<h3>{{ post['title'] }}</h3>
-{{ post['description']['html'] | safe }}
-</article>
-{% endfor %}
 </div>
 {% endblock %}
