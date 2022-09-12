@@ -33,7 +33,7 @@ async def see_icon():
 
 
 def serve_with(args):
-    uvicorn.run(app, port=args.port, log_level='debug')
+    uvicorn.run('serve:app', port=args.port, log_level='debug', reload=True)
 
 
 if __name__ == '__main__':

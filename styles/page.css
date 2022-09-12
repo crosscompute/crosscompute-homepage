@@ -1,4 +1,6 @@
-.list {
+.no-bullets {
   list-style: none;
-  padding-left: 0;
+}
+.no-padding {
+  padding: 0;
 }
