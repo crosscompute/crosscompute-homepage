@@ -1,6 +1,15 @@
-.no-bullets {
-  list-style: none;
+.widgets {
+  background: #ffcccb;
+  border-radius: 10px;
 }
-.no-padding {
-  padding: 0;
+.websites {
+  background: #add8e6;
+  border-radius: 10px;
+}
+.carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.seat {
 }
