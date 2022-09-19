@@ -7,26 +7,25 @@
 
 <section class="widgets">
 <h2>Widgets</h2>
-Step 1: Choose widget.
 <div class="carousel">
-    <div class="seat">
-        1
-    </div>
-    <div class="seat">
-        2
-    </div>
+{% for widget in widgets %}
+  <article class="seat">
+    <div>{{ widget['name'] }}</div>
+    <div>{{ widget['description'] }}</div>
+  </article>
+{% endfor %}
 </div>
 </section>
 
 <section class="websites">
 <h2>Websites</h2>
-{#
-{% for automation in CONFIGURATION['automations'] %}
-<article>
-<h3>{{ automation['name']['text'] }}</h3>
-{{ automation['description']['html'] | safe }}
-</article>
+<div class="carousel">
+{% for website in websites %}
+  <article class="seat">
+    <div>{{ website['name'] }}</div>
+    <div>{{ website['description'] }}</div>
+  </article>
 {% endfor %}
-#}
+</div>
 </section>
 {% endblock %}

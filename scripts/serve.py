@@ -24,7 +24,34 @@ templates = Jinja2Templates(
 
 @app.get('/', response_class=HTMLResponse)
 async def see_home(request: Request):
-    return templates.TemplateResponse('index.html', {'request': request})
+    widgets = [{
+        'name': 'Widget A',
+        'description': 'Description for Widget A',
+    }, {
+        'name': 'Widget B',
+        'description': 'Description for Widget B',
+    }, {
+        'name': 'Widget C',
+        'description': 'Description for Widget C',
+    }, {
+        'name': 'Widget D',
+        'description': 'Description for Widget D',
+    }]
+    websites = [{
+        'name': 'Website A',
+        'description': 'Description for Website A',
+    }, {
+        'name': 'Website B',
+        'description': 'Description for Website B',
+    }, {
+        'name': 'Website C',
+        'description': 'Description for Website C',
+    }]
+    return templates.TemplateResponse('index.html', {
+        'request': request,
+        'widgets': widgets,
+        'websites': websites,
+    })
 
 
 @app.get('/favicon.ico')
