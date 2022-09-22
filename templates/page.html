@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 
 {% block head_html %}
-<link rel="stylesheet" href="{{ url_for('styles', path='/page.css') }}">
+<style>
+.widgets {
+}
+.websites {
+}
+.carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+.seat {
+  flex: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
+.widgets .seat {
+  background: #ffcccb;
+}
+.websites .seat {
+  background: #add8e6;
+}
+</style>
 {% endblock %}
