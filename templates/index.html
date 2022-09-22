@@ -1,41 +1,104 @@
-{% extends 'page.html' %}
+{% extends 'base.html' %}
+
+{% block head_html %}
+<style>
+.widgets {
+}
+.websites {
+}
+.accomplishments {
+}
+.thanks {
+}
+.links {
+}
+.carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+.seat {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  list-style: none;
+}
+.seat img {
+  width: 100%
+}
+.name {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.description {
+  text-align: justify;
+}
+.panel {
+  display: flex;
+  justify-content: space-evenly;
+}
+.widgets .seat {
+  background: #ffcccb;
+}
+.websites .seat {
+  background: #add8e6;
+}
+</style>
+{% endblock %}
 
 {% block main_html %}
 <section class="updates">
 <h1>Add Widgets to Your Website</h1>
+<p>CrossCompute publishes widgets for planning infrastructure.</p>
 </section>
 
 <section class="widgets">
 <h2>Widgets</h2>
-<div class="carousel">
+<ul class="carousel">
 {% for widget in widgets %}
-  <article class="seat">
-    <div>{{ widget['name'] }}</div>
-    <div>{{ widget['description'] }}</div>
-  </article>
+  <li class="seat">
+    <div class="info">
+      <div class="name">{{ widget['name'] }}</div>
+      <div class="description">{{ widget['description'] }}</div>
+    </div>
+    <img src="{{ widget['image_uri'] }}">
+    <div class="panel">
+      <a href="{{ widget['video_uri'] }}">Watch</a>
+      <a href="{{ widget['link_uri'] }}">Experiment</a>
+    </div>
+  </li>
 {% endfor %}
-</div>
+</ul>
 </section>
 
 <section class="websites">
 <h2>Websites</h2>
-<div class="carousel">
+<ul class="carousel">
 {% for website in websites %}
-  <article class="seat">
-    <div>{{ website['name'] }}</div>
-    <div>{{ website['description'] }}</div>
-  </article>
+  <li class="seat">
+    <div class="info">
+      <div class="name">{{ website['name'] }}</div>
+      <div class="description">{{ website['description'] }}</div>
+    </div>
+    <img src="{{ website['image_uri'] }}">
+    <div class="panel">
+      <a href="{{ website['video_uri'] }}">Watch</a>
+      <a href="{{ website['link_uri'] }}">Experiment</a>
+    </div>
+  </li>
 {% endfor %}
-</div>
+</ul>
 </section>
 
 <section class="accomplishments">
-CrossCompute publishes web-based tools and reports for planning infrastructure. Our reports help planners prioritize hazard mitigation projects. We specialize in benefit cost analysis tools for planning microgrids.
-
 list accomplishments
 </section>
 
-<section class="thanks">
+<section class="acknowledgments">
 list thanks
 </section>
 
