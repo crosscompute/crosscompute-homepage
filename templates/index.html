@@ -2,16 +2,6 @@
 
 {% block head_html %}
 <style>
-.widgets {
-}
-.websites {
-}
-.accomplishments {
-}
-.thanks {
-}
-.links {
-}
 .carousel {
   display: flex;
   flex-flow: row wrap;
@@ -47,13 +37,19 @@
 .websites .seat {
   background: #add8e6;
 }
+.posts .seat {
+  background: #d3d3d3;
+}
 </style>
 {% endblock %}
 
 {% block main_html %}
-<section class="updates">
+<section class="news">
 <h1>Add Widgets to Your Website</h1>
 <p>CrossCompute publishes widgets for planning infrastructure.</p>
+{% for new in news %}
+<p>{{ new['description'] }}</p>
+{% endfor %}
 </section>
 
 <section class="widgets">
@@ -68,7 +64,7 @@
     <img src="{{ widget['image_uri'] }}">
     <div class="panel">
       <a href="{{ widget['video_uri'] }}">Watch</a>
-      <a href="{{ widget['link_uri'] }}">Experiment</a>
+      <a href="{{ widget['asset_uri'] }}">Experiment</a>
     </div>
   </li>
 {% endfor %}
@@ -87,22 +83,48 @@
     <img src="{{ website['image_uri'] }}">
     <div class="panel">
       <a href="{{ website['video_uri'] }}">Watch</a>
-      <a href="{{ website['link_uri'] }}">Experiment</a>
+      <a href="{{ website['asset_uri'] }}">Experiment</a>
     </div>
   </li>
 {% endfor %}
 </ul>
 </section>
 
+<section class="posts">
+<h2>Posts</h2>
+<ul class="carousel">
+{% for post in posts %}
+  <li class="seat">
+    <div class="info">
+        <div class="name">{{ post['name'] }}</div>
+        <div class="description">{{ post['description'] }}</div>
+    </div>
+    <img src="{{ post['image_uri'] }}">
+  </li>
+{% endfor %}
+</ul>
+</section>
+
 <section class="accomplishments">
-list accomplishments
+<h2>Accomplishments</h2>
+<ul>
+{% for accomplishment in accomplishments %}
+  <li>{{ accomplishment['description'] }}</li>
+{% endfor %}
+</ul>
 </section>
 
 <section class="acknowledgments">
-list thanks
+<h2>Acknowledgments</h2>
+{% for acknowledgment in acknowledgments %}
+<a href="{{ acknowledgment['asset_uri'] }}">{{ acknowledgment['name'] }}</a>
+{% endfor %}
 </section>
 
 <section class="links">
-social media
+<h2>Links</h2>
+{% for link in links %}
+<a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a>
+{% endfor %}
 </section>
 {% endblock %}
