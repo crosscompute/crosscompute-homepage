@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block head_html %}
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
 <style>
 .carousel {
   display: flex;
@@ -45,8 +47,7 @@
 
 {% block main_html %}
 <section class="news">
-<h1>Add Widgets to Your Website</h1>
-<p>CrossCompute publishes widgets for planning infrastructure.</p>
+<h1>{{ title }}</h1>
 {% for new in news %}
 <p>{{ new['description'] }}</p>
 {% endfor %}

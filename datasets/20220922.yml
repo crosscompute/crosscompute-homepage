@@ -1,9 +1,17 @@
 ---
+title: Tools and Reports for Infrastructure Planning
+description: CrossCompute publishes tools and reports for infrastructure planning.
 news:
   - description: News A
+  - description: News B
 widgets:
   - name: Widget A
     description: Description for Widget A
+    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
+    video_uri: https://youtu.be/z0-Zi5ngQQw
+    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Widget B
+    description: Description for Widget B
     image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
     video_uri: https://youtu.be/z0-Zi5ngQQw
     asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
@@ -13,15 +21,28 @@ websites:
     image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
     video_uri: https://youtu.be/z0-Zi5ngQQw
     asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Website B
+    description: Description for Website B
+    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
+    video_uri: https://youtu.be/z0-Zi5ngQQw
+    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
 posts:
   - name: Post A
     description: Description for Post A
     image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
+  - name: Post B
+    description: Description for Post A
+    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
 accomplishments:
   - description: Accomplishment A
+  - description: Accomplishment B
 acknowledgments:
   - name: Acknowledgment A
     asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Acknowledgment B
+    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
 links:
   - name: Link A
+    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Link B
     asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
