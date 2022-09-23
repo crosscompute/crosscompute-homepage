@@ -1,0 +1,5 @@
+fastapi
+invisibleroads-macros-web[markdown]
+ruamel.yaml
+uvicorn
+watchfiles

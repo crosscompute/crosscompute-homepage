@@ -8,6 +8,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from invisibleroads_macros_web.markdown import get_html_from_markdown
 from ruamel.yaml import YAML
+from watchfiles import run_process
 
 
 PORT = 8000
@@ -43,7 +44,7 @@ def serve_with(args):
 
 def load_configuration(path):
     yaml = YAML()
-    with Path(args.configuration_path).open('rt') as f:
+    with Path(path).open('rt') as f:
         c = yaml.load(f)
     ds = [c]
     while ds:
@@ -61,4 +62,4 @@ if __name__ == '__main__':
     a.add_argument('--port', metavar='X', default=PORT)
     a.add_argument('configuration_path')
     args = a.parse_args()
-    serve_with(args)
+    run_process('.', target=serve_with, args=(args,))

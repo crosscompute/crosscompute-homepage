@@ -7,16 +7,17 @@
 .carousel {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   gap: 8px;
   list-style: none;
   padding-left: 0;
 }
 .seat {
-  flex: 1;
   padding: 8px;
   border-radius: 8px;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 256px;
 }
 .seat img {
   width: 100%
@@ -27,11 +28,11 @@
   font-weight: bold;
 }
 .description {
-  text-align: justify;
+  flex: 1;
 }
 .panel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .widgets .seat {
   background: #ffcccb;
@@ -57,15 +58,16 @@
 <h2>Widgets</h2>
 <ul class="carousel">
 {% for widget in widgets %}
+  {% set video_uri = widget['video_uri'] %}
   <li class="seat">
-    <div class="info">
-      <div class="name">{{ widget['name'] }}</div>
-      <div class="description">{{ widget['description'] }}</div>
-    </div>
+    <div class="name">{{ widget['name'] }}</div>
+    <div class="description">{{ widget['description'] }}</div>
     <img src="{{ widget['image_uri'] }}">
     <div class="panel">
-      <a href="{{ widget['video_uri'] }}">Watch</a>
-      <a href="{{ widget['asset_uri'] }}">Experiment</a>
+    {% if video_uri %}
+      <a href="{{ video_uri }}">Watch</a>
+    {% endif %}
+      <a href="{{ widget['asset_uri'] }}">Visit</a>
     </div>
   </li>
 {% endfor %}
@@ -76,15 +78,16 @@
 <h2>Websites</h2>
 <ul class="carousel">
 {% for website in websites %}
+  {% set video_uri = website['video_uri'] %}
   <li class="seat">
-    <div class="info">
-      <div class="name">{{ website['name'] }}</div>
-      <div class="description">{{ website['description'] }}</div>
-    </div>
+    <div class="name">{{ website['name'] }}</div>
+    <div class="description">{{ website['description'] }}</div>
     <img src="{{ website['image_uri'] }}">
     <div class="panel">
-      <a href="{{ website['video_uri'] }}">Watch</a>
-      <a href="{{ website['asset_uri'] }}">Experiment</a>
+    {% if video_uri %}
+      <a href="{{ video_uri }}">Watch</a>
+    {% endif %}
+      <a href="{{ website['asset_uri'] }}">Visit</a>
     </div>
   </li>
 {% endfor %}
