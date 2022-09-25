@@ -1,6 +1,9 @@
 ---
 title: Infrastructure Planning Tools and Reports
 description: CrossCompute publishes tools and reports for infrastructure planning.
+brand:
+  image_uri: images/brand.svg
+  asset_uri: https://crosscompute.com
 news:
   - description: CrossCompute publishes tools and reports for infrastructure planning.
 widgets:
@@ -15,24 +18,35 @@ widgets:
     video_uri: https://youtu.be/z0-Zi5ngQQw
     asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
 websites:
+  - name: Forum
+    description: Read tutorials and ask questions
+    image_uri: images/forum.png
+    video_uri:
+    asset_uri: https://forum.crosscompute.com
+  - name: Documentation
+    description: Learn how to use our open source packages
+    image_uri: images/docs.png
+    video_uri:
+    asset_uri: https://docs.crosscompute.com
   - name: Platform v4
     description: Gallery of widgets built using our open source framework
     image_uri: images/platform4.png
+    video_uri: https://www.youtube.com/shorts/5g782ny0zqo
     asset_uri: https://crosscompute.net
   - name: Platform v3
     description: Analytics prototype featuring an electricity network editor
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-    video_uri: https://youtu.be/z0-Zi5ngQQw
+    image_uri: images/platform3.png
+    video_uri: https://youtu.be/XyXwg9Z9e_E
     asset_uri: https://crosscompute.com/authentications
   - name: Platform v2
     description: Tools created by users with Jupyter Notebook
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-    video_uri: https://youtu.be/z0-Zi5ngQQw
+    image_uri: images/platform2.png
+    video_uri: https://youtu.be/M6GPVq3-Beg
     asset_uri: https://legacy.crosscompute.com/learn
   - name: Algorithm Cookbooks
     description: Selection of tools for electricity planning
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-    video_uri: https://youtu.be/z0-Zi5ngQQw
+    image_uri: images/cookbooks.png
+    video_uri:
     asset_uri: https://v2.crosscompute.com/cookbooks
 posts:
   - name: Post A
@@ -52,7 +66,19 @@ acknowledgments:
   - name: Olga Ryabtseva
     asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
 links:
-  - name: Link A
-    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
-  - name: Link B
-    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Twitter
+    asset_uri: https://twitter.com/crosscompute
+  - name: Github
+    asset_uri: https://github.com/crosscompute
+  - name: YouTube
+    asset_uri: https://www.youtube.com/crosscompute
+  - name: LinkedIn
+    asset_uri: https://www.linkedin.com/company/crosscompute
+  - name: Facebook
+    asset_uri: https://www.facebook.com/crosscompute
+  - name: Tumblr
+    asset_uri: https://crosscompute.tumblr.com
+  - name: Discord
+    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
+  - name: Twitch
+    asset_uri: https://twitch.tv/crosscompute

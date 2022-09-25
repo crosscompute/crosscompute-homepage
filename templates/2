@@ -26,11 +26,14 @@ gtag('config', 'G-VP9T2V7B17');
 @media only screen and (min-width: 600px) {
   main {
     max-width: calc(100vw - 256px - 16px - 16px);
+        background: blue;
   }
   #menu {
-    position: fixed;
-    right: 8px;
+    position: sticky;
+    top: 0;
+    float: right;
     padding: 8px;
+        background: red;
   }
 }
 .carousel {
@@ -79,13 +82,8 @@ gtag('config', 'G-VP9T2V7B17');
 <nav id="menu">
 <a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
 <ul>
-    <li><a href="#news">News</a></li>
     <li><a href="#widgets">Widgets</a></li>
     <li><a href="#websites">Websites</a></li>
-    <li><a href="#posts">Posts</a></li>
-    <li><a href="#links">Links</a></li>
-    <li><a href="#accomplishments">Accomplishments</a></li>
-    <li><a href="#acknowledgments">Acknowledgements</a></li>
 </ul>
 </nav>
 {% endblock %}
