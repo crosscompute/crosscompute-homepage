@@ -13,26 +13,6 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="description" content="{{ description }}">
 <title>{{ title }}</title>
 <style>
-#menu {
-  max-width: 256px;
-}
-#menu img {
-  width: 100%;
-}
-#menu ul {
-  list-style: none;
-  padding-left: 0;
-}
-@media only screen and (min-width: 600px) {
-  main {
-    max-width: calc(100vw - 256px - 16px - 16px);
-  }
-  #menu {
-    position: fixed;
-    right: 8px;
-    padding: 8px;
-  }
-}
 .carousel {
   display: flex;
   flex-flow: row wrap;
@@ -46,6 +26,7 @@ gtag('config', 'G-VP9T2V7B17');
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 8px;
   width: 240px;
 }
 .seat img {
@@ -63,6 +44,16 @@ gtag('config', 'G-VP9T2V7B17');
   display: flex;
   justify-content: space-around;
 }
+#menu img {
+  max-width: 256px;
+}
+#menu ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 #widgets .seat {
   background: #ffcccb;
 }
@@ -71,6 +62,31 @@ gtag('config', 'G-VP9T2V7B17');
 }
 #posts .seat {
   background: #d3d3d3;
+}
+#links ul, #acknowledgments ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#acknowledgments ul {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: calc(100vw - 256px - 16px - 16px);
+  }
+  #menu {
+    max-width: 256px;
+    position: fixed;
+    right: 8px;
+    padding: 8px;
+  }
+  #menu ul {
+    display: block;
+    line-height: 2;
+  }
 }
 </style>
 {% endblock %}
@@ -155,9 +171,11 @@ gtag('config', 'G-VP9T2V7B17');
 
 <section id="links">
 <h2>Links</h2>
+<ul>
 {% for link in links %}
-<a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a>
+<li><a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a></li>
 {% endfor %}
+</ul>
 </section>
 
 <section id="accomplishments">
@@ -170,9 +188,17 @@ gtag('config', 'G-VP9T2V7B17');
 </section>
 
 <section id="acknowledgments">
-<h2>Acknowledgments</h2>
+<h2><a href="#acknowledgments">Acknowledgments</a></h2>
+<ul>
 {% for acknowledgment in acknowledgments %}
-<a href="{{ acknowledgment['asset_uri'] }}">{{ acknowledgment['name'] }}</a>
+<li><a href="{{ acknowledgment['asset_uri'] }}">{{ acknowledgment['name'] }}</a></li>
 {% endfor %}
+</ul>
 </section>
+{% endblock %}
+
+{% block body_js %}
+document.getElementById('acknowledgments').addEventListener('click', function() {
+this.getElementsByTagName('ul')[0].style.display = 'flex';
+});
 {% endblock %}

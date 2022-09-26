@@ -7,16 +7,11 @@ brand:
 news:
   - description: CrossCompute publishes tools and reports for infrastructure planning.
 widgets:
-  - name: Widget A
-    description: Description for Widget A
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-    video_uri: https://youtu.be/z0-Zi5ngQQw
-    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
-  - name: Widget B
-    description: Description for Widget B
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-    video_uri: https://youtu.be/z0-Zi5ngQQw
-    asset_uri: https://www.interestingeverything.com/2013/03/07/tree-frog-amphibian-climber
+  - name: Learn Examples in JupyterLab
+    description: Experiment with the code behind our example widgets
+    image_uri: images/jupyterlab.png
+    video_uri: https://youtu.be/RGvs9spyZy8
+    asset_uri: https://crosscompute.net/a/learn-examples-in-jupyterlab
 websites:
   - name: Forum
     description: Read tutorials and ask questions
@@ -52,19 +47,135 @@ posts:
   - name: Post A
     description: Description for Post A
     image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
-  - name: Post B
-    description: Description for Post A
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
 accomplishments:
   - description: Accomplishment A
-  - description: Accomplishment B
 acknowledgments:
+  - name: Olga Ryabtseva
+    asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
+  - name: Salah Ahmed
+    asset_uri: https://www.linkedin.com/in/salahspage
+  - name: Cathaleen Kaiyoorawongs
+    asset_uri: https://www.linkedin.com/in/catalina-kaiyoorawongs
+  - name: Roy Hyunjin Han
+    asset_uri: https://www.linkedin.com/in/invisibleroads
+  - name: Rodrigo Guarachi
+    asset_uri: https://www.linkedin.com/in/rmguarachi
+  - name: Marta Moreno Catalan
+    asset_uri: https://www.linkedin.com/in/marta-moreno-07364b82
   - name: Kashfi Fahim
     asset_uri: https://www.linkedin.com/in/kashfifahim
   - name: Miguel Ángel Gordián
     asset_uri: https://github.com/zoek1
-  - name: Olga Ryabtseva
-    asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
+  - name: Polina Chernomaz
+    asset_uri: https://www.linkedin.com/in/polinac
+  - name: Samuel Edandison
+    asset_uri: https://www.linkedin.com/in/edandison
+  - name: Ning Wei
+    asset_uri: https://www.linkedin.com/in/ning-wei-8152393b
+  - name: Eugen Fomenko
+    asset_uri: https://www.linkedin.com/in/eugen-fomenko-57b204168
+  - name: Noé Domínguez Porras
+    asset_uri: https://www.linkedin.com/in/noedominguez
+  - name: Mary Rodriguez Gort
+    asset_uri: https://theorg.com/org/tampa-bay-innovation-center/org-chart/mary-rodriguez-gort
+  - name: Ken Evans
+    asset_uri: https://www.linkedin.com/in/evansken
+  - name: Alex Hofmann
+    asset_uri: https://www.linkedin.com/in/alex-hofmann-4a006519
+  - name: Ji Yoon Lee
+    asset_uri: https://www.linkedin.com/in/ji-yoon-lee-516750136
+  - name: Tyler Doyle
+    asset_uri: https://www.linkedin.com/in/tyler-doyle-987642111
+  - name: Ethan Epstein
+    asset_uri: https://www.linkedin.com/in/ethan-epstein-80772093
+  - name: Jennifer Ruda
+    asset_uri: https://www.linkedin.com/in/jruda
+  - name: Shaky Sherpa
+    asset_uri: https://www.linkedin.com/in/shakythesherpa
+  - name: Trevor David Rhone
+    asset_uri: https://www.linkedin.com/in/trevor-david-rhone-965ba9b
+  - name: Matt Henning
+    asset_uri: https://www.linkedin.com/in/matthew-henning-26406412b
+  - name: Elizabeth Ritter
+    asset_uri: https://www.linkedin.com/in/elizabeth-b-ritter
+  - name: Chenxin Han
+    asset_uri: https://www.linkedin.com/in/chenxin-han
+  - name: Soo Ji Choi
+    asset_uri: https://www.linkedin.com/in/susie-choi-0504
+  - name: Yao Kou
+    asset_uri: https://www.linkedin.com/in/yaokou
+  - name: Ying Zhou
+    asset_uri: https://www.linkedin.com/in/yingznyc
+  - name: Margarita Zias
+    asset_uri: https://www.linkedin.com/in/margarita-zias
+  - name: Elaine Chan
+    asset_uri: https://www.linkedin.com/in/chanelaine
+  - name: Aida Shoydokova
+    asset_uri: https://www.linkedin.com/in/ashoydok
+  - name: Lauren Talbot
+    asset_uri: https://www.linkedin.com/in/laurentalbotnyc
+  - name: Benjamin Dean
+    asset_uri: https://www.linkedin.com/in/benwdean
+  - name: Catherine Kwan
+    asset_uri: https://www.linkedin.com/in/catherine-kwan-27aba827
+  - name: Nicholas O'Brien
+    asset_uri: https://www.linkedin.com/in/njobrien
+  - name: Michael Flowers
+    asset_uri: https://www.linkedin.com/in/michael-flowers-8b61601b
+  - name: Ewa Jodlowska
+    asset_uri: https://www.linkedin.com/in/ewa-jodlowska-39810611
+  - name: Betsy Waliszewski
+    asset_uri: https://www.linkedin.com/in/betsywaliszewski
+  - name: Selin Kocaman
+    asset_uri: https://www.linkedin.com/in/ayse-selin-kocaman-473023a
+  - name: Matt Basinger
+    asset_uri: https://www.linkedin.com/in/matt-basinger-a7b14b35
+  - name: Dorcas Murai
+    asset_uri: https://www.linkedin.com/in/dorcas-murai-119813114
+  - name: Christopher Horner
+    asset_uri: https://www.linkedin.com/in/christopher-hornor-480a913
+  - name: Liliana Durán
+    asset_uri: https://www.linkedin.com/in/lumiservicioslilianaduran
+  - name: Ariana Gradow
+    asset_uri: https://www.linkedin.com/in/arianagradow
+  - name: Rajesh Menon
+    asset_uri: https://www.linkedin.com/in/rmeno
+  - name: Jessica Leon
+    asset_uri: https://www.linkedin.com/in/jesleon
+  - name: Diego Saenz
+    asset_uri: https://www.linkedin.com/in/diegosaenz2010
+  - name: Paul Everitt
+    asset_uri: https://www.linkedin.com/in/paeveritt
+  - name: Jake Maslow
+    asset_uri: https://www.linkedin.com/in/jake-maslow-4580106
+  - name: Susan Kum
+    asset_uri: https://www.linkedin.com/in/susan-s-kum
+  - name: Chris Natali
+    asset_uri: https://www.linkedin.com/in/chris-natali-6841472b
+  - name: Edwin Adkins
+    asset_uri: https://www.linkedin.com/in/edwin-adkins
+  - name: Aly Sanoh
+    asset_uri: https://www.linkedin.com/in/sanohaly
+  - name: Vijay Modi
+    asset_uri: https://www.linkedin.com/in/vijay-modi-39241229
+  - name: Tampa Bay Innovation Center
+    asset_uri: https://tbinnovates.com
+  - name: Python Software Foundation
+    asset_uri: https://python.org/psf
+  - name: DevLabs México
+    asset_uri: https://www.devlabs.com.mx
+  - name: American Public Power Association
+    asset_uri: https://publicpower.org
+  - name: U.S. Department of Energy
+    asset_uri: https://www.energy.gov
+  - name: Quadracci Sustainable Engineering Lab at Columbia University
+    asset_uri: https://qsel.columbia.edu
+  - name: Tech Incubator at Queens College
+    asset_uri: https://techincubatorqc.com
+  - name: World Bank
+    asset_uri: https://www.worldbank.org
+  - name: NYC Mayor's Office of Data Analytics
+    asset_uri: https://nyc.gov/analytics
 links:
   - name: Twitter
     asset_uri: https://twitter.com/crosscompute
