@@ -36,13 +36,13 @@ def save(
             link_href = element.get('href')
             if link_href.startswith('http'):
                 continue
-            uri = root_uri + link_href
+            uri = root_uri + '/' + link_href
             save(target_folder, link_href, uri)
         for element in soup.find_all('img'):
             img_src = element.get('src')
             if img_src.startswith('http'):
                 continue
-            uri = root_uri + img_src
+            uri = root_uri + '/' + img_src
             save(target_folder, img_src, uri, is_binary=True)
     with open(target_path, 'wt') as f:
         f.write(html)
