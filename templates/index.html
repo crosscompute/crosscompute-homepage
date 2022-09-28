@@ -19,6 +19,7 @@ gtag('config', 'G-VP9T2V7B17');
   gap: 8px;
   list-style: none;
   padding-left: 0;
+  justify-content: space-evenly;
 }
 .seat {
   padding: 16px;
@@ -72,12 +73,15 @@ gtag('config', 'G-VP9T2V7B17');
 #links ul, #acknowledgments ul {
   list-style: none;
   padding-left: 0;
+  flex-wrap: wrap;
+}
+#links ul {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
 }
 #acknowledgments ul {
   display: none;
+  gap: 8px;
 }
 @media only screen and (min-width: 768px) {
   main {
