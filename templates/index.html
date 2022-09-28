@@ -16,12 +16,12 @@ gtag('config', 'G-VP9T2V7B17');
 .carousel {
   display: flex;
   flex-flow: row wrap;
-  gap: 8px;
+  gap: 16px;
   list-style: none;
   padding-left: 0;
 }
 .seat {
-  padding: 8px;
+  padding: 16px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,12 @@ gtag('config', 'G-VP9T2V7B17');
 }
 .seat img {
   width: 100%;
+}
+.info {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .name {
   text-align: center;
@@ -45,7 +51,7 @@ gtag('config', 'G-VP9T2V7B17');
   justify-content: space-around;
 }
 #menu img {
-  max-width: 256px;
+  max-width: 100%;
 }
 #menu ul {
   list-style: none;
@@ -55,13 +61,13 @@ gtag('config', 'G-VP9T2V7B17');
   flex-wrap: wrap;
 }
 #widgets .seat {
-  background: #ffcccb;
+  background: #fadbd8;
 }
 #websites .seat {
-  background: #add8e6;
+  background: #d6eaf8;
 }
 #posts .seat {
-  background: #d3d3d3;
+  background: #e8e8e8;
 }
 #links ul, #acknowledgments ul {
   list-style: none;
@@ -75,10 +81,10 @@ gtag('config', 'G-VP9T2V7B17');
 }
 @media only screen and (min-width: 768px) {
   main {
-    max-width: calc(100vw - 256px - 16px - 16px);
+    max-width: calc(100vw - 160px - 16px - 16px);
   }
   #menu {
-    max-width: 256px;
+    max-width: 160px;
     position: fixed;
     right: 8px;
     padding: 8px;
@@ -120,9 +126,11 @@ gtag('config', 'G-VP9T2V7B17');
 {% for widget in widgets %}
   {% set video_uri = widget['video_uri'] %}
   <li class="seat">
-    <div class="name">{{ widget['name'] }}</div>
-    <div class="description">{{ widget['description'] }}</div>
+    <div class="info">
+      <div class="name">{{ widget['name'] }}</div>
+    </div>
     <img src="{{ widget['image_uri'] }}">
+    <div class="description">{{ widget['description'] }}</div>
     <div class="panel">
     {% if video_uri %}
       <a href="{{ video_uri }}">Watch</a>
@@ -140,9 +148,11 @@ gtag('config', 'G-VP9T2V7B17');
 {% for website in websites %}
   {% set video_uri = website['video_uri'] %}
   <li class="seat">
-    <div class="name">{{ website['name'] }}</div>
-    <div class="description">{{ website['description'] }}</div>
+    <div class="info">
+      <div class="name">{{ website['name'] }}</div>
+    </div>
     <img src="{{ website['image_uri'] }}">
+    <div class="description">{{ website['description'] }}</div>
     <div class="panel" style='display:flex'>
     {% if video_uri %}
       <a href="{{ video_uri }}">Watch</a>
@@ -160,10 +170,13 @@ gtag('config', 'G-VP9T2V7B17');
 {% for post in posts %}
   <li class="seat">
     <div class="info">
-        <div class="name">{{ post['name'] }}</div>
-        <div class="description">{{ post['description'] }}</div>
+      <div class="name">{{ post['name'] }}</div>
     </div>
     <img src="{{ post['image_uri'] }}">
+    <div class="description">{{ post['description'] }}</div>
+    <div class="panel" style='display:flex'>
+      <a href="{{ post['asset_uri'] }}">Visit</a>
+    </div>
   </li>
 {% endfor %}
 </ul>

@@ -4,14 +4,72 @@ description: CrossCompute publishes tools and reports for infrastructure plannin
 brand:
   image_uri: images/brand.svg
   asset_uri: https://crosscompute.com
+
 news:
   - description: CrossCompute publishes tools and reports for infrastructure planning.
+
 widgets:
-  - name: Learn Examples in JupyterLab
+  - name: Development Server in JupyterLab
     description: Experiment with the code behind our example widgets
-    image_uri: images/jupyterlab.png
+    image_uri: images/jupyterlab-crosscompute.png
     video_uri: https://youtu.be/RGvs9spyZy8
     asset_uri: https://crosscompute.net/a/learn-examples-in-jupyterlab
+  - name: Airport Traffic Dashboard
+    description: See how much time it takes to get to the airport
+    image_uri: images/airport-traffic.png
+    video_uri:
+    asset_uri: https://crosscompute.net/a/see-airport-traffic
+  - name: Internet Speed Form
+    description: Record your internet speed on a map
+    image_uri: images/internet-speed.png
+    video_uri:
+    asset_uri: https://crosscompute.net/a/report-internet-speed
+  - name: Greenfield Microgrid Placement
+    description: Rank microgrid sites by cost per connection
+    image_uri: images/microgrid-placement.png
+    video_uri:
+    asset_uri: https://crosscompute.net/a/place-microgrids
+  - name: Service Drop Placement
+    description: Place service drop poles along roads around obstacles
+    image_uri: images/service-drops.png
+    video_uri:
+    asset_uri: https://crosscompute.com/r/3gbgKhRp9ErxrBZshj3b3jRUhReRSc38
+  - name: Microgrid Pole Placement
+    description: Place microgrid poles along roads around obstacles
+    image_uri: images/microgrid-poles.png
+    video_uri:
+    asset_uri: https://crosscompute.com/r/5SnZZWXOqY7PvWA5R1oKVKmFzzZw8FT7
+  - name: Solar Microgrid Design
+    description: Place solar microgrid equipment
+    image_uri: images/microgrid-equipment.png
+    video_uri:
+    asset_uri: https://crosscompute.com/r/GbZiEwl8sukHirDdYd6aw5dqO6jW8rSx
+  - name: Grid Pole Placement
+    description: Place distribution poles along roads around obstacles
+    image_uri: images/grid-poles.jpg
+    video_uri:
+    asset_uri: https://crosscompute.com/r/sO20foFEjlLrch2UI2YlVm6rwt3au7Gu
+  - name: Electrification Technology Choice
+    description: Estimate electrification costs by technology
+    image_uri: images/technology-choice.png
+    video_uri:
+    asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
+  - name: Settlement Clustering
+    description: Group buildings into settlements
+    image_uri: images/settlement-clusters.png
+    video_uri:
+    asset_uri: https://crosscompute.com/r/AMfjrLyqdJC5XYlfESkw9MPEsYce07Vr
+  - name: OpenStreetMap Datasets
+    description: Extract infrastructure by region
+    image_uri: images/openstreetmap-datasets.png
+    video_uri:
+    asset_uri: https://crosscompute.com/t/5D1eMdp9EnAPrFkVGOgiSHRLnNriZvlR
+  - name: Electrification Scenario Visualization
+    description: Visualize electrification scenarios by technology choice
+    image_uri: images/electrification-scenarios.gif
+    video_uri:
+    asset_uri: https://crosscompute.com/t/um4cpUqzye7x8MOoWGG7L8xyfsjhnMqd
+
 websites:
   - name: Forum
     description: Read tutorials and ask questions
@@ -37,18 +95,34 @@ websites:
     description: Tools created by users with Jupyter Notebook
     image_uri: images/platform2.png
     video_uri: https://youtu.be/M6GPVq3-Beg
-    asset_uri: https://legacy.crosscompute.com/learn
+    asset_uri: https://crosscompute.com/learn
   - name: Algorithm Cookbooks
     description: Selection of tools for electricity planning
     image_uri: images/cookbooks.png
     video_uri:
     asset_uri: https://v2.crosscompute.com/cookbooks
+
 posts:
-  - name: Post A
-    description: Description for Post A
-    image_uri: https://i0.wp.com/www.interestingeverything.com/wp-content/uploads/2013/02/red-eyed-tree-frog.png?w=500&ssl=1
+  - name: CrossCompute Framework 0.9.2
+    description: Turn your script into a widget
+    image_uri: images/crosscompute-0.9.2.png
+    video_uri:
+    asset_uri: https://forum.crosscompute.com/t/crosscompute-framework-0-9-2-3-release-notes/175
+  - name: Call for Infrastructure Planning Widgets
+    description: Submit a widget for infrastructure planning
+    image_uri: images/open-call.png
+    video_uri:
+    asset_uri: https://forum.crosscompute.com/t/open-call-for-runnable-reports-in-infrastructure-planning-emergency-planning-community-development/157
+
 accomplishments:
-  - description: Accomplishment A
+  - description: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
+  - description: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
+  - description: Web based decision support tool used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
+  - description: Web app for tracking outages being used by 500+ utilities
+  - description: Web app for mapping electricity distribution networks
+  - description: Algorithms for finding buildings in satellite images
+  - description: Report automation system used for electricity outage benchmarking
+
 acknowledgments:
   - name: Olga Ryabtseva
     asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
@@ -176,6 +250,7 @@ acknowledgments:
     asset_uri: https://www.worldbank.org
   - name: NYC Mayor's Office of Data Analytics
     asset_uri: https://nyc.gov/analytics
+
 links:
   - name: Twitter
     asset_uri: https://twitter.com/crosscompute
@@ -193,3 +268,5 @@ links:
     asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
   - name: Twitch
     asset_uri: https://twitch.tv/crosscompute
+  - name: EventBrite
+    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
