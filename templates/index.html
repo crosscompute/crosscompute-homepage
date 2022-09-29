@@ -13,6 +13,10 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="description" content="{{ description }}">
 <title>{{ title }}</title>
 <style>
+section h2 {
+  display: flex;
+  justify-content: space-between;
+}
 .carousel {
   display: flex;
   flex-flow: row wrap;
@@ -86,6 +90,9 @@ gtag('config', 'G-VP9T2V7B17');
 @media only screen and (min-width: 768px) {
   main {
     max-width: calc(100vw - 160px - 16px - 16px);
+  }
+  section h2 a {
+    display: none;
   }
   #menu {
     max-width: 160px;
@@ -216,6 +223,9 @@ gtag('config', 'G-VP9T2V7B17');
 
 {% block body_js %}
 document.getElementById('acknowledgments').addEventListener('click', function() {
-this.getElementsByTagName('ul')[0].style.display = 'flex';
+  this.getElementsByTagName('ul')[0].style.display = 'flex';
 });
+for (const x of document.querySelectorAll('section h2')) {
+  x.innerHTML += '<a href="#">Top</a>';
+}
 {% endblock %}
