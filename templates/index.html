@@ -222,10 +222,10 @@ section h2 {
 {% endblock %}
 
 {% block body_js %}
-document.getElementById('acknowledgments').addEventListener('click', function() {
-  this.getElementsByTagName('ul')[0].style.display = 'flex';
-});
 for (const x of document.querySelectorAll('section h2')) {
   x.innerHTML += '<a href="#">Top</a>';
 }
+document.querySelector('#acknowledgments h2 a').onclick = function() {
+  this.parentNode.nextElementSibling.style.display = 'flex';
+};
 {% endblock %}
