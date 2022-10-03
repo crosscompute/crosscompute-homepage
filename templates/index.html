@@ -91,7 +91,7 @@ section h2 {
   main {
     max-width: calc(100vw - 160px - 16px - 16px);
   }
-  section h2 a {
+  .mobile {
     display: none;
   }
   #menu {
@@ -223,7 +223,7 @@ section h2 {
 
 {% block body_js %}
 for (const x of document.querySelectorAll('section h2')) {
-  x.innerHTML += '<a href="#">Top</a>';
+  x.innerHTML += '<a href="#" class="mobile">Top</a>';
 }
 document.querySelector('#acknowledgments h2 a').onclick = function() {
   this.parentNode.nextElementSibling.style.display = 'flex';
