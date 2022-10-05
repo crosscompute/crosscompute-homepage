@@ -1,12 +1,12 @@
 ---
-title: Infrastructure Planning Tools and Reports
-description: CrossCompute publishes tools and reports for infrastructure planning.
+title: Hazard Mitigation Planning Tools and Reports
+description: CrossCompute publishes tools and reports for hazard mitigation planning.
 brand:
   image_uri: images/brand.svg
   asset_uri: https://crosscompute.com
 
 news:
-  - description: CrossCompute publishes tools and reports for infrastructure planning.
+  - description: CrossCompute publishes tools and reports for hazard mitigation planning.
 
 widgets:
   - name: Development Server in JupyterLab
@@ -108,8 +108,8 @@ posts:
     image_uri: images/crosscompute-0.9.2.png
     video_uri:
     asset_uri: https://forum.crosscompute.com/t/crosscompute-framework-0-9-2-3-release-notes/175
-  - name: Call for Infrastructure Planning Widgets
-    description: Submit a widget for infrastructure planning
+  - name: Call for Hazard Mitigation Planning Widgets
+    description: Submit a widget for hazard mitigation planning
     image_uri: images/open-call.png
     video_uri:
     asset_uri: https://forum.crosscompute.com/t/open-call-for-runnable-reports-in-infrastructure-planning-emergency-planning-community-development/157
