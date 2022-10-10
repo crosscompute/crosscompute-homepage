@@ -32,7 +32,7 @@ widgets:
   - name: Service Drop Placement
     description: Place service drop poles along roads around obstacles
     image_uri: images/service-drops.png
-    video_uri:
+    video_uri: https://youtu.be/smcgvgrERV0
     asset_uri: https://crosscompute.com/r/3gbgKhRp9ErxrBZshj3b3jRUhReRSc38
   - name: Microgrid Pole Placement
     description: Place microgrid poles along roads around obstacles
