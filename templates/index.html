@@ -209,7 +209,7 @@ section h2 {
 <h2>Accomplishments</h2>
 <ul>
 {% for accomplishment in accomplishments %}
-  <li>{{ accomplishment['description'] }}</li>
+  <li><a href="{{ accomplishment['asset_uri'] }}">{{ accomplishment['description'] }}</a></li>
 {% endfor %}
 </ul>
 </section>

@@ -116,12 +116,19 @@ posts:
 
 accomplishments:
   - description: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
+    asset_uri: https://crosscompute.net/a/place-microgrids
   - description: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
+    asset_uri: https://youtu.be/smcgvgrERV0
   - description: Web based decision support tool used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
+    asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
   - description: Web app for tracking outages being used by 500+ utilities
+    asset_uri: https://www.publicpower.org/reliability-tracking
   - description: Web app for mapping electricity distribution networks
+    asset_uri: https://youtu.be/CUJ3u_I282o
   - description: Algorithms for finding buildings in satellite images
+    asset_uri: https://github.com/invisibleroads/find-buildings-cuda-convnet
   - description: Report automation system used for electricity outage benchmarking
+    asset_uri: https://docs.crosscompute.com
 
 acknowledgments:
   - name: Olga Ryabtseva
