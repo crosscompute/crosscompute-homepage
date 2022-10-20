@@ -6,7 +6,7 @@ brand:
   asset_uri: https://crosscompute.com
 
 news:
-  - description: CrossCompute publishes tools and reports for hazard mitigation planning.
+  - description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
 
 widgets:
   - name: Development Server in JupyterLab
