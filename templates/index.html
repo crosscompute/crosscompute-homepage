@@ -130,7 +130,7 @@ section h2 {
 <section id="news">
 <h1>{{ title }}</h1>
 {% for new in news %}
-<p>{{ new['description'] }}</p>
+<p>{{ new['description'] | safe }}</p>
 {% endfor %}
 </section>
 
@@ -144,7 +144,7 @@ section h2 {
       <div class="name">{{ widget['name'] }}</div>
     </div>
     <img src="{{ widget['image_uri'] }}">
-    <div class="description">{{ widget['description'] }}</div>
+    <div class="description">{{ widget['description'] | safe }}</div>
     <div class="panel">
     {% if video_uri %}
       <a href="{{ video_uri }}">Watch</a>
@@ -166,7 +166,7 @@ section h2 {
       <div class="name">{{ website['name'] }}</div>
     </div>
     <img src="{{ website['image_uri'] }}">
-    <div class="description">{{ website['description'] }}</div>
+    <div class="description">{{ website['description'] | safe }}</div>
     <div class="panel" style='display:flex'>
     {% if video_uri %}
       <a href="{{ video_uri }}">Watch</a>
@@ -187,7 +187,7 @@ section h2 {
       <div class="name">{{ post['name'] }}</div>
     </div>
     <img src="{{ post['image_uri'] }}">
-    <div class="description">{{ post['description'] }}</div>
+    <div class="description">{{ post['description'] | safe }}</div>
     <div class="panel" style='display:flex'>
       <a href="{{ post['asset_uri'] }}">Visit</a>
     </div>
@@ -209,7 +209,7 @@ section h2 {
 <h2>Accomplishments</h2>
 <ul>
 {% for accomplishment in accomplishments %}
-  <li><a href="{{ accomplishment['asset_uri'] }}">{{ accomplishment['description'] }}</a></li>
+  <li><a href="{{ accomplishment['asset_uri'] }}">{{ accomplishment['description'] | safe }}</a></li>
 {% endfor %}
 </ul>
 </section>

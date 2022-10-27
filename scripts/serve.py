@@ -52,6 +52,8 @@ def load_configuration(path):
         for k, v in d.items():
             if isinstance(v, dict):
                 ds.append(v)
+            elif isinstance(v, list):
+                ds.extend(v)
             elif k == 'description':
                 d[k] = get_html_from_markdown(v)
     return c
