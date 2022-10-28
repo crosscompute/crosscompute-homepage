@@ -71,6 +71,11 @@ widgets:
     asset_uri: https://crosscompute.com/t/um4cpUqzye7x8MOoWGG7L8xyfsjhnMqd
 
 websites:
+  - name: Teamwork
+    description: Build your idea through team programming
+    image_uri: images/teamwork.png
+    video_uri:
+    asset_uri: https://teamwork.crosscompute.com
   - name: Forum
     description: Read tutorials and ask questions
     image_uri: images/forum.png
