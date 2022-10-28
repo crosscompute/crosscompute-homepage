@@ -7,6 +7,7 @@ brand:
 
 news:
   - description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
+  - description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions. [Submit your application for Spring 2023](https://teamwork.crosscompute.com).
 
 widgets:
   - name: Development Server in JupyterLab
@@ -71,11 +72,6 @@ widgets:
     asset_uri: https://crosscompute.com/t/um4cpUqzye7x8MOoWGG7L8xyfsjhnMqd
 
 websites:
-  - name: Teamwork
-    description: Build your idea through team programming
-    image_uri: images/teamwork.png
-    video_uri:
-    asset_uri: https://teamwork.crosscompute.com
   - name: Forum
     description: Read tutorials and ask questions
     image_uri: images/forum.png
