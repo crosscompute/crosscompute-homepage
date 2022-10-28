@@ -6,12 +6,4 @@ python3 -m venv \
 source \
     ~/.virtualenvs/crosscompute-homepage/bin/activate
 
-pip install -U \
-    beautifulsoup4 \
-    crosscompute \
-    fastapi \
-    jinja2 \
-    markdown \
-    pip \
-    requests \
-    ruamel.yaml
+pip install -r requirements.txt
