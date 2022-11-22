@@ -30,5 +30,5 @@ systemctl start crosscompute-homepage
 ## Development
 
 ```bash
-python scripts/serve.py
+python scripts/serve.py datasets/configuration.yml
 ```

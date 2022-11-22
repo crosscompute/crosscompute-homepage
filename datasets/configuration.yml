@@ -10,6 +10,11 @@ news:
   - description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions. [Submit your application for Spring 2023](https://teamwork.crosscompute.com).
 
 widgets:
+  - name: Production Tracking System
+    description: Track production times for product manufacturing
+    image_uri: images/production-tracking.png
+    video_uri: https://youtu.be/rKM6YPrkGTk
+    asset_uri: https://crosscompute.net/a/launch-production-tracking-system
   - name: Development Server in JupyterLab
     description: Experiment with the code behind our example widgets
     image_uri: images/jupyterlab-crosscompute.png
