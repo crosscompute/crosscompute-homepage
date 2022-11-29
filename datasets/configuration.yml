@@ -6,8 +6,20 @@ brand:
   asset_uri: https://crosscompute.com
 
 news:
-  - description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
-  - description: Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions. [Submit your application for Spring 2023](https://teamwork.crosscompute.com).
+  - description: |
+      Replace risky transformers before they fail. Use analytics to prioritize upgrades, improve reliability and optimize spending. We provide these services:
+
+        - Decide which poles/reclosers/transformers to replace through benefit cost analysis;
+        - Develop a data collection strategy to predict an asset's probability of failure;
+        - Build an optimization model and dashboard to prioritize which assets to repair and replace first;
+        - Process data feeds from smart meters to forecast hourly consumption;
+        - Create a digital circuit map of your distribution network compatible with OpenDSS and other DER simulation software;
+        - Plan placement of electric vehicle charging stations, battery energy storage systems, solar microgrids;
+        - Add interactive maps and tools to your website;
+        - Harden networks against malicious internet traffic;
+        - Update your utility's hazard mitigation plan;
+        - Apply for mitigation grants to move lines underground.
+  - description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis. Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions. [Submit your application for Spring 2023](https://teamwork.crosscompute.com).
 
 widgets:
   - name: Production Tracking System
