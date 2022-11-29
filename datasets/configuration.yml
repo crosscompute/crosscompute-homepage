@@ -14,7 +14,7 @@ news:
         - Build an optimization model and dashboard to prioritize which assets to repair and replace first;
         - Process data feeds from smart meters to forecast hourly consumption;
         - Create a digital circuit map of your distribution network compatible with OpenDSS and other DER simulation software;
-        - Plan placement of electric vehicle charging stations, battery energy storage systems, solar microgrids;
+        - Plan placement of electric vehicle charging stations, battery energy storage systems and solar microgrids;
         - Add interactive maps and tools to your website;
         - Harden networks against malicious internet traffic;
         - Update your utility's hazard mitigation plan;
