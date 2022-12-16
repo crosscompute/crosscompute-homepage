@@ -146,7 +146,7 @@ accomplishments:
   - description: Algorithms for finding buildings in satellite images
     asset_uri: https://github.com/invisibleroads/find-buildings-cuda-convnet
   - description: Report automation system used for electricity outage benchmarking
-    asset_uri: https://docs.crosscompute.com
+    asset_uri: https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900
 
 acknowledgments:
   - name: Olga Ryabtseva
