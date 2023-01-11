@@ -277,12 +277,12 @@ acknowledgments:
     asset_uri: https://nyc.gov/analytics
 
 links:
-  - name: Twitter
-    asset_uri: https://twitter.com/crosscompute
   - name: Github
     asset_uri: https://github.com/crosscompute
   - name: YouTube
     asset_uri: https://www.youtube.com/crosscompute
+  - name: Twitter
+    asset_uri: https://twitter.com/crosscompute
   - name: LinkedIn
     asset_uri: https://www.linkedin.com/company/crosscompute
   - name: Facebook
