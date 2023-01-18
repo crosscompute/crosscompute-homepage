@@ -1,25 +1,36 @@
 ---
-title: Hazard Mitigation Planning Tools and Reports
-description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis.
+title: "CrossCompute | Maximize Your Script's Impact: Create a Web Tool Now!"
+description: Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web tool. With a few steps, you can turn it into a powerful web tool that can automate repetitive tasks, streamline processes and make your life easier. Our platform makes it easy to create a web tool from your script, so why wait? Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today.
+
+banners:
+  - image_uri: images/make-simple-app.svg
+  - image_uri: images/do-it-yourself.svg
+  - image_uri: images/subscribe-newsletter.svg
+  - image_uri: images/schedule-call.svg
+
+headline: "Maximize Your Script's Impact: Create a Web Tool Now!"
+blurb: |
+  Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web tool.
+  With a few steps, you can turn it into a powerful web tool that can automate repetitive tasks, streamline processes and make your life easier. Our platform makes it easy to create a web tool from your script, so why wait?
+  Don't miss the opportunity to maximize the potential of your script.
+  Take your script to the web and start seeing the benefits today.
+  <a role="button" class="action">Unleash the full potential of your script by turning it into a web tool!</a>
+
 brand:
   image_uri: images/brand.svg
   asset_uri: https://crosscompute.com
 
-news:
-  - description: |
-      Replace risky transformers before they fail. Use analytics to prioritize upgrades, improve reliability and optimize spending. We provide these services:
-
-        - Decide which poles/reclosers/transformers to replace through benefit cost analysis;
-        - Develop a data collection strategy to predict an asset's probability of failure;
-        - Build an optimization model and dashboard to prioritize which assets to repair and replace first;
-        - Process data feeds from smart meters to forecast hourly consumption;
-        - Create a digital circuit map of your distribution network compatible with OpenDSS and other DER simulation software;
-        - Plan placement of electric vehicle charging stations, battery energy storage systems and solar microgrids;
-        - Add interactive maps and tools to your website;
-        - Harden networks against malicious internet traffic;
-        - Update your utility's hazard mitigation plan;
-        - Apply for mitigation grants to move lines underground.
-  - description: CrossCompute publishes tools and reports for hazard mitigation planning. We have 16+ years of experience creating report automation systems and decision support tools for geospatial analysis. Have an idea you want to build but keep putting off? Have a process you want to automate? We'll help you start and finish your project through weekly team programming sessions. [Submit your application for Spring 2023](https://teamwork.crosscompute.com).
+ideas:
+  - description: Decide which poles/reclosers/transformers to replace through benefit cost analysis
+  - description: Develop a data collection strategy to predict an asset's probability of failure
+  - description: Build an optimization model and dashboard to prioritize which assets to repair and replace first
+  - description: Process data feeds from smart meters to forecast hourly consumption
+  - description: Create a digital circuit map of your distribution network compatible with OpenDSS and other DER simulation software
+  - description: Plan placement of electric vehicle charging stations, battery energy storage systems and solar microgrids
+  - description: Add interactive maps and tools to your website
+  - description: Harden networks against malicious internet traffic
+  - description: Update your utility's hazard mitigation plan
+  - description: Apply for mitigation grants to move lines underground
 
 widgets:
   - name: Production Tracking System

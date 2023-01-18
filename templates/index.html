@@ -8,10 +8,10 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-VP9T2V7B17');
 </script>
+<title>{{ title }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ description }}">
-<title>{{ title }}</title>
 <style>
 body {
   font-family: sans-serif;
@@ -19,6 +19,15 @@ body {
 section h2 {
   display: flex;
   justify-content: space-between;
+}
+.action {
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 1em;
+  width: 100%;
+  background: #606060;
+      color: white;
 }
 .carousel {
   display: flex;
@@ -68,6 +77,9 @@ section h2 {
   gap: 16px;
   flex-wrap: wrap;
 }
+#banners img {
+  max-width: 100%;
+}
 #widgets .seat {
   background: #fadbd8;
 }
@@ -115,7 +127,6 @@ section h2 {
 <nav id="menu">
 <a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
 <ul>
-    <li><a href="#news">News</a></li>
     <li><a href="#widgets">Widgets</a></li>
     <li><a href="#websites">Websites</a></li>
     <li><a href="#posts">Posts</a></li>
@@ -127,16 +138,21 @@ section h2 {
 {% endblock %}
 
 {% block main_html %}
-<img src="images/make-simple-app.svgz">
-<img src="images/do-it-yourself.svgz">
-<img src="images/subscribe-newsletter.svgz">
-<img src="images/schedule-call.svgz">
-
-<section id="news">
-<h1>{{ title }}</h1>
-{% for new in news %}
-<p>{{ new['description'] | safe }}</p>
+<section id="banners">
+{% for banner in banners %}
+<img src="{{ banner['image_uri'] }}">
 {% endfor %}
+<h1>{{ headline }}</h1>
+<p>{{ blurb | safe }}</p>
+</section>
+
+<section id="ideas">
+<h2>Ideas</h2>
+<ul>
+{% for idea in ideas %}
+<li>{{ idea['description'] | safe }}</li>
+{% endfor %}
+</ul>
 </section>
 
 <section id="widgets">
