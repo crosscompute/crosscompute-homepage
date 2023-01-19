@@ -7,6 +7,7 @@ banners:
   - image_uri: images/do-it-yourself.svg
   - image_uri: images/subscribe-newsletter.svg
   - image_uri: images/schedule-call.svg
+    asset_uri: https://calendly.com/crosscompute/teamwork
 
 headline: "Maximize Your Script's Impact: Create a Web Tool Now!"
 blurb: |
