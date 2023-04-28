@@ -38,11 +38,11 @@ widgets:
     image_uri: images/airport-traffic.png
     video_uri:
     asset_uri: https://crosscompute.net/a/see-airport-traffic
-  - name: Internet Speed Form
+  - name: Internet Speed Survey
     description: Record your internet speed on a map
     image_uri: images/internet-speed.png
     video_uri:
-    asset_uri: https://crosscompute.net/a/report-internet-speed
+    asset_uri: https://crosscompute.net/a/internet-speed-survey
   - name: Greenfield Microgrid Placement
     description: Rank microgrid sites by cost per connection
     image_uri: images/microgrid-placement.png
