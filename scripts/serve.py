@@ -13,14 +13,12 @@ from watchfiles import run_process
 
 PORT = 8000
 BASE_FOLDER = Path(__file__).parents[1]
-IMAGES_FOLDER = BASE_FOLDER / 'images'
-# STYLES_FOLDER = BASE_FOLDER / 'styles'
+ASSETS_FOLDER = BASE_FOLDER / 'assets'
 TEMPLATES_FOLDER = BASE_FOLDER / 'templates'
 
 
 app = FastAPI()
-app.mount('/images', StaticFiles(directory=IMAGES_FOLDER), name='images')
-# app.mount('/styles', StaticFiles(directory=STYLES_FOLDER), name='styles')
+app.mount('/assets', StaticFiles(directory=ASSETS_FOLDER), name='assets')
 templates = Jinja2Templates(
     directory=TEMPLATES_FOLDER, trim_blocks=True, auto_reload=True)
 configuration = {}
@@ -34,7 +32,7 @@ async def see_home(request: Request):
 
 @app.get('/favicon.ico')
 async def see_icon():
-    return FileResponse(IMAGES_FOLDER / 'favicon.ico')
+    return FileResponse(ASSETS_FOLDER / 'favicon.ico')
 
 
 def serve_with(args):
@@ -54,7 +52,7 @@ def load_configuration(path):
                 ds.append(v)
             elif isinstance(v, list):
                 ds.extend(v)
-            elif k == 'description':
+            elif k in ['pitch']:
                 d[k] = get_html_from_markdown(v)
     return c
 

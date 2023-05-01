@@ -1,148 +1,116 @@
 ---
-title: "CrossCompute | Maximize Your Script's Impact: Create a Web Tool Now!"
-description: Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web tool. With a few steps, you can turn it into a powerful web tool that can automate repetitive tasks, streamline processes and make your life easier. Our platform makes it easy to create a web tool from your script, so why wait? Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today.
+language_code: en-US
 
-banners:
-  - image_uri: images/make-simple-app.svg
-  - image_uri: images/do-it-yourself.svg
-  - image_uri: images/subscribe-newsletter.svg
-  - image_uri: images/schedule-call.svg
-    asset_uri: https://calendly.com/crosscompute/teamwork
-
-headline: "Maximize Your Script's Impact: Create a Web Tool Now!"
-blurb: |
-  Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web tool.
-  With a few steps, you can turn it into a powerful web tool that can automate repetitive tasks, streamline processes and make your life easier. Our platform makes it easy to create a web tool from your script, so why wait?
-  Don't miss the opportunity to maximize the potential of your script.
-  Take your script to the web and start seeing the benefits today.
-  <a role="button" class="action">Unleash the full potential of your script by turning it into a web tool!</a>
+title_text: "CrossCompute | Maximize Your Script's Impact: Create an App Now!"
+description_text: Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web app. With a few steps, you can turn it into a powerful web app that can automate repetitive tasks, streamline processes and make your life easier. Our products and services make it easy to create a web app from your script, so why wait? Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today. CrossCompute specializes in building web apps for gathering, processing and presenting data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. Unleash the full potential of your script by turning it into a web app!
 
 brand:
-  image_uri: images/brand.svg
+  image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-ideas:
-  - description: Decide which poles/reclosers/transformers to replace through benefit cost analysis
-  - description: Develop a data collection strategy to predict an asset's probability of failure
-  - description: Build an optimization model and dashboard to prioritize which assets to repair and replace first
-  - description: Process data feeds from smart meters to forecast hourly consumption
-  - description: Create a digital circuit map of your distribution network compatible with OpenDSS and other DER simulation software
-  - description: Plan placement of electric vehicle charging stations, battery energy storage systems and solar microgrids
-  - description: Add interactive maps and tools to your website
-  - description: Harden networks against malicious internet traffic
-  - description: Update your utility's hazard mitigation plan
-  - description: Apply for mitigation grants to move lines underground
+headline_text: "Maximize Your Script's Impact: Create an App Now!"
 
-widgets:
+action_text: Subscribe to our monthly newsletter
+
+pitch_markdown: |
+  Who would benefit from your scripts if they were apps instead?
+
+  Do you have the time and budget to make apps from scratch?
+
+  How can you capture your expertise into apps that non-experts can use?
+
+  Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web app. With a few steps, you can turn it into a powerful web app that can automate repetitive tasks, streamline processes and make your life easier. [Our products and services make it easy to create a web app from your script, so why wait?](#services) Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today.
+
+  CrossCompute specializes in building web apps for gathering, processing and presenting data. We created the [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics), an open source package that turns scripts into web apps. Unleash the full potential of your script by turning it into a web app!
+
+services_markdown: |
+  Our products and services are designed for organizations that collect data, run analyses and publish reports on a periodic basis.
+
+  The [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics) drastically reduces the time and effort needed to update a software as a service (SaaS) solution directly from your command-line scripts and Jupyter notebooks. [See how an organization is using CrossCompute to automate reports for electric utilities](https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900).
+
+  Here are services we provide:
+
+  - Turn existing scripts into web apps
+  - Transform spreadsheets and forms into step by step wizards
+  - Automate analyses so that non-experts can generate reports from new data
+
+  Our expertise is in automating the analysis of spatial data and imagery to support infrastructure planning. By partnering with us, you can leverage our expertise in building pipelines for geospatial information processing.
+
+pricing_markdown: |
+  ### Option 1: Create Your Own Apps
+
+  - Host Your Apps on [crosscompute.net](https://crosscompute.net)
+  - No Upfront Cost
+  - 20% Revenue Share
+
+  ### Option 2: Power Your Organization
+
+  - Host Your Apps on Managed Servers
+  - $10k Per Year
+  - Training and Support Add-Ons
+
+updates:
   - name: Production Tracking System
     description: Track production times for product manufacturing
-    image_uri: images/production-tracking.png
     video_uri: https://youtu.be/rKM6YPrkGTk
     asset_uri: https://crosscompute.net/a/launch-production-tracking-system
   - name: Development Server in JupyterLab
     description: Experiment with the code behind our example widgets
-    image_uri: images/jupyterlab-crosscompute.png
     video_uri: https://youtu.be/RGvs9spyZy8
     asset_uri: https://crosscompute.net/a/learn-examples-in-jupyterlab
   - name: Airport Traffic Dashboard
     description: See how much time it takes to get to the airport
-    image_uri: images/airport-traffic.png
-    video_uri:
     asset_uri: https://crosscompute.net/a/see-airport-traffic
   - name: Internet Speed Form
     description: Record your internet speed on a map
-    image_uri: images/internet-speed.png
-    video_uri:
     asset_uri: https://crosscompute.net/a/report-internet-speed
-  - name: Greenfield Microgrid Placement
-    description: Rank microgrid sites by cost per connection
-    image_uri: images/microgrid-placement.png
-    video_uri:
-    asset_uri: https://crosscompute.net/a/place-microgrids
-  - name: Service Drop Placement
-    description: Place service drop poles along roads around obstacles
-    image_uri: images/service-drops.png
-    video_uri: https://youtu.be/smcgvgrERV0
-    asset_uri: https://crosscompute.com/r/3gbgKhRp9ErxrBZshj3b3jRUhReRSc38
-  - name: Microgrid Pole Placement
-    description: Place microgrid poles along roads around obstacles
-    image_uri: images/microgrid-poles.png
-    video_uri:
-    asset_uri: https://crosscompute.com/r/5SnZZWXOqY7PvWA5R1oKVKmFzzZw8FT7
-  - name: Solar Microgrid Design
-    description: Place solar microgrid equipment
-    image_uri: images/microgrid-equipment.png
-    video_uri:
-    asset_uri: https://crosscompute.com/r/GbZiEwl8sukHirDdYd6aw5dqO6jW8rSx
-  - name: Grid Pole Placement
-    description: Place distribution poles along roads around obstacles
-    image_uri: images/grid-poles.jpg
-    video_uri:
-    asset_uri: https://crosscompute.com/r/sO20foFEjlLrch2UI2YlVm6rwt3au7Gu
-  - name: Electrification Technology Choice
-    description: Estimate electrification costs by technology
-    image_uri: images/technology-choice.png
-    video_uri:
-    asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
-  - name: Settlement Clustering
-    description: Group buildings into settlements
-    image_uri: images/settlement-clusters.png
-    video_uri:
-    asset_uri: https://crosscompute.com/r/AMfjrLyqdJC5XYlfESkw9MPEsYce07Vr
-  - name: OpenStreetMap Datasets
-    description: Extract infrastructure by region
-    image_uri: images/openstreetmap-datasets.png
-    video_uri:
-    asset_uri: https://crosscompute.com/t/5D1eMdp9EnAPrFkVGOgiSHRLnNriZvlR
-  - name: Electrification Scenario Visualization
-    description: Visualize electrification scenarios by technology choice
-    image_uri: images/electrification-scenarios.gif
-    video_uri:
-    asset_uri: https://crosscompute.com/t/um4cpUqzye7x8MOoWGG7L8xyfsjhnMqd
 
-websites:
+requests:
+  - name: Example Request
+    asset_uri: https://example.com
+
+internal_links:
   - name: Forum
     description: Read tutorials and ask questions
-    image_uri: images/forum.png
-    video_uri:
     asset_uri: https://forum.crosscompute.com
   - name: Documentation
     description: Learn how to use our open source packages
-    image_uri: images/docs.png
-    video_uri:
     asset_uri: https://docs.crosscompute.com
   - name: Platform v4
     description: Gallery of widgets built using our open source framework
-    image_uri: images/platform4.png
     video_uri: https://www.youtube.com/shorts/5g782ny0zqo
     asset_uri: https://crosscompute.net
   - name: Platform v3
     description: Analytics prototype featuring an electricity network editor
-    image_uri: images/platform3.png
     video_uri: https://youtu.be/XyXwg9Z9e_E
     asset_uri: https://crosscompute.com/authentications
   - name: Platform v2
     description: Tools created by users with Jupyter Notebook
-    image_uri: images/platform2.png
     video_uri: https://youtu.be/M6GPVq3-Beg
     asset_uri: https://crosscompute.com/learn
   - name: Algorithm Cookbooks
     description: Selection of tools for electricity planning
-    image_uri: images/cookbooks.png
-    video_uri:
     asset_uri: https://v2.crosscompute.com/cookbooks
 
-posts:
-  - name: CrossCompute Framework 0.9.2
-    description: Turn your script into a widget
-    image_uri: images/crosscompute-0.9.2.png
-    video_uri:
-    asset_uri: https://forum.crosscompute.com/t/crosscompute-framework-0-9-2-3-release-notes/175
-  - name: Call for Hazard Mitigation Planning Widgets
-    description: Submit a widget for hazard mitigation planning
-    image_uri: images/open-call.png
-    video_uri:
-    asset_uri: https://forum.crosscompute.com/t/open-call-for-runnable-reports-in-infrastructure-planning-emergency-planning-community-development/157
+external_links:
+  - name: GitHub
+    asset_uri: https://github.com/crosscompute
+  - name: YouTube
+    asset_uri: https://www.youtube.com/crosscompute
+  - name: Twitter
+    asset_uri: https://twitter.com/crosscompute
+  - name: LinkedIn
+    asset_uri: https://www.linkedin.com/company/crosscompute
+  - name: Facebook
+    asset_uri: https://www.facebook.com/crosscompute
+  - name: Tumblr
+    asset_uri: https://crosscompute.tumblr.com
+  - name: Discord
+    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
+  - name: Twitch
+    asset_uri: https://twitch.tv/crosscompute
+  - name: EventBrite
+    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
 
 accomplishments:
   - description: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
@@ -287,23 +255,3 @@ acknowledgments:
     asset_uri: https://www.worldbank.org
   - name: NYC Mayor's Office of Data Analytics
     asset_uri: https://nyc.gov/analytics
-
-links:
-  - name: Github
-    asset_uri: https://github.com/crosscompute
-  - name: YouTube
-    asset_uri: https://www.youtube.com/crosscompute
-  - name: Twitter
-    asset_uri: https://twitter.com/crosscompute
-  - name: LinkedIn
-    asset_uri: https://www.linkedin.com/company/crosscompute
-  - name: Facebook
-    asset_uri: https://www.facebook.com/crosscompute
-  - name: Tumblr
-    asset_uri: https://crosscompute.tumblr.com
-  - name: Discord
-    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
-  - name: Twitch
-    asset_uri: https://twitch.tv/crosscompute
-  - name: EventBrite
-    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369

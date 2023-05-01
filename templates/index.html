@@ -8,232 +8,113 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-VP9T2V7B17');
 </script>
-<title>{{ title }}</title>
+<title>{{ title_text }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ description }}">
+<meta name="description_text" content="{{ description }}">
 <style>
-body {
-  font-family: sans-serif;
-}
-section h2 {
+header {
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
 }
-.action {
-  display: block;
+main {
+  max-width: 640px;
+  margin: auto;
+}
+button {
+  padding: 8px;
+  border: 0;
   font-size: large;
-  font-weight: bold;
-  width: calc(100% - 2em);
-  margin: 1em auto 0 auto;
-  background: #148ed5;
-  color: white;
-  padding: 1em;
-  text-align: center;
-  border-radius: 10px;
-}
-.carousel {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 8px;
-  list-style: none;
-  padding-left: 0;
-  justify-content: space-evenly;
-}
-.seat {
-  padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
-  width: 240px;
-}
-.seat img {
   width: 100%;
 }
-.info {
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+button:hover {
+  cursor: pointer;
 }
-.name {
-  text-align: center;
-  font-size: large;
+.action {
+  background: #17A2F5;
+  color: white;
   font-weight: bold;
 }
-.description {
-  flex: 1;
-}
-.panel {
-  display: flex;
-  justify-content: space-around;
-}
-#menu img {
-  max-width: 160px;
-}
-#menu ul {
+.bar {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-#banners img {
-  max-width: 100%;
-}
-#widgets .seat {
-  background: #fadbd8;
-}
-#websites .seat {
-  background: #d6eaf8;
-}
-#posts .seat {
-  background: #e8e8e8;
-}
-#links ul, #acknowledgments ul {
-  list-style: none;
-  padding-left: 0;
-  flex-wrap: wrap;
-}
-#links ul {
-  display: flex;
-  gap: 16px;
-}
-#acknowledgments ul {
-  display: none;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-@media only screen and (min-width: 768px) {
-  main {
-    max-width: calc(100vw - 160px - 16px - 16px);
-  }
-  .mobile {
-    display: none;
-  }
-  #menu {
-    max-width: 160px;
-    position: fixed;
-    right: 8px;
-    padding: 8px;
-  }
-  #menu ul {
-    display: block;
-    line-height: 2em;
-  }
+#brand {
+  height: 1.5em;
+}
+#navigation {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+#account {
+  display: flex;
+  gap: 8px;
 }
 </style>
 {% endblock %}
 
 {% block header_html %}
-<nav id="menu">
-<a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
-<ul>
-    <li><a href="#widgets">Widgets</a></li>
-    <li><a href="#websites">Websites</a></li>
-    <li><a href="#posts">Posts</a></li>
-    <li><a href="#links">Links</a></li>
-    <li><a href="#accomplishments">Accomplishments</a></li>
-    <li><a href="#acknowledgments">Acknowledgements</a></li>
-</ul>
+<nav id="navigation">
+<a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading=lazy></a>
+<a href=#pricing>Pricing</a>
+</div>
+<div id="account">
+<a href="#updates">Updates</a>
+<a href="#requests">Requests</a>
+<a href="https://crosscompute.net">Automations</a>
 </nav>
 {% endblock %}
 
 {% block main_html %}
-<section id="banners">
-{% for banner in banners %}
-<img src="{{ banner['image_uri'] }}">
-{% endfor %}
-<h1>{{ headline }}</h1>
-<p>{{ blurb | safe }}</p>
+<section id="pitch">
+<h1>{{ headline_text }}</h1>
+{{ pitch_markdown | safe }}
 </section>
 
-<section id="ideas">
-<h2>Ideas</h2>
+<section id="services">
+<h2>Products and Services</h2>
+{{ services_markdown | safe }}
+</section>
+
+<button class="action">{{ action_text }}</button>
+
+<section id="pricing">
+<h2>Pricing</h2>
+{{ pricing_markdown }}
+</section>
+
+<section id="updates">
+<h2>Updates</h2>
 <ul>
-{% for idea in ideas %}
-<li>{{ idea['description'] | safe }}</li>
+{% for l in updates %}
+<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
 {% endfor %}
 </ul>
 </section>
 
-<section id="widgets">
-<h2>Widgets</h2>
-<ul class="carousel">
-{% for widget in widgets %}
-  {% set video_uri = widget['video_uri'] %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ widget['name'] }}</div>
-    </div>
-    <img src="{{ widget['image_uri'] }}">
-    <div class="description">{{ widget['description'] | safe }}</div>
-    <div class="panel">
-    {% if video_uri %}
-      <a href="{{ video_uri }}">Watch</a>
-    {% endif %}
-      <a href="{{ widget['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="websites">
-<h2>Websites</h2>
-<ul class="carousel">
-{% for website in websites %}
-  {% set video_uri = website['video_uri'] %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ website['name'] }}</div>
-    </div>
-    <img src="{{ website['image_uri'] }}">
-    <div class="description">{{ website['description'] | safe }}</div>
-    <div class="panel" style='display:flex'>
-    {% if video_uri %}
-      <a href="{{ video_uri }}">Watch</a>
-    {% endif %}
-      <a href="{{ website['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="posts">
-<h2>Posts</h2>
-<ul class="carousel">
-{% for post in posts %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ post['name'] }}</div>
-    </div>
-    <img src="{{ post['image_uri'] }}">
-    <div class="description">{{ post['description'] | safe }}</div>
-    <div class="panel" style='display:flex'>
-      <a href="{{ post['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="links">
-<h2>Links</h2>
+<section id="requests">
+<h2>Requests</h2>
 <ul>
-{% for link in links %}
-<li><a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a></li>
+{% for l in requests %}
+<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
 {% endfor %}
 </ul>
 </section>
+
+<button class="action">Subscribe to our monthly newsletter</button>
 
 <section id="accomplishments">
 <h2>Accomplishments</h2>
 <ul>
-{% for accomplishment in accomplishments %}
-  <li><a href="{{ accomplishment['asset_uri'] }}">{{ accomplishment['description'] | safe }}</a></li>
+{% for l in accomplishments %}
+<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
 {% endfor %}
 </ul>
 </section>
@@ -241,10 +122,31 @@ section h2 {
 <section id="acknowledgments">
 <h2><a href="#acknowledgments">Acknowledgments</a></h2>
 <ul>
-{% for acknowledgment in acknowledgments %}
-<li><a href="{{ acknowledgment['asset_uri'] }}">{{ acknowledgment['name'] }}</a></li>
+{% for l in acknowledgments %}
+<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
 {% endfor %}
 </ul>
+</section>
+{% endblock %}
+
+{% block footer_html %}
+<section id="links">
+<h2>Links</h2>
+<ul>
+{% for l in internal_links %}
+<li><a href="{{ l['asset_uri'] }}">{{ l['name'] }}: {{ l['description'] }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
+{% endfor %}
+</ul>
+<ul class="bar">
+{% for l in external_links %}
+<li><a href="{{ l['asset_uri'] }}">{{ l['name'] }}</a></li>
+{% endfor %}
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p><a href="mailto:contact+opportunities@crosscompute.com">contact+opportunities@crosscompute.com</a></p>
 </section>
 {% endblock %}
 
