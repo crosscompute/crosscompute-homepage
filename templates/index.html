@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 
+{% macro action_button(index) %}
+{% set d = actions[index] %}
+<a href="{{ d['asset_uri'] }}" class="button action">{{ d.name_text }}</a>
+{% endmacro %}
+
+{% macro link_list(items, class_text) %}
+<ul{% if class_text %} class="{{ class_text }}"{% endif %}>
+{% for d in items %}
+{% set name_text = d['name_text'] %}
+{% set description_html = d['description_html'] %}
+{% set asset_uri = d['asset_uri'] %}
+{% set video_uri = d['video_uri'] %}
+<li><a href="{{ asset_uri }}">{{ name_text }}{% if name_text and description_html %}: {% endif %}{{ description_html | safe }}</a>{% if video_uri %} [<a href="{{ video_uri }}">video</a>]{% endif %}</li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
 {% block head_html %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
 <script>
@@ -11,61 +28,65 @@ gtag('config', 'G-VP9T2V7B17');
 <title>{{ title_text }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description_text" content="{{ description }}">
+<meta name="description" content="{{ description_text }}">
 <style>
 header {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+header > nav {
+  display: flex;
+  gap: 8px;
 }
 main {
   max-width: 640px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-button {
+footer {
+  max-width: 640px;
+  margin: auto;
+}
+h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
   padding: 8px;
   border: 0;
-  font-size: large;
-  width: 100%;
+  text-decoration: none;
+  text-align: center;
 }
-button:hover {
+.button:hover {
   cursor: pointer;
 }
 .action {
+  font-size: large;
   background: #17A2F5;
   color: white;
   font-weight: bold;
-}
-.bar {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
 }
 #brand {
   height: 1.5em;
 }
-#navigation {
-  flex: 1;
-  display: flex;
+#acknowledgments > ul {
+  list-style: none;
+  padding: 0;
+  display: none;
   gap: 8px;
-  align-items: center;
-}
-#account {
-  display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
 }
 </style>
 {% endblock %}
 
 {% block header_html %}
-<nav id="navigation">
 <a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading=lazy></a>
-<a href=#pricing>Pricing</a>
-</div>
-<div id="account">
+<nav>
 <a href="#updates">Updates</a>
 <a href="#requests">Requests</a>
 <a href="https://crosscompute.net">Automations</a>
@@ -73,87 +94,56 @@ button:hover {
 {% endblock %}
 
 {% block main_html %}
-<section id="pitch">
+<section id="summary">
 <h1>{{ headline_text }}</h1>
-{{ pitch_markdown | safe }}
+{{ summary_html | safe }}
 </section>
 
-<section id="services">
-<h2>Products and Services</h2>
-{{ services_markdown | safe }}
+{{ action_button(0) }}
+
+<section id="menu">
+<h2>What We Offer</h2>
+{{ menu_html | safe }}
 </section>
 
-<button class="action">{{ action_text }}</button>
+{{ action_button(1) }}
 
-<section id="pricing">
-<h2>Pricing</h2>
-{{ pricing_markdown }}
+<section id="showcase">
+<h2>Browse Our Work</h2>
+<h3>Updates</h3>
+{{ link_list(updates) }}
+<h3>Requests</h3>
+{{ link_list(requests) }}
 </section>
 
-<section id="updates">
-<h2>Updates</h2>
-<ul>
-{% for l in updates %}
-<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="requests">
-<h2>Requests</h2>
-<ul>
-{% for l in requests %}
-<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
-{% endfor %}
-</ul>
-</section>
-
-<button class="action">Subscribe to our monthly newsletter</button>
+{{ action_button(2) }}
 
 <section id="accomplishments">
 <h2>Accomplishments</h2>
-<ul>
-{% for l in accomplishments %}
-<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="acknowledgments">
-<h2><a href="#acknowledgments">Acknowledgments</a></h2>
-<ul>
-{% for l in acknowledgments %}
-<li><a href="{{ l['asset_uri'] }}">{% if l['name'] %}{{ l['name'] }}: {% endif %}{{ l['description'] | safe }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
-{% endfor %}
-</ul>
+{{ link_list(accomplishments) }}
 </section>
 {% endblock %}
 
 {% block footer_html %}
+<section id="acknowledgments">
+<h2><a href="#acknowledgments">Acknowledgments</a></h2>
+{{ link_list(acknowledgments) }}
+</section>
+
 <section id="links">
 <h2>Links</h2>
-<ul>
-{% for l in internal_links %}
-<li><a href="{{ l['asset_uri'] }}">{{ l['name'] }}: {{ l['description'] }}</a>{% if l['video_uri'] %} [video]({{ l['video_uri'] }}){% endif %}</li>
-{% endfor %}
-</ul>
-<ul class="bar">
-{% for l in external_links %}
-<li><a href="{{ l['asset_uri'] }}">{{ l['name'] }}</a></li>
-{% endfor %}
-</ul>
+{{ link_list(links) }}
 </section>
 
 <section id="contact">
 <h2>Contact</h2>
-<p><a href="mailto:contact+opportunities@crosscompute.com">contact+opportunities@crosscompute.com</a></p>
+{{ link_list(contacts) }}
 </section>
+
+{{ action_button(3) }}
 {% endblock %}
 
 {% block body_js %}
-for (const x of document.querySelectorAll('section h2')) {
-  x.innerHTML += '<a href="#" class="mobile">Top</a>';
-}
 document.querySelector('#acknowledgments h2 a').onclick = function() {
   this.parentNode.nextElementSibling.style.display = 'flex';
 };

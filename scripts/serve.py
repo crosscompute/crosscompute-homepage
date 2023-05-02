@@ -47,13 +47,13 @@ def load_configuration(path):
     ds = [c]
     while ds:
         d = ds.pop()
-        for k, v in d.items():
+        for k, v in d.copy().items():
             if isinstance(v, dict):
                 ds.append(v)
             elif isinstance(v, list):
                 ds.extend(v)
-            elif k in ['pitch']:
-                d[k] = get_html_from_markdown(v)
+            elif k.endswith('_markdown'):
+                d[k.replace('_markdown', '_html')] = get_html_from_markdown(v)
     return c
 
 

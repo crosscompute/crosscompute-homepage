@@ -1,257 +1,258 @@
 ---
 language_code: en-US
-
-title_text: "CrossCompute | Maximize Your Script's Impact: Create an App Now!"
-description_text: Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web app. With a few steps, you can turn it into a powerful web app that can automate repetitive tasks, streamline processes and make your life easier. Our products and services make it easy to create a web app from your script, so why wait? Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today. CrossCompute specializes in building web apps for gathering, processing and presenting data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. Unleash the full potential of your script by turning it into a web app!
-
 brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
+title_text: CrossCompute | Make Apps to Automate Routine Processes
+headline_text: Make Apps to Automate Routine Processes
 
-headline_text: "Maximize Your Script's Impact: Create an App Now!"
+actions:
+  - name_text: Subscribe to Our Monthly Newsletter for Updates and Requests
+    asset_uri:
+  - name_text: Speak with an Engineer to Discuss Your Problems
+    asset_uri:
+  - name_text: Schedule a Demo
+    asset_uri:
+  - name_text: Schedule a Consultation
+    asset_uri:
 
-action_text: Subscribe to our monthly newsletter
+description_text: CrossCompute helps organizations simplify operations by making web apps to automate routine processes. We specialize in making apps for gathering, processing and presenting data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. Our expertise is in automating the analysis of spatial rasters and vectors to support scenario planning for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our expertise in building pipelines for geospatial information processing.
 
-pitch_markdown: |
-  Who would benefit from your scripts if they were apps instead?
+summary_markdown: |
+  CrossCompute helps organizations simplify operations by making web apps to automate routine processes. We specialize in making apps for gathering, processing and presenting data. We created the [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics), an open source package that turns scripts into web apps.
 
-  Do you have the time and budget to make apps from scratch?
+  Our expertise is in automating the analysis of spatial rasters and vectors to support scenario planning for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our expertise in building pipelines for geospatial information processing.
 
-  How can you capture your expertise into apps that non-experts can use?
+menu_markdown: |
+  Our products and services are for organizations that collect data, run analyses and publish reports on a regular basis. By automating reports, your team members can focus on developing new analyses.
 
-  Don't let your script go to waste. Make your script useful to more people by turning it into a user-friendly web app. With a few steps, you can turn it into a powerful web app that can automate repetitive tasks, streamline processes and make your life easier. [Our products and services make it easy to create a web app from your script, so why wait?](#services) Don't miss the opportunity to maximize the potential of your script. Take your script to the web and start seeing the benefits today.
+  ### Products
 
-  CrossCompute specializes in building web apps for gathering, processing and presenting data. We created the [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics), an open source package that turns scripts into web apps. Unleash the full potential of your script by turning it into a web app!
+  Our [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics) helps researchers build apps for data collection and analysis. It drastically reduces the effort needed to launch a software as a service (SaaS) directly from your command-line scripts and Jupyter notebooks. [See how one organization is using CrossCompute to automate reports for 500+ electric utilities](https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900).
 
-services_markdown: |
-  Our products and services are designed for organizations that collect data, run analyses and publish reports on a periodic basis.
-
-  The [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics) drastically reduces the time and effort needed to update a software as a service (SaaS) solution directly from your command-line scripts and Jupyter notebooks. [See how an organization is using CrossCompute to automate reports for electric utilities](https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900).
-
-  Here are services we provide:
+  ### Services We Provide
 
   - Turn existing scripts into web apps
   - Transform spreadsheets and forms into step by step wizards
-  - Automate analyses so that non-experts can generate reports from new data
+  - Automate analyses to help non-experts generate reports from new data
 
-  Our expertise is in automating the analysis of spatial data and imagery to support infrastructure planning. By partnering with us, you can leverage our expertise in building pipelines for geospatial information processing.
+  ### Services We Do Not Provide
 
-pricing_markdown: |
-  ### Option 1: Create Your Own Apps
+  - Design a website
+  - Build a web app from scratch
+  - Build a mobile app from scratch
 
-  - Host Your Apps on [crosscompute.net](https://crosscompute.net)
-  - No Upfront Cost
-  - 20% Revenue Share
+  ### Pricing
 
-  ### Option 2: Power Your Organization
-
-  - Host Your Apps on Managed Servers
-  - $10k Per Year
-  - Training and Support Add-Ons
+  Our basic package includes orientation workshops and one year of managed servers for creating and deploying apps with the CrossCompute Analytics Software Development Kit for $8,400. Training and support for creating custom apps are available as add-ons.
 
 updates:
-  - name: Production Tracking System
-    description: Track production times for product manufacturing
+  - name_text: Production Tracking System
+    description_markdown: Track production times for product manufacturing
     video_uri: https://youtu.be/rKM6YPrkGTk
     asset_uri: https://crosscompute.net/a/launch-production-tracking-system
-  - name: Development Server in JupyterLab
-    description: Experiment with the code behind our example widgets
+  - name_text: Development Server in JupyterLab
+    description_markdown: Experiment with the code behind our example widgets
     video_uri: https://youtu.be/RGvs9spyZy8
     asset_uri: https://crosscompute.net/a/learn-examples-in-jupyterlab
-  - name: Airport Traffic Dashboard
-    description: See how much time it takes to get to the airport
+  - name_text: Airport Traffic Dashboard
+    description_markdown: See how much time it takes to get to the airport
     asset_uri: https://crosscompute.net/a/see-airport-traffic
-  - name: Internet Speed Form
-    description: Record your internet speed on a map
+  - name_text: Internet Speed Form
+    description_markdown: Record your internet speed on a map
     asset_uri: https://crosscompute.net/a/report-internet-speed
 
 requests:
-  - name: Example Request
+  - name_text: Example Request
     asset_uri: https://example.com
 
-internal_links:
-  - name: Forum
-    description: Read tutorials and ask questions
-    asset_uri: https://forum.crosscompute.com
-  - name: Documentation
-    description: Learn how to use our open source packages
-    asset_uri: https://docs.crosscompute.com
-  - name: Platform v4
-    description: Gallery of widgets built using our open source framework
-    video_uri: https://www.youtube.com/shorts/5g782ny0zqo
-    asset_uri: https://crosscompute.net
-  - name: Platform v3
-    description: Analytics prototype featuring an electricity network editor
-    video_uri: https://youtu.be/XyXwg9Z9e_E
-    asset_uri: https://crosscompute.com/authentications
-  - name: Platform v2
-    description: Tools created by users with Jupyter Notebook
-    video_uri: https://youtu.be/M6GPVq3-Beg
-    asset_uri: https://crosscompute.com/learn
-  - name: Algorithm Cookbooks
-    description: Selection of tools for electricity planning
-    asset_uri: https://v2.crosscompute.com/cookbooks
-
-external_links:
-  - name: GitHub
-    asset_uri: https://github.com/crosscompute
-  - name: YouTube
-    asset_uri: https://www.youtube.com/crosscompute
-  - name: Twitter
-    asset_uri: https://twitter.com/crosscompute
-  - name: LinkedIn
-    asset_uri: https://www.linkedin.com/company/crosscompute
-  - name: Facebook
-    asset_uri: https://www.facebook.com/crosscompute
-  - name: Tumblr
-    asset_uri: https://crosscompute.tumblr.com
-  - name: Discord
-    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
-  - name: Twitch
-    asset_uri: https://twitch.tv/crosscompute
-  - name: EventBrite
-    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
-
 accomplishments:
-  - description: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
+  - description_markdown: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
     asset_uri: https://crosscompute.net/a/place-microgrids
-  - description: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
+  - description_markdown: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
     asset_uri: https://youtu.be/smcgvgrERV0
-  - description: Web based decision support tool used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
+  - description_markdown: Web based decision support tool used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
     asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
-  - description: Web app for tracking outages being used by 500+ utilities
+  - description_markdown: Web app for tracking outages being used by 500+ utilities
     asset_uri: https://www.publicpower.org/reliability-tracking
-  - description: Web app for mapping electricity distribution networks
+  - description_markdown: Web app for mapping electricity distribution networks
     asset_uri: https://youtu.be/CUJ3u_I282o
-  - description: Algorithms for finding buildings in satellite images
+  - description_markdown: Algorithms for finding buildings in satellite images
     asset_uri: https://github.com/invisibleroads/find-buildings-cuda-convnet
-  - description: Report automation system used for electricity outage benchmarking
+  - description_markdown: Report automation system used for electricity outage benchmarking
     asset_uri: https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900
 
 acknowledgments:
-  - name: Olga Ryabtseva
+  - name_text: Olga Ryabtseva
     asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
-  - name: Salah Ahmed
+  - name_text: Salah Ahmed
     asset_uri: https://www.linkedin.com/in/salahspage
-  - name: Cathaleen Kaiyoorawongs
+  - name_text: Cathaleen Kaiyoorawongs
     asset_uri: https://www.linkedin.com/in/catalina-kaiyoorawongs
-  - name: Roy Hyunjin Han
+  - name_text: Roy Hyunjin Han
     asset_uri: https://www.linkedin.com/in/invisibleroads
-  - name: Rodrigo Guarachi
+  - name_text: Rodrigo Guarachi
     asset_uri: https://www.linkedin.com/in/rmguarachi
-  - name: Marta Moreno Catalan
+  - name_text: Marta Moreno Catalan
     asset_uri: https://www.linkedin.com/in/marta-moreno-07364b82
-  - name: Kashfi Fahim
+  - name_text: Kashfi Fahim
     asset_uri: https://www.linkedin.com/in/kashfifahim
-  - name: Miguel Ángel Gordián
+  - name_text: Miguel Ángel Gordián
     asset_uri: https://github.com/zoek1
-  - name: Polina Chernomaz
+  - name_text: Polina Chernomaz
     asset_uri: https://www.linkedin.com/in/polinac
-  - name: Samuel Edandison
+  - name_text: Samuel Edandison
     asset_uri: https://www.linkedin.com/in/edandison
-  - name: Ning Wei
+  - name_text: Ning Wei
     asset_uri: https://www.linkedin.com/in/ning-wei-8152393b
-  - name: Eugen Fomenko
+  - name_text: Eugen Fomenko
     asset_uri: https://www.linkedin.com/in/eugen-fomenko-57b204168
-  - name: Noé Domínguez Porras
+  - name_text: Noé Domínguez Porras
     asset_uri: https://www.linkedin.com/in/noedominguez
-  - name: Mary Rodriguez Gort
+  - name_text: Mary Rodriguez Gort
     asset_uri: https://theorg.com/org/tampa-bay-innovation-center/org-chart/mary-rodriguez-gort
-  - name: Ken Evans
+  - name_text: Ken Evans
     asset_uri: https://www.linkedin.com/in/evansken
-  - name: Alex Hofmann
+  - name_text: Alex Hofmann
     asset_uri: https://www.linkedin.com/in/alex-hofmann-4a006519
-  - name: Ji Yoon Lee
+  - name_text: Ji Yoon Lee
     asset_uri: https://www.linkedin.com/in/ji-yoon-lee-516750136
-  - name: Tyler Doyle
+  - name_text: Tyler Doyle
     asset_uri: https://www.linkedin.com/in/tyler-doyle-987642111
-  - name: Ethan Epstein
+  - name_text: Ethan Epstein
     asset_uri: https://www.linkedin.com/in/ethan-epstein-80772093
-  - name: Jennifer Ruda
+  - name_text: Jennifer Ruda
     asset_uri: https://www.linkedin.com/in/jruda
-  - name: Shaky Sherpa
+  - name_text: Shaky Sherpa
     asset_uri: https://www.linkedin.com/in/shakythesherpa
-  - name: Trevor David Rhone
+  - name_text: Trevor David Rhone
     asset_uri: https://www.linkedin.com/in/trevor-david-rhone-965ba9b
-  - name: Matt Henning
+  - name_text: Matt Henning
     asset_uri: https://www.linkedin.com/in/matthew-henning-26406412b
-  - name: Elizabeth Ritter
+  - name_text: Elizabeth Ritter
     asset_uri: https://www.linkedin.com/in/elizabeth-b-ritter
-  - name: Chenxin Han
+  - name_text: Chenxin Han
     asset_uri: https://www.linkedin.com/in/chenxin-han
-  - name: Soo Ji Choi
+  - name_text: Soo Ji Choi
     asset_uri: https://www.linkedin.com/in/susie-choi-0504
-  - name: Yao Kou
+  - name_text: Yao Kou
     asset_uri: https://www.linkedin.com/in/yaokou
-  - name: Ying Zhou
+  - name_text: Ying Zhou
     asset_uri: https://www.linkedin.com/in/yingznyc
-  - name: Margarita Zias
+  - name_text: Margarita Zias
     asset_uri: https://www.linkedin.com/in/margarita-zias
-  - name: Elaine Chan
+  - name_text: Elaine Chan
     asset_uri: https://www.linkedin.com/in/chanelaine
-  - name: Aida Shoydokova
+  - name_text: Aida Shoydokova
     asset_uri: https://www.linkedin.com/in/ashoydok
-  - name: Lauren Talbot
+  - name_text: Lauren Talbot
     asset_uri: https://www.linkedin.com/in/laurentalbotnyc
-  - name: Benjamin Dean
+  - name_text: Benjamin Dean
     asset_uri: https://www.linkedin.com/in/benwdean
-  - name: Catherine Kwan
+  - name_text: Catherine Kwan
     asset_uri: https://www.linkedin.com/in/catherine-kwan-27aba827
-  - name: Nicholas O'Brien
+  - name_text: Nicholas O'Brien
     asset_uri: https://www.linkedin.com/in/njobrien
-  - name: Michael Flowers
+  - name_text: Michael Flowers
     asset_uri: https://www.linkedin.com/in/michael-flowers-8b61601b
-  - name: Ewa Jodlowska
+  - name_text: Ewa Jodlowska
     asset_uri: https://www.linkedin.com/in/ewa-jodlowska-39810611
-  - name: Betsy Waliszewski
+  - name_text: Betsy Waliszewski
     asset_uri: https://www.linkedin.com/in/betsywaliszewski
-  - name: Selin Kocaman
+  - name_text: Selin Kocaman
     asset_uri: https://www.linkedin.com/in/ayse-selin-kocaman-473023a
-  - name: Matt Basinger
+  - name_text: Matt Basinger
     asset_uri: https://www.linkedin.com/in/matt-basinger-a7b14b35
-  - name: Dorcas Murai
+  - name_text: Dorcas Murai
     asset_uri: https://www.linkedin.com/in/dorcas-murai-119813114
-  - name: Christopher Horner
+  - name_text: Christopher Horner
     asset_uri: https://www.linkedin.com/in/christopher-hornor-480a913
-  - name: Liliana Durán
+  - name_text: Liliana Durán
     asset_uri: https://www.linkedin.com/in/lumiservicioslilianaduran
-  - name: Ariana Gradow
+  - name_text: Ariana Gradow
     asset_uri: https://www.linkedin.com/in/arianagradow
-  - name: Rajesh Menon
+  - name_text: Rajesh Menon
     asset_uri: https://www.linkedin.com/in/rmeno
-  - name: Jessica Leon
+  - name_text: Jessica Leon
     asset_uri: https://www.linkedin.com/in/jesleon
-  - name: Diego Saenz
+  - name_text: Diego Saenz
     asset_uri: https://www.linkedin.com/in/diegosaenz2010
-  - name: Paul Everitt
+  - name_text: Paul Everitt
     asset_uri: https://www.linkedin.com/in/paeveritt
-  - name: Jake Maslow
+  - name_text: Jake Maslow
     asset_uri: https://www.linkedin.com/in/jake-maslow-4580106
-  - name: Susan Kum
+  - name_text: Susan Kum
     asset_uri: https://www.linkedin.com/in/susan-s-kum
-  - name: Chris Natali
+  - name_text: Chris Natali
     asset_uri: https://www.linkedin.com/in/chris-natali-6841472b
-  - name: Edwin Adkins
+  - name_text: Edwin Adkins
     asset_uri: https://www.linkedin.com/in/edwin-adkins
-  - name: Aly Sanoh
+  - name_text: Aly Sanoh
     asset_uri: https://www.linkedin.com/in/sanohaly
-  - name: Vijay Modi
+  - name_text: Vijay Modi
     asset_uri: https://www.linkedin.com/in/vijay-modi-39241229
-  - name: Tampa Bay Innovation Center
+  - name_text: Tampa Bay Innovation Center
     asset_uri: https://tbinnovates.com
-  - name: Python Software Foundation
+  - name_text: Python Software Foundation
     asset_uri: https://python.org/psf
-  - name: DevLabs México
+  - name_text: DevLabs México
     asset_uri: https://www.devlabs.com.mx
-  - name: American Public Power Association
+  - name_text: American Public Power Association
     asset_uri: https://publicpower.org
-  - name: U.S. Department of Energy
+  - name_text: U.S. Department of Energy
     asset_uri: https://www.energy.gov
-  - name: Quadracci Sustainable Engineering Lab at Columbia University
+  - name_text: Quadracci Sustainable Engineering Lab at Columbia University
     asset_uri: https://qsel.columbia.edu
-  - name: Tech Incubator at Queens College
+  - name_text: Tech Incubator at Queens College
     asset_uri: https://techincubatorqc.com
-  - name: World Bank
+  - name_text: World Bank
     asset_uri: https://www.worldbank.org
-  - name: NYC Mayor's Office of Data Analytics
+  - name_text: NYC Mayor's Office of Data Analytics
     asset_uri: https://nyc.gov/analytics
+
+links:
+  - name_text: Forum
+    description_markdown: Read tutorials and ask questions
+    asset_uri: https://forum.crosscompute.com
+  - name_text: Documentation
+    description_markdown: Learn how to use our open source packages
+    asset_uri: https://docs.crosscompute.com
+  - name_text: Platform v4
+    description_markdown: Gallery of widgets built using our open source framework
+    video_uri: https://www.youtube.com/shorts/5g782ny0zqo
+    asset_uri: https://crosscompute.net
+  - name_text: Platform v3
+    description_markdown: Analytics prototype featuring an electricity network editor
+    video_uri: https://youtu.be/XyXwg9Z9e_E
+    asset_uri: https://crosscompute.com/authentications
+  - name_text: Platform v2
+    description_markdown: Tools created by users with Jupyter Notebook
+    video_uri: https://youtu.be/M6GPVq3-Beg
+    asset_uri: https://crosscompute.com/learn
+  - name_text: Algorithm Cookbooks
+    description_markdown: Selection of tools for electricity planning
+    asset_uri: https://v2.crosscompute.com/cookbooks
+  - name_text: GitHub
+    asset_uri: https://github.com/crosscompute
+  - name_text: YouTube
+    asset_uri: https://www.youtube.com/crosscompute
+  - name_text: Twitter
+    asset_uri: https://twitter.com/crosscompute
+  - name_text: LinkedIn
+    asset_uri: https://www.linkedin.com/company/crosscompute
+  - name_text: Facebook
+    asset_uri: https://www.facebook.com/crosscompute
+  - name_text: Tumblr
+    asset_uri: https://crosscompute.tumblr.com
+  - name_text: Discord
+    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
+  - name_text: Twitch
+    asset_uri: https://twitch.tv/crosscompute
+  - name_text: EventBrite
+    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
+
+contacts:
+  - name_text: +1-917-566-7004
+    asset_uri: tel:+1-917-566-7004
+  - name_text: contact+opportunities@crosscompute.com
+    asset_uri: mailto:contact+opportunities@crosscompute.com
