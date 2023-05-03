@@ -47,13 +47,16 @@ main {
   flex-direction: column;
   gap: 8px;
 }
+main > img {
+  width: 100%;
+  margin-top: 16px;
+}
 footer {
   max-width: 640px;
   margin: auto;
-}
-h2 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
 }
 .button {
   padding: 8px;
@@ -85,7 +88,7 @@ h2 {
 {% endblock %}
 
 {% block header_html %}
-<a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading=lazy></a>
+<a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
 <nav>
 <a href="#updates">Updates</a>
 <a href="#requests">Requests</a>
@@ -96,6 +99,13 @@ h2 {
 {% block main_html %}
 <section id="summary">
 <h1>{{ headline_text }}</h1>
+{{ pitch_html | safe }}
+</section>
+
+<img src="{{ assets[0].image_uri  }}" loading="lazy">
+
+<section id="menu">
+<h2>What We Do</h2>
 {{ summary_html | safe }}
 </section>
 
@@ -110,9 +120,9 @@ h2 {
 
 <section id="showcase">
 <h2>Browse Our Work</h2>
-<h3>Updates</h3>
+<h3 id="updates">Updates</h3>
 {{ link_list(updates) }}
-<h3>Requests</h3>
+<h3 id="requests">Requests</h3>
 {{ link_list(requests) }}
 </section>
 
