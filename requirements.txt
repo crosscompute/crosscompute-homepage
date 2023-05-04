@@ -1,7 +1,6 @@
 beautifulsoup4
 fastapi
 invisibleroads_macros_process
-invisibleroads-macros-web[markdown]
 jinja2
 requests
 ruamel.yaml

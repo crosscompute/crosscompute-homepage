@@ -2,17 +2,17 @@
 
 {% macro action_button(index) %}
 {% set d = actions[index] %}
-<a href="{{ d['asset_uri'] }}" class="button action">{{ d.name_text }}</a>
+<a href="{{ d['uri'] }}" class="button">{{ d.text }}</a>
 {% endmacro %}
 
-{% macro link_list(items, class_text) %}
-<ul{% if class_text %} class="{{ class_text }}"{% endif %}>
+{% macro link_list(items) %}
+<ul class="board">
 {% for d in items %}
 {% set name_text = d['name_text'] %}
-{% set description_html = d['description_html'] %}
+{% set description_text = d['description_text'] %}
 {% set asset_uri = d['asset_uri'] %}
 {% set video_uri = d['video_uri'] %}
-<li><a href="{{ asset_uri }}">{{ name_text }}{% if name_text and description_html %}: {% endif %}{{ description_html | safe }}</a>{% if video_uri %} [<a href="{{ video_uri }}">video</a>]{% endif %}</li>
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_uri %} [<a href="{{ video_uri }}" target="_blank">video</a>]{% endif %}</li>
 {% endfor %}
 </ul>
 {% endmacro %}
@@ -35,6 +35,7 @@ header {
   gap: 8px;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 header > nav {
   display: flex;
@@ -44,8 +45,8 @@ main {
   max-width: 640px;
   margin: auto;
   display: flex;
-  flex-direction: column;
   gap: 8px;
+  flex-direction: column;
 }
 main > img {
   width: 100%;
@@ -54,31 +55,42 @@ footer {
   max-width: 640px;
   margin: auto;
   display: flex;
-  flex-direction: column;
   gap: 8px;
+  flex-direction: column;
 }
 .button {
   padding: 8px;
   border: 0;
   text-decoration: none;
   text-align: center;
-}
-.button:hover {
-  cursor: pointer;
-}
-.action {
   font-size: large;
   background: #17A2F5;
   color: white;
   font-weight: bold;
   width: 100%;
 }
+.button:hover {
+  cursor: pointer;
+}
+.board {
+  list-style: none;
+  padding: 0;
+}
+.board li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.form {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.form input {
+  font-size: large;
+}
 #brand {
   height: 1.5em;
 }
-#acknowledgments > ul {
-  list-style: none;
-  padding: 0;
+#acknowledgments ul {
   display: none;
   gap: 8px;
   flex-wrap: wrap;
@@ -105,14 +117,18 @@ footer {
 
 {{ action_button(0) }}
 
-<section id="menu">
+<section>
 <h2>What We Do</h2>
 {{ summary_html | safe }}
 </section>
 
-{{ action_button(1) }}
+<div id="newsletter-subscription" class="form">
+<label for="v0">Email Address</label>
+<input id="v0" class="email_address" type="email" placeholder="you@example.com">
+<button type="button" class="button">{{ automations[0].button_text }}</button>
+</div>
 
-<section id="menu">
+<section>
 <h2>What We Offer</h2>
 {{ menu_html | safe }}
 </section>
@@ -127,7 +143,7 @@ footer {
 {{ link_list(requests) }}
 </section>
 
-{{ action_button(3) }}
+{{ action_button(2) }}
 
 <section id="accomplishments">
 <h2>Accomplishments</h2>
@@ -149,11 +165,24 @@ footer {
 <section id="contact">
 <h2>Contact</h2>
 {{ link_list(contacts) }}
+<div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 {% endblock %}
 
 {% block body_js %}
 document.querySelector('#acknowledgments h2 a').onclick = function() {
   this.parentNode.nextElementSibling.style.display = 'flex';
+};
+const l = document.getElementById('newsletter-subscription');
+l.querySelector('button').onclick = function() {
+  const d = {
+    email_address: { value: l.querySelector('.email_address').value },
+  };
+  fetch('{{ automations[0].automation_uri }}.json', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(d)});
+  l.innerHTML = 'Thank you for subscribing to our monthly newsletter!';
 };
 {% endblock %}

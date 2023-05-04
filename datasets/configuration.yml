@@ -1,23 +1,28 @@
 ---
 language_code: en-US
+
 brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
+
 title_text: "CrossCompute | Maximize Impact: Turn Your Expertise into an App"
+
 headline_text: "Maximize Impact: Turn Your Expertise into an App"
 
 assets:
   - image_uri: assets/ExpertiseScriptApp-Horizontal-20230503.svg
 
 actions:
-  - name_text: Speak with an Engineer to Discuss Your Needs
-    asset_uri:
-  - name_text: Subscribe to Our Monthly Newsletter for Updates and Requests
-    asset_uri:
-  - name_text: Schedule a Demo
-    asset_uri:
-  - name_text: Schedule a Consultation
-    asset_uri:
+  - text: Speak with an Engineer to Discuss Your Needs
+    uri: "#contact"
+  - text: Schedule a Demo
+    uri: "#contact"
+  - text: Schedule a Consultation
+    uri: "#contact"
+
+automations:
+  - button_text: Subscribe to Our Monthly Newsletter for Updates and Requests
+    automation_uri: https://crosscompute.net/a/subscribe-newsletter
 
 description_text: CrossCompute helps organizations simplify operations by making web apps to automate routine processes. We specialize in making apps that gather, process and present data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. We excel at automating the analysis of spatial rasters and vectors to support scenario planning, particularly for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our experience in building pipelines for geospatial information processing.
 
@@ -47,39 +52,38 @@ menu_markdown: |
   Our basic package includes orientation workshops and one year of managed servers for creating and deploying apps with the CrossCompute Analytics Software Development Kit for $8,400. Training and support for creating custom apps are available as add-ons.
 
 updates:
-  - name_text: Production Tracking System
-    description_markdown: Track production times for product manufacturing
-    video_uri: https://youtu.be/rKM6YPrkGTk
-    asset_uri: https://crosscompute.net/a/launch-production-tracking-system
-  - name_text: Development Server in JupyterLab
-    description_markdown: Experiment with the code behind our example widgets
-    video_uri: https://youtu.be/RGvs9spyZy8
+  - name_text: CrossCompute Analytics SDK 0.9.4 Released
+    description_text: "The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms: live PDF preview, conditional templates, file uploads. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates lets you create step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts if you set an input variable to file view."
+    video_uri:
     asset_uri: https://crosscompute.net/a/learn-examples-in-jupyterlab
-  - name_text: Airport Traffic Dashboard
-    description_markdown: See how much time it takes to get to the airport
-    asset_uri: https://crosscompute.net/a/see-airport-traffic
-  - name_text: Internet Speed Form
-    description_markdown: Record your internet speed on a map
-    asset_uri: https://crosscompute.net/a/report-internet-speed
 
 requests:
-  - name_text: Example Request
-    asset_uri: https://example.com
+  - name_text: IRS Form 5884 Work Opportunity Credit Wizard
+    description_text: Create a step by step wizard to help U.S. businesses fill IRS Form 5884 to claim the Work Opportunity Credit.
+    video_uri:
+    asset_uri:
 
 accomplishments:
-  - description_markdown: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
+  - name_text: Microgrid Site Selection Algorithms
+    description_text: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
     asset_uri: https://crosscompute.net/a/place-microgrids
-  - description_markdown: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
+  - name_text: Microgrid Pole Placement Algorithms
+    description_text: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
     asset_uri: https://youtu.be/smcgvgrERV0
-  - description_markdown: Web based decision support tool used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
+  - name_text: Electrification Planning Tools
+    description_text: Web based decision support tools used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
     asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
-  - description_markdown: Web app for tracking outages being used by 500+ utilities
+  - name_text: Outage Tracking App
+    description_text: Web app for tracking outages being used by 500+ utilities
     asset_uri: https://www.publicpower.org/reliability-tracking
-  - description_markdown: Web app for mapping electricity distribution networks
+  - name_text: Network Mapping App
+    description_text: Web app for mapping electricity distribution networks
     asset_uri: https://youtu.be/CUJ3u_I282o
-  - description_markdown: Algorithms for finding buildings in satellite images
+  - name_text: Satellite Image Recognition Algorithms
+    description_text: Algorithms for finding buildings in satellite images
     asset_uri: https://github.com/invisibleroads/find-buildings-cuda-convnet
-  - description_markdown: Report automation system used for electricity outage benchmarking
+  - name_text: Analytics Software Development Kit
+    description_text: System being used to generate reports for electric utilities
     asset_uri: https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900
 
 acknowledgments:
@@ -212,52 +216,52 @@ acknowledgments:
 
 links:
   - name_text: Forum
-    description_markdown: Tutorials and frequently asked questions
+    description_text: Tutorials and frequently asked questions
     asset_uri: https://forum.crosscompute.com
   - name_text: Documentation
-    description_markdown: Reference on how to use the CrossCompute Analytics Software Development Kit
+    description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
     asset_uri: https://docs.crosscompute.com
   - name_text: Platform v4
-    description_markdown: Widgets built using our open source framework
+    description_text: Widgets built using our open source framework
     video_uri: https://www.youtube.com/shorts/5g782ny0zqo
     asset_uri: https://crosscompute.net
   - name_text: Platform v3
-    description_markdown: Prototype featuring an electricity network editor
+    description_text: Prototype featuring an electricity network editor
     video_uri: https://youtu.be/XyXwg9Z9e_E
     asset_uri: https://crosscompute.com/authentications
   - name_text: Platform v2
-    description_markdown: Tools created by users with Jupyter Notebook
+    description_text: Tools created by users with Jupyter Notebook
     video_uri: https://youtu.be/M6GPVq3-Beg
     asset_uri: https://crosscompute.com/learn
   - name_text: Algorithm Cookbooks
-    description_markdown: Tools for electricity planning
+    description_text: Tools for electricity planning
     asset_uri: https://v2.crosscompute.com/cookbooks
   - name_text: GitHub
-    description_markdown: Our open source code repositories
+    description_text: Our open source code repositories
     asset_uri: https://github.com/crosscompute
   - name_text: YouTube
-    description_markdown: Videos of tutorials and demos
+    description_text: Videos of tutorials and demos
     asset_uri: https://www.youtube.com/crosscompute
   - name_text: Twitter
-    description_markdown: Updates and requests
+    description_text: Updates and requests
     asset_uri: https://twitter.com/crosscompute
   - name_text: LinkedIn
-    description_markdown: Updates and requests
+    description_text: Updates and requests
     asset_uri: https://www.linkedin.com/company/crosscompute
   - name_text: Facebook
-    description_markdown: Updates and requests
+    description_text: Updates and requests
     asset_uri: https://www.facebook.com/crosscompute
   - name_text: Tumblr
-    description_markdown: Blog
+    description_text: Blog
     asset_uri: https://crosscompute.tumblr.com
   - name_text: Discord
-    description_markdown: Chat
+    description_text: Chat
     asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
   - name_text: Twitch
-    description_markdown: Our livestream
+    description_text: Our livestream
     asset_uri: https://twitch.tv/crosscompute
   - name_text: EventBrite
-    description_markdown: Our events
+    description_text: Our events
     asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
 
 contacts:

@@ -6,7 +6,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from invisibleroads_macros_web.markdown import get_html_from_markdown
+from markdown2 import markdown
 from ruamel.yaml import YAML
 from watchfiles import run_process
 
@@ -53,7 +53,8 @@ def load_configuration(path):
             elif isinstance(v, list):
                 ds.extend(v)
             elif k.endswith('_markdown'):
-                d[k.replace('_markdown', '_html')] = get_html_from_markdown(v)
+                d[k.replace('_markdown', '_html')] = markdown(v, extras=[
+                    'target-blank-links'])
     return c
 
 
