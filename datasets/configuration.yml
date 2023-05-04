@@ -10,9 +10,9 @@ assets:
   - image_uri: assets/ExpertiseScriptApp-Horizontal-20230503.svg
 
 actions:
-  - name_text: Subscribe to Our Monthly Newsletter for Updates and Requests
-    asset_uri:
   - name_text: Speak with an Engineer to Discuss Your Needs
+    asset_uri:
+  - name_text: Subscribe to Our Monthly Newsletter for Updates and Requests
     asset_uri:
   - name_text: Schedule a Demo
     asset_uri:

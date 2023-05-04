@@ -49,7 +49,6 @@ main {
 }
 main > img {
   width: 100%;
-  margin-top: 16px;
 }
 footer {
   max-width: 640px;
@@ -97,26 +96,28 @@ footer {
 {% endblock %}
 
 {% block main_html %}
+<img src="{{ assets[0].image_uri  }}" loading="lazy">
+
 <section id="summary">
 <h1>{{ headline_text }}</h1>
 {{ pitch_html | safe }}
 </section>
 
-<img src="{{ assets[0].image_uri  }}" loading="lazy">
+{{ action_button(0) }}
 
 <section id="menu">
 <h2>What We Do</h2>
 {{ summary_html | safe }}
 </section>
 
-{{ action_button(0) }}
+{{ action_button(1) }}
 
 <section id="menu">
 <h2>What We Offer</h2>
 {{ menu_html | safe }}
 </section>
 
-{{ action_button(1) }}
+{{ action_button(2) }}
 
 <section id="showcase">
 <h2>Browse Our Work</h2>
@@ -126,7 +127,7 @@ footer {
 {{ link_list(requests) }}
 </section>
 
-{{ action_button(2) }}
+{{ action_button(3) }}
 
 <section id="accomplishments">
 <h2>Accomplishments</h2>
@@ -149,8 +150,6 @@ footer {
 <h2>Contact</h2>
 {{ link_list(contacts) }}
 </section>
-
-{{ action_button(3) }}
 {% endblock %}
 
 {% block body_js %}
