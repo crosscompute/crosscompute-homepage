@@ -6,4 +6,4 @@ python3 -m venv \
 source \
     ~/.virtualenvs/crosscompute-homepage/bin/activate
 
-pip install -r requirements.txt
+bash setup.sh
