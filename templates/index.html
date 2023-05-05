@@ -1,5 +1,22 @@
 {% extends 'base.html' %}
 
+{% macro action_button(index) %}
+{% set d = actions[index] %}
+<a href="{{ d['uri'] }}" class="button">{{ d.text }}</a>
+{% endmacro %}
+
+{% macro link_list(items) %}
+<ul class="board">
+{% for d in items %}
+{% set name_text = d['name_text'] %}
+{% set description_text = d['description_text'] %}
+{% set asset_uri = d['asset_uri'] %}
+{% set video_uri = d['video_uri'] %}
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_uri %} [<a href="{{ video_uri }}" target="_blank">video</a>]{% endif %}</li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
 {% block head_html %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
 <script>
@@ -8,228 +25,172 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-VP9T2V7B17');
 </script>
+<title>{{ title_text }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ description }}">
-<title>{{ title }}</title>
+<meta name="description" content="{{ description_text }}">
 <style>
 body {
-  font-family: sans-serif;
+  word-wrap: break-word;
 }
-section h2 {
+header {
   display: flex;
-  justify-content: space-between;
-}
-.carousel {
-  display: flex;
-  flex-flow: row wrap;
   gap: 8px;
-  list-style: none;
-  padding-left: 0;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
 }
-.seat {
-  padding: 16px;
-  border-radius: 8px;
+header > nav {
   display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  gap: 8px;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
-  width: 240px;
 }
-.seat img {
+main > img {
   width: 100%;
 }
-.info {
-  height: 48px;
+footer {
+  max-width: 640px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  gap: 8px;
   flex-direction: column;
 }
-.name {
+.button {
+  padding: 8px;
+  border: 0;
+  text-decoration: none;
   text-align: center;
   font-size: large;
+  background: #17A2F5;
+  color: white;
   font-weight: bold;
 }
-.description {
-  flex: 1;
+.button:hover {
+  cursor: pointer;
 }
-.panel {
-  display: flex;
-  justify-content: space-around;
-}
-#menu img {
-  max-width: 160px;
-}
-#menu ul {
+.board {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+}
+.board li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.form {
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 8px;
+  flex-direction: column;
 }
-#widgets .seat {
-  background: #fadbd8;
+.form input {
+  font-size: large;
 }
-#websites .seat {
-  background: #d6eaf8;
-}
-#posts .seat {
-  background: #e8e8e8;
-}
-#links ul, #acknowledgments ul {
-  list-style: none;
-  padding-left: 0;
-  flex-wrap: wrap;
-}
-#links ul {
-  display: flex;
-  gap: 16px;
+#brand {
+  height: 1.5em;
+  max-width: 100%;
 }
 #acknowledgments ul {
   display: none;
   gap: 8px;
-}
-@media only screen and (min-width: 768px) {
-  main {
-    max-width: calc(100vw - 160px - 16px - 16px);
-  }
-  .mobile {
-    display: none;
-  }
-  #menu {
-    max-width: 160px;
-    position: fixed;
-    right: 8px;
-    padding: 8px;
-  }
-  #menu ul {
-    display: block;
-    line-height: 2em;
-  }
+  flex-wrap: wrap;
 }
 </style>
 {% endblock %}
 
 {% block header_html %}
-<nav id="menu">
-<a href="{{ brand['asset_uri'] }}"><img class="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
-<ul>
-    <li><a href="mailto:support@crosscompute.com">Email Us</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#widgets">Widgets</a></li>
-    <li><a href="#websites">Websites</a></li>
-    <li><a href="#posts">Posts</a></li>
-    <li><a href="#links">Links</a></li>
-    <li><a href="#accomplishments">Accomplishments</a></li>
-    <li><a href="#acknowledgments">Acknowledgements</a></li>
-</ul>
+<nav>
+<a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
+<a href="#contact">Contact</a>
+</nav>
+<nav>
+<a href="#updates">Updates</a>
+<a href="#requests">Requests</a>
+<a href="https://crosscompute.net">Automations</a>
 </nav>
 {% endblock %}
 
 {% block main_html %}
-<section id="news">
-<h1>{{ title }}</h1>
-{% for new in news %}
-<p>{{ new['description'] | safe }}</p>
-{% endfor %}
+<img src="{{ assets[0].image_uri  }}" loading="lazy">
+
+<section id="summary">
+<h1>{{ headline_text }}</h1>
+{{ pitch_html | safe }}
 </section>
 
-<section id="widgets">
-<h2>Widgets</h2>
-<ul class="carousel">
-{% for widget in widgets %}
-  {% set video_uri = widget['video_uri'] %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ widget['name'] }}</div>
-    </div>
-    <img src="{{ widget['image_uri'] }}">
-    <div class="description">{{ widget['description'] | safe }}</div>
-    <div class="panel">
-    {% if video_uri %}
-      <a href="{{ video_uri }}">Watch</a>
-    {% endif %}
-      <a href="{{ widget['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
+{{ action_button(0) }}
+
+<section>
+<h2>What We Do</h2>
+{{ summary_html | safe }}
 </section>
 
-<section id="websites">
-<h2>Websites</h2>
-<ul class="carousel">
-{% for website in websites %}
-  {% set video_uri = website['video_uri'] %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ website['name'] }}</div>
-    </div>
-    <img src="{{ website['image_uri'] }}">
-    <div class="description">{{ website['description'] | safe }}</div>
-    <div class="panel" style='display:flex'>
-    {% if video_uri %}
-      <a href="{{ video_uri }}">Watch</a>
-    {% endif %}
-      <a href="{{ website['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
+<div id="newsletter-subscription" class="form">
+<label for="v0">Email Address</label>
+<input id="v0" class="email_address" type="email" placeholder="you@example.com">
+<button type="button" class="button">{{ automations[0].button_text }}</button>
+</div>
+
+<section>
+<h2>What We Offer</h2>
+{{ menu_html | safe }}
 </section>
 
-<section id="posts">
-<h2>Posts</h2>
-<ul class="carousel">
-{% for post in posts %}
-  <li class="seat">
-    <div class="info">
-      <div class="name">{{ post['name'] }}</div>
-    </div>
-    <img src="{{ post['image_uri'] }}">
-    <div class="description">{{ post['description'] | safe }}</div>
-    <div class="panel" style='display:flex'>
-      <a href="{{ post['asset_uri'] }}">Visit</a>
-    </div>
-  </li>
-{% endfor %}
-</ul>
+{{ action_button(2) }}
+
+<section id="showcase">
+<h2>Browse Our Work</h2>
+<h3 id="updates">Updates</h3>
+{{ link_list(updates) }}
+<h3 id="requests">Requests</h3>
+{{ link_list(requests) }}
+</section>
+
+{{ action_button(2) }}
+
+<section id="accomplishments">
+<h2>Accomplishments</h2>
+{{ link_list(accomplishments) }}
+</section>
+{% endblock %}
+
+{% block footer_html %}
+<section id="acknowledgments">
+<h2><a href="#acknowledgments">Acknowledgments</a></h2>
+{{ link_list(acknowledgments) }}
 </section>
 
 <section id="links">
 <h2>Links</h2>
-<ul>
-{% for link in links %}
-<li><a href="{{ link['asset_uri'] }}">{{ link['name'] }}</a></li>
-{% endfor %}
-</ul>
+{{ link_list(links) }}
 </section>
 
-<section id="accomplishments">
-<h2>Accomplishments</h2>
-<ul>
-{% for accomplishment in accomplishments %}
-  <li><a href="{{ accomplishment['asset_uri'] }}">{{ accomplishment['description'] | safe }}</a></li>
-{% endfor %}
-</ul>
-</section>
-
-<section id="acknowledgments">
-<h2><a href="#acknowledgments">Acknowledgments</a></h2>
-<ul>
-{% for acknowledgment in acknowledgments %}
-<li><a href="{{ acknowledgment['asset_uri'] }}">{{ acknowledgment['name'] }}</a></li>
-{% endfor %}
-</ul>
+<section id="contact">
+<h2>Contact</h2>
+{{ link_list(contacts) }}
+<div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:640px"></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 {% endblock %}
 
 {% block body_js %}
-for (const x of document.querySelectorAll('section h2')) {
-  x.innerHTML += '<a href="#" class="mobile">Top</a>';
-}
 document.querySelector('#acknowledgments h2 a').onclick = function() {
   this.parentNode.nextElementSibling.style.display = 'flex';
+};
+const l = document.getElementById('newsletter-subscription');
+l.querySelector('button').onclick = function() {
+  const d = {
+    email_address: { value: l.querySelector('.email_address').value },
+  };
+  fetch('{{ automations[0].automation_uri }}.json', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(d)});
+  l.innerHTML = 'Thank you for subscribing to our monthly newsletter!';
 };
 {% endblock %}
