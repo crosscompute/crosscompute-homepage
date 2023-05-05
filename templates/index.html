@@ -30,6 +30,9 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ description_text }}">
 <style>
+body {
+  word-wrap: break-word;
+}
 header {
   display: flex;
   gap: 8px;
@@ -40,6 +43,8 @@ header {
 header > nav {
   display: flex;
   gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 main {
   max-width: 640px;
@@ -67,7 +72,6 @@ footer {
   background: #17A2F5;
   color: white;
   font-weight: bold;
-  width: 100%;
 }
 .button:hover {
   cursor: pointer;
@@ -89,6 +93,7 @@ footer {
 }
 #brand {
   height: 1.5em;
+  max-width: 100%;
 }
 #acknowledgments ul {
   display: none;
@@ -99,7 +104,10 @@ footer {
 {% endblock %}
 
 {% block header_html %}
+<nav>
 <a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
+<a href="#contact">Contact</a>
+</nav>
 <nav>
 <a href="#updates">Updates</a>
 <a href="#requests">Requests</a>
@@ -165,8 +173,8 @@ footer {
 <section id="contact">
 <h2>Contact</h2>
 {{ link_list(contacts) }}
-<div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:630px"></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </section>
 {% endblock %}
 
