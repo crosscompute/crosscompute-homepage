@@ -24,7 +24,7 @@ automations:
   - button_text: Subscribe to Our Monthly Newsletter
     automation_uri: https://crosscompute.net/a/subscribe-newsletter
 
-description_text: CrossCompute helps organizations simplify operations by making web apps to automate routine processes. We specialize in making apps that gather, process and present data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. We excel at automating the analysis of spatial rasters and vectors to support scenario planning, particularly for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our experience in building pipelines for geospatial information processing.
+description_text: CrossCompute helps organizations simplify operations by making web apps to automate routine processes ASAP. We specialize in making apps that gather, process and present data. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web apps. We excel at automating the analysis of spatial rasters and vectors to support scenario planning, particularly for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our experience in building pipelines for geospatial information processing.
 
 pitch_markdown: |
   Don't let your expertise go to waste. Make your expertise useful to more people by turning it into an app.
@@ -35,7 +35,7 @@ summary_markdown: |
   We excel at automating the analysis of spatial rasters and vectors to support scenario planning, particularly for hazard mitigation, infrastructure design and disaster preparation. By partnering with us, you can leverage our experience in building pipelines for geospatial information processing.
 
 menu_markdown: |
-  Our products and services are for organizations that collect data, run analyses and publish reports on a regular basis. By automating reports into apps, your team members can focus on developing new analyses.
+  Our products and services are for organizations that collect data, run analyses and publish reports regularly. By automating reports into apps, your team members can focus on developing new analyses.
 
   ### Products
 
