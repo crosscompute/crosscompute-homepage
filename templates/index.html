@@ -5,6 +5,11 @@
 <a href="{{ d['uri'] }}" class="button">{{ d.text }}</a>
 {% endmacro %}
 
+{% macro video_frame(index) %}
+{% set d = videos[index] %}
+<iframe class="video" width="560" height="315" src="{{ d.uri }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% endmacro %}
+
 {% macro link_list(items) %}
 <ul class="board">
 {% for d in items %}
@@ -90,6 +95,9 @@ footer {
 .form input {
   font-size: large;
 }
+.video {
+  margin: auto;
+}
 #brand {
   height: 1.5em;
   max-width: 100%;
@@ -117,6 +125,8 @@ footer {
 
 {% block main_html %}
 <img src="{{ assets[0].image_uri  }}" loading="lazy">
+
+{{ video_frame(0) }}
 
 <section id="summary">
 <h1>{{ headline_text }}</h1>

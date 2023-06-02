@@ -13,12 +13,15 @@ assets:
   - image_uri: assets/ExpertiseScriptApp-Horizontal-20230503.svg
 
 actions:
-  - text: Speak with an Engineer
+  - text: Talk with an Engineer
     uri: "#contact"
   - text: Schedule a Demo
     uri: "#contact"
-  - text: Schedule a Consultation
+  - text: Get a Consultation
     uri: "#contact"
+
+videos:
+  - uri: https://www.youtube.com/embed/B7of7dQVJwM
 
 automations:
   - button_text: Subscribe to Our Monthly Newsletter
