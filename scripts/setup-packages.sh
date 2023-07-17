@@ -6,4 +6,13 @@ python3 -m venv \
 source \
     ~/.virtualenvs/crosscompute-homepage/bin/activate
 
-bash setup.sh
+pip install -U \
+    beautifulsoup4 \
+    fastapi \
+    invisibleroads-macros-process \
+    jinja2 \
+    markdown2 \
+    requests \
+    ruamel.yaml \
+    uvicorn \
+    watchfiles
