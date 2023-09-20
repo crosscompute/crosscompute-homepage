@@ -11,6 +11,22 @@ ssh-keygen -t ed25519 -C "crosscompute-homepage-$(date +%Y%m%d-%H%M%S)"
 
 [Add the SSH key as a deploy key to this repository](https://github.com/crosscompute/crosscompute-homepage/settings/keys).
 
+Set up the deploy key ssh configuration.
+
+```bash
+vim ~/.ssh/config
+    Host gh-homepage
+    Hostname github.com
+    IdentityFile ~/.ssh/crosscompute-homepage
+    IdentitiesOnly yes
+```
+
+Clone the repository using the deploy key.
+
+```bash
+git clone git@gh-homepage:crosscompute/crosscompute-homepage
+```
+
 Set up packages and services.
 
 ```bash
@@ -24,7 +40,7 @@ Test the deploy key.
 ```bash
 sudo -s
 bash scripts/build.sh
-systemctl start crosscompute-homepage
+systemctl restart crosscompute-homepage
 ```
 
 ## Development
