@@ -14,13 +14,12 @@ from watchfiles import run_process
 PORT = 8000
 BASE_FOLDER = Path(__file__).parents[1]
 ASSETS_FOLDER = BASE_FOLDER / 'assets'
-TEMPLATES_FOLDER = BASE_FOLDER / 'templates'
 
 
 app = FastAPI()
 app.mount('/assets', StaticFiles(directory=ASSETS_FOLDER), name='assets')
 templates = Jinja2Templates(
-    directory=TEMPLATES_FOLDER, trim_blocks=True, auto_reload=True)
+    directory=ASSETS_FOLDER, trim_blocks=True, auto_reload=True)
 configuration = {}
 
 
