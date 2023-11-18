@@ -35,21 +35,21 @@ updates:
     video_uri: https://youtu.be/B7of7dQVJwM
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
 
-sessions_markdown: |
-  To schedule a teamwork session, use the calendar below.
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:700px"></div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
 links:
   - name_text: Forum
-    description_text: Tutorials and frequently asked questions
+    description_text: Tutorials and questions
     asset_uri: https://forum.crosscompute.com
-  - name_text: GitHub
-    description_text: Our open source code repositories
-    asset_uri: https://github.com/crosscompute
   - name_text: YouTube
-    description_text: Videos of tutorials and demos
+    description_text: Tutorials and demos
     asset_uri: https://www.youtube.com/crosscompute
+  - name_text: GitHub
+    description_text: Our code repositories
+    asset_uri: https://github.com/crosscompute
   - name_text: Documentation
     description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
     asset_uri: https://docs.crosscompute.com
+
+sessions_markdown: |
+  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:700px"></div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  To schedule a teamwork session, use the calendar above.
