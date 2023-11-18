@@ -5,290 +5,51 @@ brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-title_text: CrossCompute | Host Your Own Automations
+title_text: CrossCompute | Host Runnable Scripts
 
-headline_text: Host Your Own Automations
+headline_text: Host Runnable Scripts
 
-assets:
-  - image_uri: assets/ScriptAutomation-Horizontal-20230628.svg
+description_text: CrossCompute is a library of scripts that you can run online. We help people host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
 
-automations:
-  - button_text: Subscribe to Our Newsletter
-    automation_uri: https://crosscompute.net/a/subscribe-newsletter
-
-description_text: CrossCompute is an online library of automations that you can run. We help organizations host their own automations. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into automations.
+demo_slug: B7of7dQVJwM
 
 pitch_markdown: |
   Let people run your scripts online.
 
-  - Increase your impact.
-  - Earn subscription revenue.
+  CrossCompute is a [library of scripts](https://crosscompute.net) that you can run online. We help people host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
 
-  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/B7of7dQVJwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+services_markdown: |
+  ### Option 1: Host your scripts on [crosscompute.net](https://crosscompute.net)
+  
+  - Host your scripts for free
+  - Earn subscription revenue from your scripts
 
-  CrossCompute is an [online library of automations](https://crosscompute.net) that you can run. We help organizations host their own automations. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into automations.
+  ### Option 2: Host your scripts on your own domain
 
-  - [Boost Data-Driven Decisions Across Your Organization](/p/boost-data-driven-decisions)
-  - [Enhance Scenario Planning](/p/scenario-planning-crosscompute)
-  - [Make Your Data Scripts Interactive](/p/interactive-data-scripts)
-  - [Streamline Engineering Talent Vetting](/p/engineering-talent-vetting-crosscompute)
-  - [Amplify Your Impact in City Planning](/p/city-planning-impact-amplification)
-  - [Extend Your Research's Reach Beyond Publications](/p/extend-research-reach)
-  - [Maximize Your Consulting Expertise](/p/consulting-expertise-lasting-value)
-  - [Monetize Your Tools Without Building a Platform](/p/monetize-tools-without-building-platform)
-  - [Simplify SaaS Subscription Management for Startups](/p/simplified-saas-subscription-management)
-
-menu_markdown: |
-  ### Hosting
-
-  #### Option 1: Host your automations on [crosscompute.net](https://crosscompute.net)
-
-  - No upfront cost
-  - 20% revenue share
-
-  Our [CrossCompute Analytics Software Development Kit](https://pypi.org/project/crosscompute-analytics) helps researchers build automations for data collection and analysis. It drastically reduces the effort needed to launch a software as a service (SaaS) directly from your command-line scripts and Jupyter notebooks. [See how one organization is using CrossCompute to automate reports for 500+ electric utilities](https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900).
-
-  #### Option 2: Host your automations on your own domain
-
-  - Managed servers
-  - Fixed cost
-
-  Our $8,400 package includes one month of orientation workshops and one year of managed servers for developing and deploying automtions with the CrossCompute Analytics Automation System. Training and support for creating custom automations are available as add-ons.
-
-  ### Training
-
-  #### For Schools
-
-  We work with each student over three months to think of a concept, write a script and present a demo that uses open data to solve a problem. Students practice analysis, coding and presentation skills.  The training culminates in a student showcase.
-
-  #### For Organizations
-
-  We can train your team to automate various tasks within your organization.
+  - Host your scripts on separate servers that we manage for you on your own domain
+  - Pay a fixed price of $8,400 for one year of managed servers to develop and distribute apps using the CrossCompute Analytics Automation System within your organization
 
 updates:
-  - name_text: Prototype a Custom Sensor Network
-    description_text: We are looking for an engineer with an interest in electronics, specifically low power wireless.
-    video_uri:
-    asset_uri:
-  - name_text: Present DMARC Reporting Solutions
-    description_text: Demonstrate 3-5 different DMARC reporting solutions, especially open source systems.
-    video_uri:
-    asset_uri:
-  - name_text: Create IRS Form 5884 Work Opportunity Credit Wizard
-    description_text: Create a step by step wizard to help U.S. businesses fill IRS Form 5884 to claim the Work Opportunity Credit.
-    video_uri:
-    asset_uri:
-  - name_text: Suggest a Conference
-    description_text: Are you organizing a conference about open data? Let us know by filling the form!
-    video_uri:
-    asset_uri: https://crosscompute.net/a/suggest-conference
   - name_text: Try CrossCompute Analytics SDK 0.9.4
-    description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates lets you create step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts if you set an input variable to file view.
+    description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates lets you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts if you set an input variable to file view.
     video_uri: https://youtu.be/B7of7dQVJwM
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
 
-achievements:
-  - name_text: Microgrid Site Selection Algorithms
-    description_text: Algorithms for microgrid site selection used to raise $5m for microgrid developer in Africa
-    asset_uri: https://crosscompute.net/a/place-microgrids
-  - name_text: Microgrid Pole Placement Algorithms
-    description_text: Algorithms for placing electricity poles and lines used to plan $240m for microgrid developer in Southeast Asia
-    asset_uri: https://youtu.be/smcgvgrERV0
-  - name_text: Electrification Planning Tools
-    description_text: Web based decision support tools used to draft electrification plans for 12+ countries in Africa, Southeast Asia and Central America
-    asset_uri: https://crosscompute.com/r/J7qzpkPoiwO3wcsihD6jx6HsAFBKIhTm
-  - name_text: Outage Tracking App
-    description_text: Web app for tracking outages being used by 500+ utilities
-    asset_uri: https://www.publicpower.org/reliability-tracking
-  - name_text: Network Mapping App
-    description_text: Web app for mapping electricity distribution networks
-    asset_uri: https://youtu.be/CUJ3u_I282o
-  - name_text: Satellite Image Recognition Algorithms
-    description_text: Algorithms for finding buildings in satellite images
-    asset_uri: https://github.com/invisibleroads/find-buildings-cuda-convnet
-  - name_text: Analytics Software Development Kit
-    description_text: System being used to generate reports for electric utilities
-    asset_uri: https://www.python.org/success-stories/python-powered-crosscompute-report-automation-for-ereliability-tracker-leads-to-cost-and-time-savings-for-the-american-public-power-association-updated-20210526-0900
-
-acknowledgments:
-  - name_text: Roy Hyunjin Han
-    asset_uri: https://www.linkedin.com/in/invisibleroads
-  - name_text: Cathaleen Kaiyoorawongs
-    asset_uri: https://www.linkedin.com/in/catalina-kaiyoorawongs
-  - name_text: Olga Ryabtseva
-    asset_uri: https://www.linkedin.com/in/olga-creutzburg-52a689b2
-  - name_text: Salah Ahmed
-    asset_uri: https://www.linkedin.com/in/salahspage
-  - name_text: Rodrigo Guarachi
-    asset_uri: https://www.linkedin.com/in/rmguarachi
-  - name_text: Marta Moreno Catalan
-    asset_uri: https://www.linkedin.com/in/marta-moreno-07364b82
-  - name_text: Kashfi Fahim
-    asset_uri: https://www.linkedin.com/in/kashfifahim
-  - name_text: Miguel Ángel Gordián
-    asset_uri: https://github.com/zoek1
-  - name_text: Polina Chernomaz
-    asset_uri: https://www.linkedin.com/in/polinac
-  - name_text: Samuel Edandison
-    asset_uri: https://www.linkedin.com/in/edandison
-  - name_text: Ning Wei
-    asset_uri: https://www.linkedin.com/in/ning-wei-8152393b
-  - name_text: Eugen Fomenko
-    asset_uri: https://www.linkedin.com/in/eugen-fomenko-57b204168
-  - name_text: Noé Domínguez Porras
-    asset_uri: https://www.linkedin.com/in/noedominguez
-  - name_text: Mary Rodriguez Gort
-    asset_uri: https://theorg.com/org/tampa-bay-innovation-center/org-chart/mary-rodriguez-gort
-  - name_text: Ken Evans
-    asset_uri: https://www.linkedin.com/in/evansken
-  - name_text: Alex Hofmann
-    asset_uri: https://www.linkedin.com/in/alex-hofmann-4a006519
-  - name_text: Ji Yoon Lee
-    asset_uri: https://www.linkedin.com/in/ji-yoon-lee-516750136
-  - name_text: Tyler Doyle
-    asset_uri: https://www.linkedin.com/in/tyler-doyle-987642111
-  - name_text: Ethan Epstein
-    asset_uri: https://www.linkedin.com/in/ethan-epstein-80772093
-  - name_text: Jennifer Ruda
-    asset_uri: https://www.linkedin.com/in/jruda
-  - name_text: Shaky Sherpa
-    asset_uri: https://www.linkedin.com/in/shakythesherpa
-  - name_text: Trevor David Rhone
-    asset_uri: https://www.linkedin.com/in/trevor-david-rhone-965ba9b
-  - name_text: Matt Henning
-    asset_uri: https://www.linkedin.com/in/matthew-henning-26406412b
-  - name_text: Elizabeth Ritter
-    asset_uri: https://www.linkedin.com/in/elizabeth-b-ritter
-  - name_text: Chenxin Han
-    asset_uri: https://www.linkedin.com/in/chenxin-han
-  - name_text: Soo Ji Choi
-    asset_uri: https://www.linkedin.com/in/susie-choi-0504
-  - name_text: Yao Kou
-    asset_uri: https://www.linkedin.com/in/yaokou
-  - name_text: Ying Zhou
-    asset_uri: https://www.linkedin.com/in/yingznyc
-  - name_text: Margarita Zias
-    asset_uri: https://www.linkedin.com/in/margarita-zias
-  - name_text: Elaine Chan
-    asset_uri: https://www.linkedin.com/in/chanelaine
-  - name_text: Aida Shoydokova
-    asset_uri: https://www.linkedin.com/in/ashoydok
-  - name_text: Lauren Talbot
-    asset_uri: https://www.linkedin.com/in/laurentalbotnyc
-  - name_text: Benjamin Dean
-    asset_uri: https://www.linkedin.com/in/benwdean
-  - name_text: Catherine Kwan
-    asset_uri: https://www.linkedin.com/in/catherine-kwan-27aba827
-  - name_text: Nicholas O'Brien
-    asset_uri: https://www.linkedin.com/in/njobrien
-  - name_text: Michael Flowers
-    asset_uri: https://www.linkedin.com/in/michael-flowers-8b61601b
-  - name_text: Ewa Jodlowska
-    asset_uri: https://www.linkedin.com/in/ewa-jodlowska-39810611
-  - name_text: Betsy Waliszewski
-    asset_uri: https://www.linkedin.com/in/betsywaliszewski
-  - name_text: Selin Kocaman
-    asset_uri: https://www.linkedin.com/in/ayse-selin-kocaman-473023a
-  - name_text: Matt Basinger
-    asset_uri: https://www.linkedin.com/in/matt-basinger-a7b14b35
-  - name_text: Dorcas Murai
-    asset_uri: https://www.linkedin.com/in/dorcas-murai-119813114
-  - name_text: Christopher Horner
-    asset_uri: https://www.linkedin.com/in/christopher-hornor-480a913
-  - name_text: Liliana Durán
-    asset_uri: https://www.linkedin.com/in/lumiservicioslilianaduran
-  - name_text: Ariana Gradow
-    asset_uri: https://www.linkedin.com/in/arianagradow
-  - name_text: Rajesh Menon
-    asset_uri: https://www.linkedin.com/in/rmeno
-  - name_text: Jessica Leon
-    asset_uri: https://www.linkedin.com/in/jesleon
-  - name_text: Diego Saenz
-    asset_uri: https://www.linkedin.com/in/diegosaenz2010
-  - name_text: Paul Everitt
-    asset_uri: https://www.linkedin.com/in/paeveritt
-  - name_text: Jake Maslow
-    asset_uri: https://www.linkedin.com/in/jake-maslow-4580106
-  - name_text: Susan Kum
-    asset_uri: https://www.linkedin.com/in/susan-s-kum
-  - name_text: Chris Natali
-    asset_uri: https://www.linkedin.com/in/chris-natali-6841472b
-  - name_text: Edwin Adkins
-    asset_uri: https://www.linkedin.com/in/edwin-adkins
-  - name_text: Aly Sanoh
-    asset_uri: https://www.linkedin.com/in/sanohaly
-  - name_text: Vijay Modi
-    asset_uri: https://www.linkedin.com/in/vijay-modi-39241229
-  - name_text: Tampa Bay Innovation Center
-    asset_uri: https://tbinnovates.com
-  - name_text: Python Software Foundation
-    asset_uri: https://python.org/psf
-  - name_text: DevLabs México
-    asset_uri: https://www.devlabs.com.mx
-  - name_text: American Public Power Association
-    asset_uri: https://publicpower.org
-  - name_text: U.S. Department of Energy
-    asset_uri: https://www.energy.gov
-  - name_text: Quadracci Sustainable Engineering Lab at Columbia University
-    asset_uri: https://qsel.columbia.edu
-  - name_text: Tech Incubator at Queens College
-    asset_uri: https://techincubatorqc.com
-  - name_text: World Bank
-    asset_uri: https://www.worldbank.org
-  - name_text: NYC Mayor's Office of Data Analytics
-    asset_uri: https://nyc.gov/analytics
+sessions_markdown: |
+  To schedule a teamwork session, use the calendar below.
+  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:700px"></div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 links:
   - name_text: Forum
     description_text: Tutorials and frequently asked questions
     asset_uri: https://forum.crosscompute.com
-  - name_text: Documentation
-    description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
-    asset_uri: https://docs.crosscompute.com
-  - name_text: Platform v4
-    description_text: Widgets built using our open source framework
-    video_uri: https://www.youtube.com/shorts/5g782ny0zqo
-    asset_uri: https://crosscompute.net
-  - name_text: Platform v3
-    description_text: Prototype featuring an electricity network editor
-    video_uri: https://youtu.be/XyXwg9Z9e_E
-    asset_uri: https://crosscompute.com/authentications
-  - name_text: Platform v2
-    description_text: Tools created by users with Jupyter Notebook
-    video_uri: https://youtu.be/M6GPVq3-Beg
-    asset_uri: https://crosscompute.com/learn
-  - name_text: Algorithm Cookbooks
-    description_text: Tools for electricity planning
-    asset_uri: https://v2.crosscompute.com/cookbooks
   - name_text: GitHub
     description_text: Our open source code repositories
     asset_uri: https://github.com/crosscompute
   - name_text: YouTube
     description_text: Videos of tutorials and demos
     asset_uri: https://www.youtube.com/crosscompute
-  - name_text: Twitter
-    description_text: Updates and requests
-    asset_uri: https://twitter.com/crosscompute
-  - name_text: LinkedIn
-    description_text: Updates and requests
-    asset_uri: https://www.linkedin.com/company/crosscompute
-  - name_text: Facebook
-    description_text: Updates and requests
-    asset_uri: https://www.facebook.com/crosscompute
-  - name_text: Tumblr
-    description_text: Blog
-    asset_uri: https://crosscompute.tumblr.com
-  - name_text: Discord
-    description_text: Chat
-    asset_uri: https://discord.com/channels/905104835639140393/905104836104691843
-  - name_text: Twitch
-    description_text: Our livestream
-    asset_uri: https://twitch.tv/crosscompute
-  - name_text: EventBrite
-    description_text: Our events
-    asset_uri: https://www.eventbrite.com/o/crosscompute-15688825369
-
-contacts_markdown: |
-  To schedule a training session, use the calendar below. For other questions, call [+1-727-353-8345](tel:+1-727-353-8345) or message [contact@crosscompute.com](mailto:contact@crosscompute.com).
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:660px"></div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  - name_text: Documentation
+    description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
+    asset_uri: https://docs.crosscompute.com

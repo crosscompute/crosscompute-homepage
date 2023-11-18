@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
-{% macro action_button(index) %}
-{% set d = actions[index] %}
-<a href="{{ d['uri'] }}" class="button">{{ d.text }}</a>
+{% macro video_frame(slug) %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% endmacro %}
 
 {% macro link_list(items) %}
@@ -31,7 +30,9 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="description" content="{{ description_text }}">
 <style>
 body {
+  max-width: 768px;
   word-wrap: break-word;
+  margin: auto;
 }
 header {
   display: flex;
@@ -51,19 +52,10 @@ h1 {
 img {
   max-width: 100%;
 }
-.button {
-  padding: 8px;
-  border: 0;
-  text-decoration: none;
-  text-align: center;
-  font-size: large;
-  font-family: serif;
-  background: #17A2F5;
-  color: white;
-  font-weight: bold;
-}
-.button:hover {
-  cursor: pointer;
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .board {
   list-style: none;
@@ -72,31 +64,10 @@ img {
 .board li:not(:last-child) {
   margin-bottom: 1em;
 }
-.form {
-  max-width: 640px;
-  margin: auto;
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-}
-.form input {
-  font-size: large;
-}
-.video {
-  max-width: 100%;
-}
 #brand {
   height: 1.5em;
   max-width: 100%;
   transform: translate(0, -2px);
-}
-.folder > h2 {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.folder > div, .folder > ul {
-  display: none;
 }
 </style>
 {% endblock %}
@@ -106,75 +77,24 @@ img {
 <a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
 </nav>
 <nav>
-<a href="https://crosscompute.net">Automations</a>
+<a href="https://crosscompute.net">Scripts</a>
 </nav>
 {% endblock %}
 
 {% block main_html %}
 <h1>{{ headline_text }}</h1>
-<div>{{ pitch_html | safe }}</div>
 
-<section class="folder">
-<h2>Services</h2>
-<div>{{ menu_html | safe }}</div>
-</section>
+{{ pitch_html | safe }}
 
-<section class="folder">
-<h2>Updates</h2>
+{{ video_frame(demo_slug) }}
+
+{{ services_html | safe }}
+
 {{ link_list(updates) }}
-</section>
 
-<section class="folder">
-<h2>Contacts</h2>
-<div>{{ contacts_html | safe }}</div>
-</section>
-
-<section class="folder">
-<h2>Newsletters</h2>
-<div>
-<div id="newsletter-form" class="form">
-<input id="v0" class="email_address" type="email" placeholder="you@example.com">
-<button type="button" class="button">{{ automations[0].button_text }}</button>
-</div>
-</div>
-</section>
+{{ sessions_html | safe }}
 {% endblock %}
 
 {% block footer_html %}
-<section class="folder">
-<h2>Links</h2>
 {{ link_list(links) }}
-</section>
-
-<section class="folder">
-<h2>Achievements</h2>
-{{ link_list(achievements) }}
-</section>
-
-<section class="folder">
-<h2>Acknowledgments</h2>
-{{ link_list(acknowledgments) }}
-</section>
-
-<img src="{{ assets[0].image_uri  }}" loading="lazy">
-{% endblock %}
-
-{% block body_js %}
-document.querySelectorAll('.folder h2').forEach(l => {
-  l.onclick = function() {
-    const style = l.nextElementSibling.style;
-    style.display = style.display == 'block' ? '' : 'block';
-  }
-});
-const l = document.querySelector('#newsletter-form')
-l.querySelector('button').onclick = function() {
-  const d = {
-    email_address: { value: l.querySelector('.email_address').value },
-  };
-  fetch('{{ automations[0].automation_uri }}.json', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(d)});
-  l.innerHTML = 'Thank you for subscribing to our newsletter!';
-};
 {% endblock %}
