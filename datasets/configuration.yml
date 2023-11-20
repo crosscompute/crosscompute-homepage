@@ -50,6 +50,6 @@ links:
     asset_uri: https://docs.crosscompute.com
 
 sessions_markdown: |
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1" style="height:700px"></div>
+  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   To schedule a teamwork session, use the calendar above.
