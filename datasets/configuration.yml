@@ -9,14 +9,14 @@ title_text: CrossCompute | Host Runnable Scripts
 
 headline_text: Host Runnable Scripts
 
-description_text: CrossCompute is a library of scripts that you can run online. We help people host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
+description_text: CrossCompute is a library of scripts that you can run online. We help teams host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
 
 demo_slug: B7of7dQVJwM
 
 pitch_markdown: |
   Let people run your scripts online.
 
-  CrossCompute is a [library of scripts](https://crosscompute.net) that you can run online. We help people host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
+  CrossCompute is a [library of scripts](https://crosscompute.net) that you can run online. We help teams host their own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into apps.
 
 services_markdown: |
   ### Option 1: Host your scripts on [crosscompute.net](https://crosscompute.net)
@@ -27,7 +27,7 @@ services_markdown: |
   ### Option 2: Host your scripts on your own domain
 
   - Host your scripts on separate servers that we manage for you on your own domain
-  - Pay a fixed price of $8,400 for one year of managed servers to develop and distribute apps using the CrossCompute Analytics Automation System within your organization
+  - Pay a fixed price of $8,400 for one year of managed servers to develop and distribute apps within your organization using the CrossCompute Analytics Automation System
 
 updates:
   - name_text: Try CrossCompute Analytics SDK 0.9.4
