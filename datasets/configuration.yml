@@ -9,14 +9,14 @@ title_text: CrossCompute | Host Runnable Scripts
 
 headline_text: Host Runnable Scripts
 
-description_text: Let people run your scripts online. CrossCompute is a library of scripts that you can run online. We help you host your own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into tools. Host your scripts on separate servers that we manage for you on your own domain. Develop and distribute tools within your organization using the CrossCompute Analytics Automation System.
+description_text: Let people run your scripts online. CrossCompute is a library of scripts that you can run online. We help you host your own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Host your scripts on separate servers that we manage for you on your own domain. Distribute scripts as web-based tools within your organization using the CrossCompute Analytics Automation System.
 
 demo_slug: B7of7dQVJwM
 
 pitch_markdown: |
   Let people run your scripts online.
 
-  CrossCompute is a [library of scripts](https://crosscompute.net) that you can run online. We help you host your own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into tools.
+  CrossCompute is a [library of scripts](https://crosscompute.net) that you can run online. We help you host your own scripts. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools.
 
 services_markdown: |
   ### Option 1: Host your scripts on [crosscompute.net](https://crosscompute.net)
@@ -26,7 +26,7 @@ services_markdown: |
 
   ### Option 2: Host your scripts on your own domain
 
-  - Develop and distribute tools within your organization using the CrossCompute Analytics Automation System
+  - Distribute scripts as web-based tools within your organization using the CrossCompute Analytics Automation System
   - Host your scripts on separate servers that we manage for you on your own domain for $8,400 per year
 
 updates:
@@ -34,6 +34,11 @@ updates:
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     video_uri: https://youtu.be/B7of7dQVJwM
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
+
+sessions_markdown: |
+  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  To schedule a teamwork session, use the calendar above.
 
 links:
   - name_text: Forum
@@ -48,8 +53,3 @@ links:
   - name_text: Documentation
     description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
     asset_uri: https://docs.crosscompute.com
-
-sessions_markdown: |
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  To schedule a teamwork session, use the calendar above.
