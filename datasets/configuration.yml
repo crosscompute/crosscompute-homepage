@@ -5,18 +5,18 @@ brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-title_text: CrossCompute | Host Runnable Tools
+title_text: CrossCompute | Runnable Tools
 
-headline_text: Host Runnable Tools
+headline_text: Runnable Tools
 
-description_text: Let people run your tools online. CrossCompute is a library of tools that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Host your tools on separate servers that we manage for you on your own domain. Distribute scripts as web-based tools within your organization using the CrossCompute Analytics Automation System.
+description_text: Let people run your tools online. CrossCompute is a library of tools that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Host your tools on separate servers that we manage for you on your own domain. Distribute scripts as web-based tools using the CrossCompute Analytics Automation System. Our mission is to inspire people to make tools that improve health, safety, quality of life.
 
 demo_slug: B7of7dQVJwM
 
 pitch_markdown: |
   Let people run your tools online.
 
-  CrossCompute is a [library of tools](https://crosscompute.net) that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools.
+  CrossCompute is a [library of tools](https://crosscompute.net) that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Our mission is to inspire people to make tools that improve health, safety, quality of life.
 
 services_markdown: |
   ### Option 1: Host your tools on [crosscompute.net](https://crosscompute.net)
@@ -26,7 +26,7 @@ services_markdown: |
 
   ### Option 2: Host your tools on your own domain
 
-  - Distribute scripts as web-based tools within your organization using the CrossCompute Analytics Automation System
+  - Distribute scripts as web-based tools using the CrossCompute Analytics Automation System
   - Host your tools on separate servers that we manage on your own domain for $8,400 per year
 
 updates:
