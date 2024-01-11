@@ -30,7 +30,7 @@ action_markdown: |
 
   <iframe src="https://crosscompute.net/a/subscribe-newsletter?_embed"></iframe>
 
-  Enter your email to subscribe to our newsletter above or schedule a consultation using the calendar below.
+  Enter your email to subscribe to our newsletter or schedule a consultation using the calendar.
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
