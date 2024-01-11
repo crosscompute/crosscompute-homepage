@@ -7,38 +7,39 @@ brand:
 
 title_text: CrossCompute | Runnable Tools
 
-headline_text: Runnable Tools
+description_text: Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute works with your team to convert institutional knowledge into processes and tools that can be shared and scaled across departments. Even when key personnel disappear, CrossCompute ensures that tools and the knowledge embedded in them remain accessible and up-to-date, so that your operations can continue. Rank your company's reports. Take inventory of the scripts and datasets used to draft the reports. Turn the scripts into tools that non-technical people can run. Share the tools to boost data-driven decisions across your organization.
 
-description_text: Let people run your tools online. CrossCompute is a library of tools that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Host your tools on separate servers that we manage for you on your own domain. Distribute scripts as web-based tools using the CrossCompute Analytics Automation System. Our mission is to inspire people to make tools that improve health, safety, quality of life.
+headline_text: Protect Expertise Before Experts Leave Your Team
 
-demo_slug: B7of7dQVJwM
+pitch_text: What Would Happen to Your Company If Your Best Analysts Were Hit By a Truck?
 
 pitch_markdown: |
-  Let people run your tools online.
 
-  CrossCompute is a [library of tools](https://crosscompute.net) that you can run online. We help you host your own tools. We created the CrossCompute Analytics Software Development Kit, an open source package that turns scripts into web-based tools. Our mission is to inspire people to make tools that improve health, safety, quality of life.
+  CrossCompute works with your team to convert institutional knowledge into processes and tools that can be shared and scaled across departments.
 
-services_markdown: |
-  ### Option 1: Host your tools on [crosscompute.net](https://crosscompute.net)
+  Even when key personnel disappear, CrossCompute ensures that tools and the knowledge embedded in them remain accessible and up-to-date, so that your operations can continue.
 
-  - Host your scripts as web-based tools online
-  - Earn subscription revenue from your tools
+  - Step 1: Rank your company's reports
+  - Step 2: Take inventory of the scripts and datasets used to draft the reports
+  - Step 3: Turn the scripts into tools that non-technical people can run
+  - Step 4: Share the tools to boost data-driven decisions across your organization
 
-  ### Option 2: Host your tools on your own domain
+action_text: Are You Ready to Future Proof Your Analytics?
 
-  - Distribute scripts as web-based tools using the CrossCompute Analytics Automation System
-  - Host your tools on separate servers that we manage on your own domain for $8,400 per year
+action_markdown: |
+
+  <iframe src="https://crosscompute.net/a/subscribe-newsletter?_embed"></iframe>
+
+  Enter your email to subscribe to our newsletter above or schedule a consultation using the calendar below.
+
+  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 updates:
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     video_uri: https://youtu.be/B7of7dQVJwM
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
-
-sessions_markdown: |
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  To schedule a teamwork session, use the calendar above.
 
 links:
   - name_text: Forum
@@ -50,6 +51,3 @@ links:
   - name_text: GitHub
     description_text: Our code repositories
     asset_uri: https://github.com/crosscompute
-  - name_text: Documentation
-    description_text: Reference on how to use the CrossCompute Analytics Software Development Kit
-    asset_uri: https://docs.crosscompute.com

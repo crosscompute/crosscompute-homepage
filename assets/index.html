@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
 
-{% macro video_frame(slug) %}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-{% endmacro %}
-
 {% macro link_list(items) %}
 <ul class="board">
 {% for d in items %}
@@ -52,6 +48,7 @@ img {
   max-width: 100%;
 }
 iframe {
+  border: 0;
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -84,22 +81,22 @@ iframe {
 <a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy"></a>
 </nav>
 <nav>
-<a href="https://crosscompute.net">Tools</a>
+<a href="https://crosscompute.net">Runnable Tools</a>
 </nav>
 {% endblock %}
 
 {% block main_html %}
 <h1>{{ headline_text }}</h1>
 
+<h2>{{ pitch_text }}</h2>
+
 {{ pitch_html | safe }}
 
-{{ video_frame(demo_slug) }}
+<h2>{{ action_text }}</h2>
 
-{{ services_html | safe }}
+{{ action_html | safe }}
 
 {{ link_list(updates) }}
-
-{{ sessions_html | safe }}
 {% endblock %}
 
 {% block footer_html %}
