@@ -6,8 +6,8 @@
 {% set name_text = d['name_text'] %}
 {% set description_text = d['description_text'] %}
 {% set asset_uri = d['asset_uri'] %}
-{% set video_uri = d['video_uri'] %}
-<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_uri %} [<a href="{{ video_uri }}" target="_blank">video</a>]{% endif %}</li>
+{% set video_slug = d['video_slug'] %}
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endmacro %}
