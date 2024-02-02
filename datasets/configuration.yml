@@ -8,7 +8,7 @@ brand:
 title_text: CrossCompute | Runnable Tools
 
 description_text:
-  Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute converts institutional knowledge into processes and tools that can be shared across departments. Let your analysts turn scripts into tools that non-technical people can run using the CrossCompute Analytics Software Development Kit, then share the tools to boost data-driven decisions across your organization using the CrossCompute Analytics Automation Platform.
+  Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute converts institutional knowledge into tools that can be shared across departments. Let your analysts turn scripts into tools that non-technical people can run using the CrossCompute Analytics Software Development Kit, then share the tools to boost data-driven decisions across your organization using the CrossCompute Analytics Automation Platform.
 
 headline_text: Protect Expertise Before Experts Leave Your Team
 
@@ -16,18 +16,18 @@ pitch_text: What Would Happen to Your Company If Your Best Analysts Were Hit by 
 
 pitch_markdown: |
 
-  CrossCompute works with your team to convert institutional knowledge into processes and tools that can be shared across departments.
+  CrossCompute works with your team to convert institutional knowledge into tools that can be shared across departments.
 
   Even when key personnel disappear, CrossCompute ensures that tools and the knowledge embedded in them remain accessible and up-to-date, so that your operations can continue.
 
-  Follow these steps:
-
   - Step 1: Your managers rank your company's reports by importance and frequency.
-  - Step 2: Your analysts take inventory of the scripts and datasets used to draft the reports.
-  - Step 3: Your analysts turn the scripts into tools that non-technical people can run using the **CrossCompute Analytics Software Development Kit**.
+  - Step 2: Your analysts study the processes used to draft the reports.
+  - Step 3: Your analysts turn the processes into tools that non-technical people can run using the **CrossCompute Analytics Software Development Kit**.
   - Step 4: Your analysts share the tools to boost data-driven decisions across your organization using the **CrossCompute Analytics Automation Platform**.
 
-  If your company does not have existing scripts or spreadsheets coded by programmer analysts or data scientists, then our solution is probably not the right fit for you.
+  <span style="background-color:yellow">We help analysts publish forms, dashboards, maps, reports and tools faster using our products. We help agencies replace PDF forms, Word documents and Excel spreadsheets with web-based forms.</span>
+
+  <span style="color:red">If your company does not have existing forms, spreadsheets or scripts coded by programmer analysts or data scientists, then our solution is not the right fit for you.</span>
 
 action_text: Are You Ready to Future Proof Your Analytics?
 
