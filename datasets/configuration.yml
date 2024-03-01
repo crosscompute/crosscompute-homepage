@@ -45,6 +45,7 @@ updates:
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
     video_slug: B7of7dQVJwM
+    playlist_slug: PLxVFbAKDmXyCHKkqT0ucma-Sco9snEMoQ
 
 links:
   - name_text: Forum
