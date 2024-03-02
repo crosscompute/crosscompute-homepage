@@ -8,7 +8,7 @@
 {% set asset_uri = d['asset_uri'] %}
 {% set video_slug = d['video_slug'] %}
 {% set playlist_slug = d['playlist_slug'] %}
-<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}?listType=playlist&list={{ playlist_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}?listType=playlist&list={{ playlist_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endmacro %}
