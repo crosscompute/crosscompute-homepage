@@ -8,7 +8,7 @@ brand:
 title_text: CrossCompute | Runnable Tools
 
 description_text:
-  Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute converts institutional knowledge into tools that can be shared across departments. Let your analysts turn scripts into tools that non-technical people can run using the CrossCompute Analytics Software Development Kit, then share the tools to boost data-driven decisions across your organization using the CrossCompute Analytics Automation Platform.
+  Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute converts institutional knowledge into tools that can be shared across departments. Let your analysts turn scripts into tools that non-technical people can run using the CrossCompute Analytics Software Development Kit, then share the tools to boost data-driven decisions across your organization using the CrossCompute Analytics Automation Platform. Automate and maintain your data pipelines under a zero trust security architecture.
 
 headline_text: Protect Expertise Before Experts Leave Your Team
 
@@ -25,12 +25,16 @@ pitch_markdown: |
 
   <span style="background-color:yellow">We help analysts publish forms, dashboards, maps, reports and tools faster using our products. We help companies replace PDF forms, Word documents and Excel spreadsheets with web-based forms.</span> If your company does not have existing forms, spreadsheets or scripts coded by programmer analysts or data scientists, then our solution is not the right fit for you.
 
+  ## Too Many Software Systems?
+
+  Is your company using different software for work orders, customer invoices, customer complaints, GIS, engineering diagrams, infrastructure monitoring, infrastructure analysis and asset management? Is your team manually importing and exporting data between the different software systems? If so, consider eliminating human error from your process by automating data pipelines between your software systems. CrossCompute can automate and maintain your data pipelines under a zero trust security architecture. Custom work is billed at an hourly rate with a monthly cap.
+
   ## Concerned About Data Security?
 
   Our open source packages provide basic options for restricting access to your tools. For greater control over who can access your tools, including subscription management, we recommend our dedicated servers. CrossCompute Analytics Automation Platform Dedicated Servers are available for $13k per year per [subdomain](https://en.wikipedia.org/wiki/Subdomain).
 
   - Restrict access to tools on your dedicated servers.
-  - Schedule monthly training and support sessions.
+  - Schedule monthly training and support sessions with engineers on our team.
   - Sell toolkit subscriptions to unlimited users.
 
 action_text: Are You Ready to Future Proof Your Analytics?
