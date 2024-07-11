@@ -5,55 +5,39 @@ brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-title_text: CrossCompute | Runnable Tools
+title_text: CrossCompute | Tools for Technical Trainers
 
-description_text:
-  Protect expertise before experts leave your team. What would happen to your company if your best analysts were hit by a truck? CrossCompute converts institutional knowledge into tools that can be shared across departments. Let your analysts turn scripts into tools that non-technical people can run using the CrossCompute Analytics Software Development Kit, then share the tools to boost data-driven decisions across your organization using the CrossCompute Analytics Automation Platform. Automate and maintain your data pipelines under a zero trust security architecture.
+description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! CrossCompute will deploy a secure cloud-based training environment for your corporate workshop, conference tutorial or university class, test your course content for typos and bugs and develop custom pedagogical tools to improve learning outcomes.
 
-headline_text: Protect Expertise Before Experts Leave Your Team
+headline_text: Provide Better Student Experiences in Less Time
 
-pitch_text: What Would Happen to Your Company If Your Best Analysts Were Hit by a Truck?
+pitch_text: For Instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity
 
 pitch_markdown: |
 
-  CrossCompute works with your team to convert institutional knowledge into tools that can be shared across departments. Even when key personnel disappear, CrossCompute ensures that tools and the knowledge embedded in them remain accessible, so that your operations can continue.
+  ### Secure Cloud-Based Training Environments
+  Handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
 
-  - Step 1: Your managers rank your company's reports by importance and frequency.
-  - Step 2: Your analysts study the processes used to draft the reports.
-  - Step 3: Your analysts turn the processes into tools that non-technical people can run using our open source **CrossCompute Analytics Software Development Kit**.
-  - Step 4: Your analysts share the tools to boost data-driven decisions across your organization using the **CrossCompute Analytics Automation Platform**.
+  ### Course Content Testing
+  Let us check for typos and bugs in your Jupyter Notebooks.
 
-  <span style="background-color:yellow">We help analysts publish forms, dashboards, maps, reports and tools faster using our products. We help companies replace PDF forms, Word documents and Excel spreadsheets with web-based forms.</span> If your company does not have existing forms, spreadsheets or scripts coded by programmer analysts or data scientists, then our solution is not the right fit for you.
+  ### Pedagogical Tools to Improve Learning Outcomes
+  We can rapidly prototype custom tools and exercises to reinforce concepts in your course using our open source CrossCompute Analytics Software Development Kit.
 
-  ## Too Many Software Systems?
-
-  Is your company using different software for work orders, customer invoices, customer complaints, GIS, engineering diagrams, infrastructure monitoring, infrastructure analysis and asset management? Is your team manually importing and exporting data between the different software systems? If so, consider eliminating human error from your process by automating data pipelines between your software systems. CrossCompute can automate and maintain your data pipelines under a zero trust security architecture. Custom work is billed at an hourly rate with a monthly cap.
-
-  ## Concerned About Data Security?
-
-  Our open source packages provide basic options for restricting access to your tools. For greater control over who can access your tools, including subscription management, we recommend our dedicated servers. CrossCompute Analytics Automation Platform Dedicated Servers are available for $13k per year per [subdomain](https://en.wikipedia.org/wiki/Subdomain).
-
-  - Restrict access to tools on your dedicated servers.
-  - Schedule monthly training and support sessions with engineers on our team.
-  - Sell toolkit subscriptions to unlimited users.
-
-action_text: Are You Ready to Future Proof Your Analytics?
+action_text: Happy Students and Happy Customers!
 
 action_markdown: |
 
   <iframe src="https://crosscompute.net/a/subscribe-newsletter?_embed"></iframe>
 
-  Enter your email to subscribe to our newsletter or schedule a consultation using the calendar.
+  Enter your email to subscribe to our newsletter or schedule a conversation using the calendar.
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 updates:
-  - name_text: Open Standards Approach to Upgrading Grid Resilience
-    description_text: We are looking for utilities that want to receive customized recommendations on specific projects to improve grid resilience in an Annual Resilience Benchmarking Report. Participating utilities can access a Grid Resilience Toolkit. Lineworkers can map assets in the field with the toolkit to digitize a circuit map of their electrical network. Analysts can track data on operations and maintenance costs with the toolkit to help utilities understand how different resilience strategies can affect their long-term costs. The Grid Resilience Toolkit computes a menu of resilience upgrade options and recommends the best option using the mapped infrastructure and available budget. The toolkit will be open source software structured with a Modular Open Systems Approach so that modules can be added, removed or replaced incrementally.
-    asset_uri: https://crosscompute.com/p/grt
-    video_slug: CUJ3u_I282o
-    playlist_slug: PLxVFbAKDmXyCHKkqT0ucma-Sco9snEMoQ
+  - name_text: Expect CrossCompute Platform 5.0.0
+    description_text: We have been actively developing the next version of our platform for the past year. Expect a launch in August 2024.
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
@@ -62,10 +46,10 @@ updates:
 
 links:
   - name_text: Forum
-    description_text: Tutorials and questions
+    description_text: Answers to questions
     asset_uri: https://forum.crosscompute.com
   - name_text: YouTube
-    description_text: Tutorials and demos
+    description_text: Updates and demos
     asset_uri: https://www.youtube.com/crosscompute
   - name_text: GitHub
     description_text: Our code repositories
