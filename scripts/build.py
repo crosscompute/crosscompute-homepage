@@ -1,3 +1,4 @@
+import re
 from argparse import ArgumentParser
 from pathlib import Path
 from time import sleep
@@ -44,8 +45,14 @@ def save(
                 continue
             uri = root_uri + '/' + img_src
             save(target_folder, img_src, uri, is_binary=True)
+        for relative_uri in URL_PATTERN.findall(html):
+            uri = root_uri + relative_uri
+            save(target_folder, relative_uri.lstrip('/'), uri, is_binary=True)
     with open(target_path, 'wt') as f:
         f.write(html)
+
+
+URL_PATTERN = re.compile(r'url\((.*)\)')
 
 
 if __name__ == '__main__':
@@ -55,7 +62,8 @@ if __name__ == '__main__':
     args = a.parse_args()
     args.port = find_open_port()
     args.is_production = True
-    load_configuration(args.configuration_path)
+    configuration_path = args.configuration_path
+    load_configuration(configuration_path)
     process = StoppableProcess(name='serve', target=serve_with, args=(args,))
     process.start()
     uri = f'http://localhost:{args.port}'

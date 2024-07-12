@@ -36,7 +36,10 @@ async def see_icon():
 
 def serve_with(args):
     configuration.update(load_configuration(args.configuration_path))
-    uvicorn.run(app, port=args.port, log_level='debug')
+    try:
+        uvicorn.run(app, port=args.port, log_level='debug')
+    except KeyboardInterrupt:
+        pass
 
 
 def load_configuration(path):
