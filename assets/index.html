@@ -52,20 +52,29 @@ h1 {
   font-size: xxx-large;
   background: #17A2F5;
   color: white;
-  margin: 0 -64px 0;
-  padding: 64px;
   text-align: center;
   transform: rotate(2deg);
-  border-radius: 128px 32px 200px 16px/24px 192px 0px 216px;
+  border-radius: 256px 8px 0px 8px/16px 256px 0px 256px;
+  padding: 32px;
 }
 h2 {
   background: #D43105;
   color: white;
-  margin: 0 -48px 64px;
-  padding: 48px;
   text-align: center;
   transform: rotate(-2deg);
-  border-radius: 200px 0px 128px 24px/32px 192px 32px 232px;
+  margin: -32px auto 32px;
+  border-radius: 0px 16px 256px 8px/16px 256px 16px 256px;
+  padding: 32px;
+}
+@media (min-width: 900px) {
+  h1 {
+    margin: 0 -64px 0;
+    padding: 64px;
+  }
+  h2 {
+    margin: 0 -48px 64px;
+    padding: 48px;
+  }
 }
 img {
   max-width: 100%;
