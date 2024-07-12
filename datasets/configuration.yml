@@ -24,13 +24,7 @@ pitch_markdown: |
   ### Pedagogical Tools to Improve Learning Outcomes
   We can make custom tools and exercises to reinforce concepts in your course using our open source CrossCompute Analytics Software Development Kit.
 
-action_text: Happy Students and Happy Customers!
-
 action_markdown: |
-
-  <iframe src="https://crosscompute.net/a/subscribe-newsletter?_embed"></iframe>
-
-  Enter your email to subscribe to our newsletter or schedule a conversation using the calendar.
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>

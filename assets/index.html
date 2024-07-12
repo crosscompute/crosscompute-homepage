@@ -8,7 +8,7 @@
 {% set asset_uri = d['asset_uri'] %}
 {% set video_slug = d['video_slug'] %}
 {% set playlist_slug = d['playlist_slug'] %}
-<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}?listType=playlist&list={{ playlist_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe class="video" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}?listType=playlist&list={{ playlist_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endmacro %}
@@ -26,6 +26,9 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ description_text }}">
 <style>
+body {
+  font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 header {
   display: flex;
   gap: 8px;
@@ -42,8 +45,27 @@ main, footer {
   max-width: 768px;
   margin: auto;
 }
+main > p, main > .board {
+  line-height: 1.5em;
+}
 h1 {
   font-size: xxx-large;
+  background: #17A2F5;
+  color: white;
+  margin: 0 -64px 0;
+  padding: 64px;
+  text-align: center;
+  transform: rotate(2deg);
+  border-radius: 128px 32px 200px 16px/24px 192px 0px 216px;
+}
+h2 {
+  background: #D43105;
+  color: white;
+  margin: 0 -48px 64px;
+  padding: 48px;
+  text-align: center;
+  transform: rotate(-2deg);
+  border-radius: 200px 0px 128px 24px/32px 192px 32px 232px;
 }
 img {
   max-width: 100%;
@@ -60,6 +82,9 @@ iframe {
 }
 .board li:not(:last-child) {
   margin-bottom: 1em;
+}
+.video {
+  margin: 32px auto;
 }
 .calendly-inline-widget {
   height: 600px;
@@ -92,8 +117,6 @@ iframe {
 <h2>{{ pitch_text }}</h2>
 
 {{ pitch_html | safe }}
-
-<h2>{{ action_text }}</h2>
 
 {{ action_html | safe }}
 
