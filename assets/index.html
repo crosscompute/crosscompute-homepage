@@ -61,10 +61,11 @@ h2 {
   background: #D43105;
   color: white;
   text-align: center;
-  transform: rotate(-2deg);
   margin: -32px auto 32px;
   border-radius: 0px 16px 256px 8px/16px 256px 16px 256px;
   padding: 32px;
+  transform: rotate(-2deg);
+  animation: 100ms 3s 4 alternate shake;
 }
 @media (min-width: 1600px) {
   body {
@@ -115,6 +116,11 @@ iframe {
   height: 1.5em;
   max-width: 100%;
   transform: translate(0, -2px);
+}
+@keyframes shake {
+  to {
+    transform: rotate(2deg);
+  }
 }
 </style>
 {% endblock %}
