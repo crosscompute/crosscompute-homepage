@@ -7,7 +7,7 @@ brand:
 
 title_text: CrossCompute | Tools for Technical Trainers
 
-description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes.
+description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes. Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development. Zero trust architectures provide a safe learning environment for students, instructors and staff. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in denied, degraded and disrupted operational environments with bad internet.
 
 headline_text: Provide Better Student Experiences in Less Time
 
@@ -30,7 +30,7 @@ pitch_markdown: |
   ### Help Your Students Invest in Themselves
   - Easy to Make Runnable Tools: Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development.
   - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students, instructors and staff.
-  - Scalable Cloud and Edge Deployments: Cloud deployments support hundreds of concurrent sessions, while edge deployments recreate training experiences in locations with bad internet.
+  - Scalable Cloud and Edge Deployments: Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in denied, degraded and disrupted operational environments with bad internet.
 
 action_markdown: |
 
