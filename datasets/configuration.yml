@@ -27,6 +27,11 @@ pitch_markdown: |
   ### Pedagogical Tools to Improve Learning Outcomes
   Make decision support tools to reinforce concepts in your course using our CrossCompute Analytics Software Development Kit.
 
+  ### Help Your Students Invest in Themselves
+  - Easy to Make Runnable Tools: Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development.
+  - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students, instructors and staff.
+  - Scalable Cloud and Edge Deployments: Cloud deployments support hundreds of concurrent sessions, while edge deployments recreate training experiences in locations with bad internet.
+
 action_markdown: |
 
   <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
