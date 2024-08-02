@@ -7,7 +7,7 @@ brand:
 
 title_text: CrossCompute | Tools for Technical Trainers
 
-description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! CrossCompute will deploy a secure cloud-based training environment for your corporate workshop, conference tutorial or university class, test your course content for typos and bugs and develop custom pedagogical tools to improve learning outcomes.
+description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes.
 
 headline_text: Provide Better Student Experiences in Less Time
 
@@ -15,14 +15,17 @@ pitch_text: For Instructors who use Jupyter Notebooks to teach Software Programm
 
 pitch_markdown: |
 
+  ### Runnable Tools to Prove Subject Mastery
+  Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform.
+
   ### Secure Cloud-Based Training Environments
-  Handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
+  Skip package installation time wasters and handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
 
   ### Course Content Testing
-  Let us check for typos and bugs in your Jupyter Notebooks.
+  Let us check for bugs in your Jupyter Notebooks.
 
   ### Pedagogical Tools to Improve Learning Outcomes
-  We can make custom tools and exercises to reinforce concepts in your course using our open source CrossCompute Analytics Software Development Kit.
+  Make decision support tools to reinforce concepts in your course using our CrossCompute Analytics Software Development Kit.
 
 action_markdown: |
 
