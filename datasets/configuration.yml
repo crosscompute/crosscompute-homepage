@@ -7,7 +7,7 @@ brand:
 
 title_text: CrossCompute | Tools for Technical Trainers
 
-description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes. Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development. Zero trust architectures provide a safe learning environment for students, instructors and staff. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
+description_text: Analysts automate reports and turn scripts into web-based tools using our software development kit. Organizations use our analytics hosting platform to sell subscription-based tools to their customers. For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes. Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development. Zero trust architectures provide a safe learning environment for students, instructors and staff. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
 
 headline_text: Provide Better Student Experiences in Less Time
 
@@ -21,9 +21,6 @@ pitch_markdown: |
   ### Secure Cloud-Based Training Environments
   Skip package installation time wasters and handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
 
-  ### Course Content Testing
-  Let us check for bugs in your Jupyter Notebooks.
-
   ### Pedagogical Tools to Improve Learning Outcomes
   Make decision support tools to reinforce concepts in your course using our CrossCompute Analytics Software Development Kit.
 
@@ -31,6 +28,10 @@ pitch_markdown: |
   - Easy to Make Runnable Tools: Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development.
   - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students, instructors and staff.
   - Scalable Cloud and Edge Deployments: Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
+
+  ### Analytics Automation for Organizations
+  1. Analysts automate reports and turn scripts into web-based tools using our software development kit.
+  2. Organizations use our analytics hosting platform to sell subscription-based tools to their customers.
 
 action_markdown: |
 
