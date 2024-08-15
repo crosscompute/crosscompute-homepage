@@ -7,7 +7,7 @@ brand:
 
 title_text: CrossCompute | Tools for Technical Trainers
 
-description_text: Analysts automate reports and turn scripts into web-based tools using our software development kit. Organizations use our analytics hosting platform to sell subscription-based tools to their customers. For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class and make pedagogical decision support tools to improve learning outcomes. Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development. Zero trust architectures provide a safe learning environment for students, instructors and staff. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
+description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better student experiences in less time! Students demonstrate creativity and mastery by publishing useful tools on our platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class. Our software helps students focus on data science instead of web development when making decision support tools. Zero trust architectures provide a safe learning environment for students and instructors. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet. Make and share decision support tools securely across your organization by launching a private deployment of our platform.
 
 headline_text: Provide Better Student Experiences in Less Time
 
@@ -16,22 +16,18 @@ pitch_text: For Instructors who use Jupyter Notebooks to teach Software Programm
 pitch_markdown: |
 
   ### Runnable Tools to Prove Subject Mastery
-  Students demonstrate creativity and mastery to employers by publishing useful tools on our CrossCompute Analytics Automation Platform.
+  Students demonstrate creativity and mastery by publishing runnable tools on our platform.
 
   ### Secure Cloud-Based Training Environments
   Skip package installation time wasters and handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
 
-  ### Pedagogical Tools to Improve Learning Outcomes
-  Make decision support tools to reinforce concepts in your course using our CrossCompute Analytics Software Development Kit.
-
   ### Help Your Students Invest in Themselves
-  - Easy to Make Runnable Tools: Our SDK helps analysts rapidly turn scripts into web-based tools without spending time on web development.
-  - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students, instructors and staff.
+  - Make Your Own Runnable Tools: Our software helps students focus on data science instead of web development when making decision support tools.
+  - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students and instructors.
   - Scalable Cloud and Edge Deployments: Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
 
   ### Analytics Automation for Organizations
-  1. Analysts automate reports and turn scripts into web-based tools using our software development kit.
-  2. Organizations use our analytics hosting platform to sell subscription-based tools to their customers.
+  Make and share decision support tools securely across your organization by launching a private deployment of our platform.
 
 action_markdown: |
 
@@ -39,8 +35,8 @@ action_markdown: |
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 updates:
-  - name_text: Expect CrossCompute Platform 5.0.0
-    description_text: We have been actively developing the next version of our platform for the past year. Expect a launch in August 2024.
+  - name_text: Expect CrossCompute Analytics Automation Platform 5.0.0
+    description_text: Expect a launch toward the end of August 2024.
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
