@@ -15,6 +15,7 @@
 
 {% block head_html %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.5.0/tsparticles.confetti.bundle.min.js"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
@@ -148,4 +149,23 @@ iframe {
 
 {% block footer_html %}
 {{ link_list(links) }}
+{% endblock %}
+
+{% block body_js %}
+function chooseRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function launchConfetti() {
+  confetti({
+    angle: chooseRandom(52, 128),
+    spread: chooseRandom(44, 76),
+    particleCount: chooseRandom(64, 128),
+    origin: { y: 0.5 },
+  });
+}
+document.addEventListener('scroll', (event) => {
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+    launchConfetti();
+  }
+});
 {% endblock %}
