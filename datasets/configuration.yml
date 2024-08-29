@@ -36,7 +36,7 @@ action_markdown: |
 
 updates:
   - name_text: Expect CrossCompute Analytics Automation Platform 5.0.0
-    description_text: Expect a launch toward the end of August 2024.
+    description_text: Expect a launch toward the end of September 2024.
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
