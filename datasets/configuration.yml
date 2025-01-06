@@ -29,14 +29,13 @@ pitch_markdown: |
   ### Analytics Automation for Organizations
   Make and share decision support tools securely across your organization by launching a private deployment of our platform.
 
-action_markdown: |
-
-  <div class="calendly-inline-widget" data-url="https://calendly.com/crosscompute/teamwork?hide_event_type_details=1&hide_gdpr_banner=1"></div>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
 updates:
-  - name_text: Expect CrossCompute Analytics Automation Platform 5.0.0
-    description_text: Expect a launch toward the end of September 2024.
+  - name_text: Suggest a Tool
+    description_text: CrossCompute Platform 5.0.0 is now live! What tools would you like to see? We are in the process of porting tools from the earlier versions, which we estimate will take most of this year to complete. Contact us if you would like to make your tools available on the platform.
+    asset_uri: https://crosscompute.com/t/suggest-tool
+  - name_text: Launch Machine for Pair Programming Command Line
+    description_text: Start a pair programming session in a secure sandbox.
+    asset_uri: https://crosscompute.com/t/pair-program
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
