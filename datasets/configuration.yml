@@ -31,11 +31,14 @@ pitch_markdown: |
 
 updates:
   - name_text: Suggest a Tool
-    description_text: CrossCompute Platform 5.0.0 is now live! What tools would you like to see? We are in the process of porting tools from the earlier versions, which we estimate will take most of this year to complete. You can also use the form if you would like to make your tools available on the platform.
+    description_text: CrossCompute Platform 5.0.0 is now live! What tools would you like to see? We are in the process of porting tools from the earlier versions 1 through 4, which we estimate will take most of this year to complete. You can also use the form if you would like to make your tools available on the platform.
     asset_uri: https://crosscompute.com/t/suggest-tool
   - name_text: Launch Machine for Pair Programming Command Line
     description_text: Start a pair programming session in a secure sandbox. Thank you to Abdourahamane Issaka Sani, Rohan Sazad, Tam Nguyen for your work on this tool.
     asset_uri: https://crosscompute.com/t/pair-program
+  - name_text: Try CrossCompute Platform 4
+    description_text: CrossCompute Platform 4 features tools for testing our CrossCompute Analytics SDK, including our custom JupyterLab extension.
+    asset_uri: https://crosscompute.net
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
