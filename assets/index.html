@@ -150,18 +150,18 @@ iframe {
 {% endblock %}
 
 {% block body_js %}
-if (window.innerWidth > 768) {
-  function chooseRandom(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-  function launchConfetti() {
-    confetti({
-      angle: chooseRandom(52, 128),
-      spread: chooseRandom(44, 76),
-      particleCount: chooseRandom(64, 128),
-      origin: { y: 0.5 },
-    });
-  }
+function chooseRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function launchConfetti() {
+  confetti({
+    angle: chooseRandom(52, 128),
+    spread: chooseRandom(44, 76),
+    particleCount: chooseRandom(64, 128),
+    origin: { y: 0.5 },
+  });
+}
+if (window.innerWidth >= 900) {
   document.addEventListener('scroll', (event) => {
     if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
       launchConfetti();
