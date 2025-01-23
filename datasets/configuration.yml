@@ -20,8 +20,9 @@ pitch_markdown: |
   Turn your task into a runnable, web-based tool!
 
   - CrossCompute is an online platform for running engineering and utility project planning tools.
-  - Share runnable tools across your organization by launching a private deployment of our platform.
   - Our SDK and platform simplify the process of developing and distributing web-based tools.
+
+  Share runnable tools across your organization by launching a private deployment of our platform.
 
 updates:
   - name_text: Suggest a Tool
