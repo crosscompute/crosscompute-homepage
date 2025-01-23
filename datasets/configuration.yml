@@ -5,29 +5,23 @@ brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-title_text: CrossCompute | Tools for Technical Trainers
+title_text: CrossCompute - Create and Share Runnable Tools
 
-description_text: For instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity -- provide better analytics training in less time! Students demonstrate creativity and mastery by publishing useful tools on our platform. Deploy your own secure cloud-based training environment for your corporate workshop, conference tutorial or university class. Our software helps students focus on data science instead of web development when making decision support tools. Zero trust architectures provide a safe learning environment for students and instructors. Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet. Make and share decision support tools securely across your organization by launching a private deployment of our platform.
+description_text: Create and share runnable tools across your organization. CrossCompute is an online platform for running engineering and utility project planning tools. Our software development kit and platform simplify the process of developing and distributing web-based, runnable tools. Our solution is specialized for deploying decision support tools in scenario planning, electricity infrastructure and hazard mitigation.
 
-headline_text: Provide Better Analytics Training in Less Time
+headline_text: Create and Share Runnable Tools
 
-pitch_text: For Instructors who use Jupyter Notebooks to teach Software Programming, Data Analytics and Cybersecurity
+pitch_text: Specialized for Scenario Planning, Electricity Infrastructure and Hazard Mitigation
 
 pitch_markdown: |
 
-  ### Runnable Tools to Prove Subject Mastery
-  Students demonstrate creativity and mastery by publishing runnable tools on our platform.
+  Are you responsible for updating tables, charts or maps for non-technical users?
 
-  ### Secure Cloud-Based Training Environments
-  Skip package installation time wasters and handle hundreds of concurrent JupyterLab sessions in your Corporate Workshops, Conference Tutorials and University Classes.
+  Turn your task into a runnable, web-based tool!
 
-  ### Help Your Students Invest in Themselves
-  - Make Your Own Runnable Tools: Our software helps students focus on data science instead of web development when making decision support tools.
-  - Secure Training and Testing Environments: Zero trust architectures provide a safe learning environment for students and instructors.
-  - Scalable Cloud and Edge Deployments: Our cloud deployments support 100+ concurrent sessions, while edge deployments recreate training experiences in spots with bad internet.
-
-  ### Analytics Automation for Organizations
-  Make and share decision support tools securely across your organization by launching a private deployment of our platform.
+  - CrossCompute is an online platform for running engineering and utility project planning tools.
+  - Share runnable tools across your organization by launching a private deployment of our platform.
+  - Our SDK and platform simplify the process of developing and distributing web-based tools.
 
 updates:
   - name_text: Suggest a Tool
