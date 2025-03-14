@@ -7,7 +7,7 @@ brand:
 
 title_text: CrossCompute - Create and Share Runnable Tools
 
-description_text: Create and share runnable tools across your organization. CrossCompute is a customizable platform for running engineering and utility project planning tools. Our software development kit and platform simplify the process of developing and distributing web-based, runnable tools. Our solution is specialized for deploying decision support tools in scenario planning, electricity infrastructure and hazard mitigation.
+description_text: Do you find yourself analyzing the same datasets to answer the same questions over and over? Turn your task into a runnable, web-based tool! Save time by providing tools that answer frequently asked data driven questions. Restrict tool access to specific projects or individuals. Share runnable tools across your organization by launching a private deployment of our platform. CrossCompute is a customizable platform for running engineering and utility project planning tools. Our SDK and platform simplify the process of developing and distributing web-based tools.
 
 headline_text: Create and Share Runnable Tools
 
@@ -19,10 +19,11 @@ pitch_markdown: |
 
   Turn your task into a runnable, web-based tool!
 
-  - CrossCompute is a customizable platform for running engineering and utility project planning tools.
-  - Our SDK and platform simplify the process of developing and distributing web-based tools.
+  - Save time by providing tools that answer frequently asked data driven questions.
+  - Restrict tool access to specific projects or individuals.
+  - Share runnable tools across your organization by launching a private deployment of our platform.
 
-  Share runnable tools across your organization by launching a private deployment of our platform.
+  CrossCompute is a customizable platform for running engineering and utility project planning tools. Our SDK and platform simplify the process of developing and distributing web-based tools.
 
 updates:
   - name_text: Suggest a Tool
