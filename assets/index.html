@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% macro link_list(items) %}
-<ul class="board">
+<ul class="_board">
 {% for d in items %}
 {% set name_text = d['name_text'] %}
 {% set description_text = d['description_text'] %}
@@ -48,7 +48,7 @@ main, footer {
   max-width: 768px;
   margin: auto;
 }
-main > p, main > .board {
+main > p, main > ._board {
   line-height: 1.5em;
 }
 h1 {
@@ -79,20 +79,23 @@ iframe {
   margin: 0 auto;
   max-width: 100%;
 }
-.board {
+._board {
   list-style: none;
   padding: 0;
 }
-.board li:not(:last-child) {
+._board li:not(:last-child) {
   margin-bottom: 1em;
 }
-.video {
+._video {
   margin: 32px auto;
 }
-.spotlight {
+._spotlight {
   margin-top: 16px;
   display: flex;
   justify-content: space-around;
+}
+._hidden {
+  display: none !important;
 }
 #brand {
   height: 1.5em;
@@ -118,7 +121,7 @@ iframe {
   }
 }
 @media (min-width: 1600px) {
-  .spotlight {
+  ._spotlight {
     float: right;
     margin-top: -20px;
     margin-right: -360px;
@@ -129,7 +132,7 @@ iframe {
 
 {% block header_html %}
 <nav>
-<a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy" alt="CrossCompute Logo;"></a>
+<a href="{{ brand['asset_uri'] }}"><img id="brand" loading="lazy" src="{{ brand['image_uri'] }}" alt="CrossCompute Logo;"></a>
 </nav>
 {% endblock %}
 
@@ -155,6 +158,7 @@ iframe {
 function chooseRandom(min, max) {
   return Math.random() * (max - min) + min;
 }
+
 function launchConfetti() {
   confetti({
     angle: chooseRandom(52, 128),
@@ -163,11 +167,29 @@ function launchConfetti() {
     origin: { y: 0.5 },
   });
 }
-if (window.innerWidth >= 900) {
-  document.addEventListener('scroll', (event) => {
-    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
-      launchConfetti();
-    }
-  });
+
+document.addEventListener('scroll', (event) => {
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+    launchConfetti();
+  }
+});
+
+function unhide(l) {
+  l.classList.remove('_hidden');
 }
+
+const intersectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(function(l) {
+    if (!l.isIntersecting) {
+      return;
+    }
+    const { target } = l;
+    target.querySelectorAll('[data-src]').forEach(function(m) {
+      m.src = m.dataset.src;
+      unhide(m);
+    });
+  });
+});
+intersectionObserver.observe(document.querySelector('._board'));
+
 {% endblock %}

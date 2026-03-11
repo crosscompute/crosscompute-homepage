@@ -23,7 +23,7 @@ updates:
   - name_text: Electric Distribution Outage Statistics for Operations Managers
     description_text: Use historical data to see where, when and why unplanned outages are happening.
     asset_uri: https://forum.crosscompute.com/t/electric-distribution-outage-statistics-for-operations-managers/245
-    extra_html: <div class="spotlight"><img src="https://forum.crosscompute.com/uploads/default/original/1X/cb1290f4765815c2e464b78175a5ae6952d814db.gif"></div>
+    extra_html: <div class="_spotlight"><img class="_hidden" loading="lazy" data-src="https://forum.crosscompute.com/uploads/default/original/1X/cb1290f4765815c2e464b78175a5ae6952d814db.gif"></div>
   - name_text: Suggest a Tool
     description_text: CrossCompute Platform 5.1.0 is now live! What tools would you like to see?
     asset_uri: https://crosscompute.com/t/suggest-tool
@@ -36,7 +36,7 @@ updates:
   - name_text: Try CrossCompute Analytics SDK 0.9.4
     description_text: The latest version of our software development kit brings enhancements to help you automate reports and increase the expressiveness of your forms. Live PDF preview updates the PDF print in real-time as you save changes to configuration files, notebook scripts, markdown templates and CSS styles. Conditional templates let you make step-by-step wizards by exposing different templates depending on the user's responses to questions. File uploads let users upload files to your scripts for each input variable that is set to file view.
     asset_uri: https://forum.crosscompute.com/t/crosscompute-0-9-4-release-notes-migration-guide/186
-    extra_html: <iframe class="video" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/B7of7dQVJwM?listType=playlist&list=PLxVFbAKDmXyCHKkqT0ucma-Sco9snEMoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    extra_html: <iframe class="_hidden _video" loading="lazy" width="560" height="315" data-src="https://www.youtube.com/embed/B7of7dQVJwM?listType=playlist&list=PLxVFbAKDmXyCHKkqT0ucma-Sco9snEMoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   - name_text: Try CrossCompute Platform 3
     description_text: CrossCompute Platform 3 was completed in 2021 and featured specialized views for editing geospatial data, including electricity distribution networks.
     asset_uri: https://crosscompute.com/authentications
