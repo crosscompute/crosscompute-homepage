@@ -6,16 +6,16 @@
 {% set name_text = d['name_text'] %}
 {% set description_text = d['description_text'] %}
 {% set asset_uri = d['asset_uri'] %}
-{% set video_slug = d['video_slug'] %}
+{% set extra_html = d['extra_html'] %}
 {% set playlist_slug = d['playlist_slug'] %}
-<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if video_slug %}<iframe class="video" loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/{{ video_slug }}?listType=playlist&list={{ playlist_slug }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>{% endif %}</li>
+<li>{% if asset_uri %}<a href="{{ asset_uri }}" target="_blank">{% endif %}{{ name_text }}{% if asset_uri %}</a>{% endif %}{% if name_text and description_text %}: {% endif %}{{ description_text }}{% if extra_html %}{{ extra_html | safe }}{% endif %}</li>
 {% endfor %}
 </ul>
 {% endmacro %}
 
 {% block head_html %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VP9T2V7B17"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.5.0/tsparticles.confetti.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.9.1/tsparticles.confetti.bundle.min.js"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
@@ -28,7 +28,9 @@ gtag('config', 'G-VP9T2V7B17');
 <meta name="description" content="{{ description_text }}">
 <style>
 body {
-  font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: system-ui;
+  color: white;
+  background: black;
 }
 header {
   display: flex;
@@ -51,43 +53,25 @@ main > p, main > .board {
 }
 h1 {
   font-size: xxx-large;
-  background: #17A2F5;
-  color: white;
-  text-align: center;
-  transform: rotate(2deg);
-  border-radius: 256px 8px 0px 8px/16px 256px 0px 256px;
-  padding: 32px;
-}
-h2 {
   background: #D43105;
   color: white;
   text-align: center;
-  margin: -32px auto 32px;
-  border-radius: 0px 16px 256px 8px/16px 256px 16px 256px;
   padding: 32px;
-  transform: rotate(-2deg);
+}
+h2 {
+  font-size: xx-large;
+  background: #17A2F5;
+  color: white;
+  text-align: center;
+  margin: -32px auto 32px;
+  padding: 32px;
   animation: 100ms 3s 4 alternate shake;
-}
-@media (min-width: 1600px) {
-  body {
-    background-image: url(/assets/red-white-blue-20240815.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-  }
-}
-@media (min-width: 900px) {
-  h1 {
-    margin: 0 -64px 0;
-    padding: 64px;
-  }
-  h2 {
-    margin: 0 -48px 64px;
-    padding: 48px;
-  }
 }
 img {
   max-width: 100%;
+}
+a {
+  color: yellow;
 }
 iframe {
   border: 0;
@@ -105,22 +89,39 @@ iframe {
 .video {
   margin: 32px auto;
 }
-.calendly-inline-widget {
-  height: 600px;
-}
-@media (min-width: 666px) {
-  .calendly-inline-widget {
-    height: 740px;
-  }
+.spotlight {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
 }
 #brand {
   height: 1.5em;
   max-width: 100%;
   transform: translate(0, -2px);
 }
+#pitch {
+  font-size: x-large;
+}
 @keyframes shake {
   to {
     transform: rotate(2deg);
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    margin: 0 -64px 0;
+    padding: 64px;
+  }
+  h2 {
+    margin: -32px -32px 64px;
+    padding: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  .spotlight {
+    float: right;
+    margin-top: -20px;
+    margin-right: -360px;
   }
 }
 </style>
@@ -130,9 +131,6 @@ iframe {
 <nav>
 <a href="{{ brand['asset_uri'] }}"><img id="brand" src="{{ brand['image_uri'] }}" loading="lazy" alt="CrossCompute Logo;"></a>
 </nav>
-<nav>
-<a href="https://crosscompute.net">Runnable Tools</a>
-</nav>
 {% endblock %}
 
 {% block main_html %}
@@ -140,7 +138,9 @@ iframe {
 
 <h2>{{ pitch_text }}</h2>
 
+<div id="pitch">
 {{ pitch_html | safe }}
+</div>
 
 <h3>Updates</h3>
 {{ link_list(updates) }}
