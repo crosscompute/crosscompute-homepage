@@ -5,9 +5,9 @@ brand:
   image_uri: assets/LogoBrand-Horizontal-20230501.svg
   asset_uri: https://crosscompute.com
 
-title_text: CrossCompute
+title_text: CrossCompute - Deploy Servers, Upload Tools, Control Access
 
-description_text: Do you find yourself analyzing the same datasets to answer the same questions over and over? Turn your task into a runnable, web-based tool! Save time by providing tools that answer frequently asked data driven questions. Restrict tool access to specific projects or individuals. Share runnable tools across your organization by launching a private deployment of our platform. CrossCompute is a customizable platform for running engineering and utility project planning tools. Our SDK and platform simplify the process of developing and distributing web-based tools.
+description_text: Don't Let Hackers Wreak Havoc on Your Customers! Deploy Your Tools on Secure Private Servers. CrossCompute is a customizable platform for running tools. Our SDK and platform simplify the process of distributing web-based tools, with a focus on access security.
 
 headline_text: Don't Let Hackers Wreak Havoc on Your Customers!
 
