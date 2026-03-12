@@ -25,7 +25,7 @@ def save(
             continue
         break
     if is_binary:
-        with open(target_path, 'wb') as f:
+        with target_path.open('wb') as f:
             f.write(response.content)
         return
     html = response.content.decode()
@@ -35,20 +35,20 @@ def save(
         soup = BeautifulSoup(html, 'html.parser')
         for element in soup.find_all('link'):
             link_href = element.get('href')
-            if link_href.startswith('http'):
+            if not link_href or link_href.startswith('http'):
                 continue
             uri = root_uri + '/' + link_href
             save(target_folder, link_href, uri)
         for element in soup.find_all('img'):
-            img_src = element.get('src')
-            if img_src.startswith('http'):
+            img_src = element.get('src', element.get('data-src'))
+            if not img_src or img_src.startswith('http'):
                 continue
             uri = root_uri + '/' + img_src
             save(target_folder, img_src, uri, is_binary=True)
         for relative_uri in URL_PATTERN.findall(html):
             uri = root_uri + relative_uri
             save(target_folder, relative_uri.lstrip('/'), uri, is_binary=True)
-    with open(target_path, 'wt') as f:
+    with target_path.open('wt') as f:
         f.write(html)
 
 
