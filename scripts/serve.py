@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 
 import uvicorn
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -15,13 +15,13 @@ from watchfiles import run_process
 PORT = 8000
 BASE_FOLDER = Path(__file__).parents[1]
 ASSETS_FOLDER = BASE_FOLDER / 'assets'
+MARKDOWN_EXTRAS = ['target-blank-links']
 
 
 app = FastAPI()
 app.mount('/assets', StaticFiles(directory=ASSETS_FOLDER), name='assets')
 env = Environment(
     loader=FileSystemLoader(ASSETS_FOLDER),
-    auto_reload=True,
     autoescape=True,
     lstrip_blocks=True,
     trim_blocks=True)
@@ -35,14 +35,11 @@ async def see_home(request: Request):
     return templates.TemplateResponse(request, 'index.html', configuration)
 
 
-@app.get('/favicon.ico')
-async def see_icon_ico():
-    return FileResponse(ASSETS_FOLDER / 'favicon.ico')
-
-
-@app.get('/favicon.svg')
-async def see_icon_svg():
-    return FileResponse(ASSETS_FOLDER / 'favicon.svg')
+@app.get('/favicon.{extension}')
+async def see_icon(extension: str):
+    if extension not in ('ico', 'svg'):
+        raise HTTPException(404)
+    return FileResponse(ASSETS_FOLDER / f'favicon.{extension}')
 
 
 def serve_with(args):
@@ -61,16 +58,18 @@ def load_configuration(path):
             if isinstance(v, dict):
                 ds.append(v)
             elif isinstance(v, list):
-                ds.extend(v)
-            elif k.endswith('_markdown'):
-                d[k.replace('_markdown', '_html')] = markdown(v, extras=[
-                    'target-blank-links'])
+                ds.extend(x for x in v if isinstance(x, dict))
+            elif k.endswith('_markdown') and isinstance(v, str):
+                d[k.removesuffix('_markdown') + '_html'] = markdown(
+                    v, extras=MARKDOWN_EXTRAS)
     return c
 
 
 if __name__ == '__main__':
     a = ArgumentParser()
-    a.add_argument('--port', metavar='X', default=PORT)
-    a.add_argument('configuration_path')
+    a.add_argument('--port', metavar='X', type=int, default=PORT)
+    a.add_argument('configuration_path', type=Path)
     args = a.parse_args()
-    run_process('.', target=serve_with, args=(args,))
+    run_process(
+        BASE_FOLDER, args.configuration_path, target=serve_with,
+        args=(args,))

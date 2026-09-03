@@ -1,10 +1,12 @@
 #!/bin/bash
 pip install -U \
-    fastapi \
-    invisibleroads-macros-process \
-    jinja2 \
-    markdown2 \
-    requests \
-    ruamel.yaml \
-    uvicorn \
-    watchfiles
+  beautifulsoup4 \
+  fastapi \
+  httpx2 \
+  invisibleroads-macros-process \
+  invisibleroads-macros-web \
+  jinja2 \
+  markdown2 \
+  ruamel.yaml \
+  uvicorn \
+  watchfiles
