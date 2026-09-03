@@ -6,6 +6,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from jinja2 import Environment, FileSystemLoader
 from markdown2 import markdown
 from ruamel.yaml import YAML
 from watchfiles import run_process
@@ -18,28 +19,35 @@ ASSETS_FOLDER = BASE_FOLDER / 'assets'
 
 app = FastAPI()
 app.mount('/assets', StaticFiles(directory=ASSETS_FOLDER), name='assets')
+env = Environment(
+    loader=FileSystemLoader(ASSETS_FOLDER),
+    auto_reload=True,
+    autoescape=True,
+    lstrip_blocks=True,
+    trim_blocks=True)
 templates = Jinja2Templates(
-    directory=ASSETS_FOLDER, trim_blocks=True, auto_reload=True)
+    env=env)
 configuration = {}
 
 
 @app.get('/', response_class=HTMLResponse)
 async def see_home(request: Request):
-    return templates.TemplateResponse('index.html', configuration | {
-        'request': request})
+    return templates.TemplateResponse(request, 'index.html', configuration)
 
 
 @app.get('/favicon.ico')
-async def see_icon():
+async def see_icon_ico():
     return FileResponse(ASSETS_FOLDER / 'favicon.ico')
+
+
+@app.get('/favicon.svg')
+async def see_icon_svg():
+    return FileResponse(ASSETS_FOLDER / 'favicon.svg')
 
 
 def serve_with(args):
     configuration.update(load_configuration(args.configuration_path))
-    try:
-        uvicorn.run(app, port=args.port, log_level='debug')
-    except KeyboardInterrupt:
-        pass
+    uvicorn.run(app, port=args.port, log_level='debug')
 
 
 def load_configuration(path):

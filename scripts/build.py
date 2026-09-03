@@ -38,7 +38,8 @@ def save(
             if not link_href or link_href.startswith('http'):
                 continue
             uri = root_uri + '/' + link_href
-            save(target_folder, link_href, uri)
+            is_binary = uri.endswith('.ico')
+            save(target_folder, link_href, uri, is_binary=is_binary)
         for element in soup.find_all('img'):
             img_src = element.get('src', element.get('data-src'))
             if not img_src or img_src.startswith('http'):
@@ -70,6 +71,6 @@ if __name__ == '__main__':
     folder = Path(args.target_folder)
     try:
         save(folder, 'index.html', uri, is_recursive=True)
-        save(folder, 'favicon.ico', uri + '/favicon.ico', is_binary=True)
+        # save(folder, 'favicon.ico', uri + '/favicon.ico', is_binary=True)
     finally:
         process.stop()
