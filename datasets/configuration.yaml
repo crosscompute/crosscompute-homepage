@@ -18,7 +18,7 @@ pitch_markdown: |
   CrossCompute is a customizable platform for running tools. Our products simplify the distribution of analytical tools and APIs, focusing on access security.
 
 updates:
-  - name_text: 20260903 CrossCompute Platform 5.3.1 Release Notes
+  - name_text: 20260903 CrossCompute Platform 5.3.2 Release Notes
     description_text: Launch your own private instance of our CrossCompute Platform + Power Manager Kit (Electric Distribution Outage Statistics for Operations Managers).
     asset_uri: https://forum.crosscompute.com/t/crosscompute-platform-updates/226/2
   - name_text: 20260312 Electric Distribution Outage Statistics for Operations Managers
