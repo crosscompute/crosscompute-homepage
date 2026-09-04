@@ -19,8 +19,9 @@ pitch_markdown: |
 
 updates:
   - name_text: 20260903 CrossCompute Platform 5.3.2 Release Notes
-    description_text: Launch your own private instance of our CrossCompute Platform + Power Manager Kit (Electric Distribution Outage Statistics for Operations Managers).
+    description_text: Launch your own private server of our CrossCompute Platform + Power Manager Kit (Electric Distribution Outage Statistics for Operations Managers).
     asset_uri: https://forum.crosscompute.com/t/crosscompute-platform-updates/226/2
+    extra_html: <iframe src="https://slides.com/invisibleroads/deck-d0e1a8/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   - name_text: 20260312 Electric Distribution Outage Statistics for Operations Managers
     description_text: Use historical data to see where, when and why unplanned outages are happening.
     asset_uri: https://forum.crosscompute.com/t/electric-distribution-outage-statistics-for-operations-managers/245
